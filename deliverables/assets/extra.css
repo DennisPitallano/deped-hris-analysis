@@ -557,6 +557,75 @@ body.diagram-zoom-open { overflow: hidden; }
 
 /* --- "What to read next" callout -------------------------------- */
 
+/* --- A/B/C compare table on landing --- */
+
+.md-typeset .compare-table {
+  margin: 0.5rem 0 1.5rem;
+  overflow-x: auto;
+  border-radius: 0.7rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-typeset .compare-table table {
+  margin: 0;
+  border: none;
+  width: 100%;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.md-typeset .compare-table table thead th {
+  background: linear-gradient(180deg,
+    color-mix(in srgb, var(--md-primary-fg-color) 96%, black) 0%,
+    var(--md-primary-fg-color) 100%);
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-align: left;
+  padding: 0.7rem 0.9rem;
+  border: none;
+  position: sticky;
+  top: 0;
+}
+.md-typeset .compare-table table thead th:first-child {
+  background: transparent;
+  color: var(--md-default-fg-color);
+  border-right: 1px solid var(--md-default-fg-color--lightest);
+}
+/* Per-column accent bars in the header row (skip 1st col which is row-headers) */
+.md-typeset .compare-table table thead th:nth-child(2) { box-shadow: inset 0 3px 0 #274069; }
+.md-typeset .compare-table table thead th:nth-child(3) { box-shadow: inset 0 3px 0 #0e8a6b; }
+.md-typeset .compare-table table thead th:nth-child(4) { box-shadow: inset 0 3px 0 #6f3ee0; }
+
+.md-typeset .compare-table table tbody th,
+.md-typeset .compare-table table tbody td {
+  padding: 0.6rem 0.9rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  border-left: none;
+  border-right: none;
+  vertical-align: top;
+}
+.md-typeset .compare-table table tbody th {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 4%, transparent);
+  color: var(--md-primary-fg-color--dark);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border-right: 1px solid var(--md-default-fg-color--lightest);
+  min-width: 8.5rem;
+}
+.md-typeset .compare-table table tbody tr:hover td,
+.md-typeset .compare-table table tbody tr:hover th {
+  background: color-mix(in srgb, var(--md-accent-fg-color) 5%, transparent);
+}
+
+@media (max-width: 640px) {
+  .md-typeset .compare-table table { font-size: 0.75rem; }
+  .md-typeset .compare-table table thead th,
+  .md-typeset .compare-table table tbody th,
+  .md-typeset .compare-table table tbody td {
+    padding: 0.5rem 0.65rem;
+  }
+  .md-typeset .compare-table table tbody th { min-width: 6.5rem; }
+}
+
 .md-typeset .next-cta {
   padding: 1.4rem 1.6rem;
   border-radius: 0.7rem;

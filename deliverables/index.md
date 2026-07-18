@@ -107,6 +107,21 @@ PostgreSQL data model.
 
 </div>
 
+## Which paper is for you? { .section-heading }
+
+<div class="compare-table" markdown>
+
+|                   | **A · Brief**              | **B · Response**              | **C · Architecture**        |
+| :---------------- | :------------------------- | :---------------------------- | :-------------------------- |
+| **You are…**      | Reading the RFP            | Preparing a bid               | Building the system         |
+| **Best for**      | Orientation, scope, SLAs   | Compliance, evidence, pricing | Design, data model, C4      |
+| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   |
+| **Diagrams**      | —                          | Risk map                      | 8 Mermaid (C4/ER/state)     |
+| **Length**        | ~22 KB · 20 min read       | ~56 KB · 45 min read          | ~74 KB · 60 min read        |
+| **Key sections**  | Milestones, P1–P4, reports | Milestone entry/exit, risks   | Container, deployment, ERDs |
+
+</div>
+
 ## Design choices at a glance { .section-heading }
 
 <div class="grid" markdown>
