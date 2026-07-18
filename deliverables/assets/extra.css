@@ -50,6 +50,113 @@
   height: auto;
 }
 
+/* --- Click-to-zoom affordance on rendered Mermaid blocks --- */
+.md-typeset .mermaid[data-zoom-init="1"] {
+  position: relative;
+  cursor: zoom-in;
+  transition: box-shadow 0.15s ease;
+  border-radius: 0.4rem;
+}
+.md-typeset .mermaid[data-zoom-init="1"]:hover {
+  box-shadow: 0 0 0 2px var(--md-accent-fg-color--transparent, rgba(11, 92, 173, 0.25));
+}
+.md-typeset .mermaid[data-zoom-init="1"]::after {
+  content: "⤢ Click to zoom";
+  position: absolute;
+  top: 0.4rem;
+  right: 0.6rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.4rem;
+  background: rgba(39, 64, 105, 0.9);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(-2px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  pointer-events: none;
+}
+.md-typeset .mermaid[data-zoom-init="1"]:hover::after,
+.md-typeset .mermaid[data-zoom-init="1"]:focus-visible::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.md-typeset .mermaid[data-zoom-init="1"]:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+/* --- Zoom modal --- */
+body.diagram-zoom-open { overflow: hidden; }
+
+.diagram-zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 15, 30, 0.92);
+  z-index: 10000;
+  display: flex;
+  padding: 3rem 1.5rem;
+  animation: diagramZoomFadeIn 0.15s ease-out;
+}
+@keyframes diagramZoomFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.diagram-zoom-stage {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  cursor: grab;
+}
+.diagram-zoom-stage:active { cursor: grabbing; }
+.diagram-zoom-stage svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.diagram-zoom-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.diagram-zoom-close:hover,
+.diagram-zoom-close:focus-visible {
+  background: rgba(255, 255, 255, 0.32);
+  transform: scale(1.05);
+  outline: none;
+}
+.diagram-zoom-hint {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  text-align: center;
+}
+@media (max-width: 640px) {
+  .diagram-zoom-overlay { padding: 2rem 0.5rem; }
+  .diagram-zoom-hint    { font-size: 0.7rem; }
+  .diagram-zoom-close   { top: 0.5rem; right: 0.5rem; }
+}
+
 /* Buttons look better with a bit of spacing */
 .md-typeset .md-button + .md-button {
   margin-left: 0.5rem;

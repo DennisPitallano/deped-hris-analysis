@@ -124,3 +124,7 @@ nav:
 
 extra_css:
   - assets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.2/dist/svg-pan-zoom.min.js
+  - assets/mermaid-zoom.js
