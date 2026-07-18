@@ -5,69 +5,109 @@ hide:
   - toc
 ---
 
-# DepEd HRIS
+<section class="hero" markdown>
 
-**An independent technical analysis of the Philippine Bidding Document for the Department of Education's Human Resources Information System (Project ID `2026C-ICTS2-002-B5-CB-034`, ABC PHP 500 M, 365-day delivery).**
+<span class="hero-eyebrow">Independent technical analysis · 2026</span>
 
-This site is a portfolio piece. It walks through:
+# DepEd HRIS { .hero-title }
 
-1. **Extraction** — the source PBD (140 pages) turned into structured, quotable text.
-2. **Analysis** — a consolidated brief of every technical specification, milestone, SLA, and compliance clause.
-3. **Response** — a fully-populated bid response outline with placeholders for a bidder's specifics.
-4. **Design** — a reference architecture (C4 model) and a PostgreSQL data model covering Core HR, Payroll, and Recruitment.
+<p class="hero-subtitle">
+An end-to-end read of the Philippine Bidding Document for the Department of
+Education&#39;s Human Resources Information System — the specifications, a full
+bid-response outline, and a reference architecture with C4 diagrams and a
+PostgreSQL data model.
+</p>
 
-Coverage of DepEd's scope: **1,000,000+ employees** across Central Office, Regional Offices, Schools Division Offices, District Offices and Schools; plantilla, contract-of-service, job-order; teaching, related-teaching and non-teaching personnel. Eleven functional areas from Personnel Information Management through Payroll to Succession Planning.
+<div class="hero-cta" markdown>
+[Read the brief :octicons-arrow-right-24:](A_technical_specifications_brief.md){ .md-button .md-button--primary }
+[View architecture](C_architecture_and_data_model.md){ .md-button }
+[Download PDFs](downloads.md){ .md-button }
+</div>
 
----
+<ul class="hero-meta">
+  <li><span>Project</span><code>2026C-ICTS2-002-B5-CB-034</code></li>
+  <li><span>ABC</span>PHP 500 M</li>
+  <li><span>Delivery</span>365 days</li>
+  <li><span>Scope</span>1 M+ employees</li>
+</ul>
 
-## The three papers
+</section>
 
-<div class="grid cards" markdown>
+<ul class="stats-strip">
+  <li><strong>1M+</strong><span>Employees in scope</span></li>
+  <li><strong>11</strong><span>Functional modules</span></li>
+  <li><strong>8</strong><span>Milestones · 365 d</span></li>
+  <li><strong>28</strong><span>Required reports</span></li>
+  <li><strong>99%</strong><span>Uptime target</span></li>
+  <li><strong>P1–P4</strong><span>SLA response bands</span></li>
+</ul>
+
+## The three papers { #the-three-papers .section-heading }
+
+<div class="grid cards docs-grid" markdown>
 
 - :material-file-document-outline: __A · Technical Specifications Brief__
 
     ---
 
-    Consolidated, section-by-section extract of every technical specification, general
-    specification, module-level requirement, SLA, milestone, and turnover obligation
-    from the PBD. Includes the eight milestone payments, the P1–P4 support matrix,
-    the 28 required recruitment reports, and every referenced regulator (CSC, DBM,
+    Consolidated, section-by-section extract of every technical specification,
+    module requirement, SLA, milestone, and turnover obligation from the PBD.
+    Includes the eight milestone payments, the P1–P4 support matrix, all 28
+    required recruitment reports, and every referenced regulator (CSC, DBM,
     NPC, DICT, GSIS, Pag-IBIG, PhilHealth, SSS, BIR).
 
+    <span class="tag-row">
+      <span class="tag">SLA</span>
+      <span class="tag">Milestones</span>
+      <span class="tag">Compliance</span>
+      <span class="tag">Reports</span>
+    </span>
+
     [Read the brief :octicons-arrow-right-24:](A_technical_specifications_brief.md){ .md-button .md-button--primary }
-    [Download PDF](pdf/A_technical_specifications_brief.pdf){ .md-button }
+    [PDF](pdf/A_technical_specifications_brief.pdf){ .md-button }
 
 - :material-file-sign: __B · Bid Response Outline__
 
     ---
 
-    A fully-populated response document with **placeholders** for bidder-specific
-    values. Every Section VII clause has an explicit Comply row with an
-    implementation approach and an evidence annex reference. All 28 required
+    A fully-populated response document with **`[[PLACEHOLDER]]`** markers for
+    bidder-specific values. Every Section VII clause has a Comply row with an
+    implementation approach and evidence annex reference. All 28 required
     reports mapped. Milestone entry/exit criteria. Risk register with twelve
     tracked risks.
 
+    <span class="tag-row">
+      <span class="tag">Section VII</span>
+      <span class="tag">Compliance matrix</span>
+      <span class="tag">Risk register</span>
+    </span>
+
     [Read the response :octicons-arrow-right-24:](B_tor_response_outline.md){ .md-button .md-button--primary }
-    [Download PDF](pdf/B_tor_response_outline.pdf){ .md-button }
+    [PDF](pdf/B_tor_response_outline.pdf){ .md-button }
 
 - :material-graph-outline: __C · Architecture & Data Model__
 
     ---
 
     C4 diagrams (System Context, Container, Component), a Payroll component
-    deep-dive, plantilla recruitment state machine, a deployment view, and
-    ~1000 lines of PostgreSQL DDL for Core HR, Payroll, and Recruitment
-    (three bounded contexts). Report coverage traceability and cross-schema
-    event handoffs included.
+    deep-dive, a plantilla recruitment state machine, a deployment view, and
+    approximately 1,000 lines of PostgreSQL DDL across three bounded contexts
+    (Core HR, Payroll, Recruitment). Cross-schema event handoffs and report
+    coverage traceability included.
+
+    <span class="tag-row">
+      <span class="tag">C4 model</span>
+      <span class="tag">PostgreSQL DDL</span>
+      <span class="tag">Event bus</span>
+      <span class="tag">State machines</span>
+    </span>
 
     [Read the architecture :octicons-arrow-right-24:](C_architecture_and_data_model.md){ .md-button .md-button--primary }
-    [Download PDF](pdf/C_architecture_and_data_model.pdf){ .md-button }
+    [PDF](pdf/C_architecture_and_data_model.pdf){ .md-button }
 
 </div>
 
----
-
-## Design choices at a glance
+## Design choices at a glance { .section-heading }
 
 <div class="grid" markdown>
 
@@ -109,15 +149,23 @@ Coverage of DepEd's scope: **1,000,000+ employees** across Central Office, Regio
 
 </div>
 
+## What to read next { .section-heading }
+
+<div class="next-cta" markdown>
+
+- **New here?** Start with **[Paper A](A_technical_specifications_brief.md)** for a guided read of the PBD scope, SLAs, and milestones.
+- **Reviewing a bid?** Open **[Paper B](B_tor_response_outline.md)** and search for `[[PLACEHOLDER]]` to see every bidder-specific field.
+- **Building the system?** Jump to **[Paper C](C_architecture_and_data_model.md)** — C4 diagrams and PostgreSQL DDL are the fast path to a prototype.
+- **Prefer offline reading?** All three papers are available as [PDFs](downloads.md) with rendered diagrams.
+
+</div>
+
 ---
 
-## Source material
+<section class="page-footer" markdown>
 
-- Source PBD: `PBD_HRIS_For-Posting.pdf` — the Philippine Bidding Document published by the DepEd BAC Secretariat.
-- Extracted text: [extracted/](https://github.com/DennisPitallano/deped-hris-analysis/tree/main/extracted) in the repository.
-- Everything in this site is generated from the markdown files under [`deliverables/`](https://github.com/DennisPitallano/deped-hris-analysis/tree/main/deliverables).
+**Source material:** The Philippine Bidding Document `PBD_HRIS_For-Posting.pdf` published by the DepEd BAC Secretariat. Extracted text is in [`extracted/`](https://github.com/DennisPitallano/deped-hris-analysis/tree/main/extracted) and all deliverables are in [`deliverables/`](https://github.com/DennisPitallano/deped-hris-analysis/tree/main/deliverables).
 
-## About
+**About:** Prepared by **deped-hris**, Solutions architect — HRIS and data platforms. This site is a public analysis; no official association with the Department of Education is implied. Feedback and issues welcome on [GitHub](https://github.com/DennisPitallano/deped-hris-analysis).
 
-Prepared by **deped-hris**, Solutions architect — HRIS and data platforms. This site is a public analysis; no official association with the Department of Education is implied.
-Feedback and issues welcome on [GitHub](https://github.com/DennisPitallano/deped-hris-analysis).
+</section>

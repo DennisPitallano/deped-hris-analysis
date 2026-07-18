@@ -4,13 +4,63 @@ title: Downloads
 
 # Downloads
 
-All three papers are available as high-quality PDFs (A4, page numbered) with rendered Mermaid diagrams.
+All three papers are available as high-quality PDFs — A4, page numbered, with fully rendered Mermaid diagrams.
 
-- :material-file-pdf-box: [Technical Specifications Brief (PDF)](pdf/A_technical_specifications_brief.pdf){ .md-button .md-button--primary }
-- :material-file-pdf-box: [Bid Response Outline — placeholders (PDF)](pdf/B_tor_response_outline.pdf){ .md-button .md-button--primary }
-- :material-file-pdf-box: [Architecture & Data Model (PDF)](pdf/C_architecture_and_data_model.pdf){ .md-button .md-button--primary }
+<div class="grid cards downloads-grid" markdown>
 
-The source markdown files are available in the [repository](https://github.com/DennisPitallano/deped-hris-analysis/tree/main/deliverables).
+- :material-file-pdf-box: __A · Technical Specifications Brief__
+
+    ---
+
+    Consolidated PBD analysis — every specification, module, milestone, SLA,
+    report, and regulator, distilled from the source document.
+
+    <span class="tag-row">
+      <span class="tag">316 KB</span>
+      <span class="tag">A4</span>
+      <span class="tag">Page numbered</span>
+    </span>
+
+    [Download PDF](pdf/A_technical_specifications_brief.pdf){ .md-button .md-button--primary }
+    [Read online](A_technical_specifications_brief.md){ .md-button }
+
+- :material-file-pdf-box: __B · Bid Response Outline__
+
+    ---
+
+    Full response document with `[[PLACEHOLDER]]` markers, compliance matrix,
+    milestone entry/exit criteria, and a twelve-item risk register.
+
+    <span class="tag-row">
+      <span class="tag">846 KB</span>
+      <span class="tag">A4</span>
+      <span class="tag">Placeholders</span>
+    </span>
+
+    [Download PDF](pdf/B_tor_response_outline.pdf){ .md-button .md-button--primary }
+    [Read online](B_tor_response_outline.md){ .md-button }
+
+- :material-file-pdf-box: __C · Architecture & Data Model__
+
+    ---
+
+    C4 diagrams, deployment view, state machines, and ~1000 lines of
+    PostgreSQL DDL for Core HR, Payroll, and Recruitment.
+
+    <span class="tag-row">
+      <span class="tag">1.1 MB</span>
+      <span class="tag">A4</span>
+      <span class="tag">Mermaid + DDL</span>
+    </span>
+
+    [Download PDF](pdf/C_architecture_and_data_model.pdf){ .md-button .md-button--primary }
+    [Read online](C_architecture_and_data_model.md){ .md-button }
+
+</div>
+
+## Source material
+
+The source markdown files are in the [repository](https://github.com/DennisPitallano/deped-hris-analysis/tree/main/deliverables); the original bidding document (`PBD_HRIS_For-Posting.pdf`) and the extracted text are also included.
 
 ## Regenerate the PDFs
 
