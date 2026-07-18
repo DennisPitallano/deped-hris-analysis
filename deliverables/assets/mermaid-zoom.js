@@ -139,41 +139,74 @@
     closeBtn.setAttribute("aria-label", "Close (Esc)");
     closeBtn.innerHTML = "&times;";
 
+    const controls = document.createElement("div");
+    controls.className = "diagram-zoom-controls";
+    controls.innerHTML =
+      '<button type="button" data-act="in"    aria-label="Zoom in">+</button>' +
+      '<button type="button" data-act="out"   aria-label="Zoom out">&minus;</button>' +
+      '<button type="button" data-act="reset" aria-label="Reset view">&#8634;</button>';
+
     const hint = document.createElement("div");
     hint.className = "diagram-zoom-hint";
-    hint.textContent = "Scroll to zoom · drag to pan · double-click to reset · Esc to close";
+    hint.textContent = "Drag to pan · use buttons or scroll to zoom · Esc to close";
 
     overlay.appendChild(stage);
     overlay.appendChild(closeBtn);
+    overlay.appendChild(controls);
     overlay.appendChild(hint);
     document.body.appendChild(overlay);
     document.body.classList.add("diagram-zoom-open");
 
     let panZoom = null;
-    try {
-      if (window.svgPanZoom) {
-        panZoom = window.svgPanZoom(svg, {
-          zoomEnabled: true,
-          controlIconsEnabled: false,
-          fit: true,
-          contain: false,
-          center: true,
-          minZoom: 0.4,
-          maxZoom: 30,
-          zoomScaleSensitivity: 0.35,
-          dblClickZoomEnabled: false,
-        });
-        // Double-click resets view
-        stage.addEventListener("dblclick", function () {
-          if (panZoom) { panZoom.resetZoom(); panZoom.center(); panZoom.fit(); }
-        });
+    function initPanZoom() {
+      try {
+        if (window.svgPanZoom) {
+          panZoom = window.svgPanZoom(svg, {
+            zoomEnabled: true,
+            controlIconsEnabled: false,
+            fit: true,
+            contain: false,
+            center: true,
+            minZoom: 0.4,
+            maxZoom: 30,
+            zoomScaleSensitivity: 0.35,
+            dblClickZoomEnabled: false,
+          });
+          // Force a re-fit after fonts / layout settle
+          setTimeout(function () {
+            if (panZoom) { panZoom.resize(); panZoom.fit(); panZoom.center(); }
+          }, 60);
+        }
+      } catch (err) {
+        console.warn("svg-pan-zoom init failed:", err);
       }
-    } catch (err) {
-      console.warn("svg-pan-zoom init failed:", err);
     }
+    // Wait one frame so flexbox has finalized stage dimensions before init
+    requestAnimationFrame(function () { requestAnimationFrame(initPanZoom); });
+
+    // Double-click resets view
+    stage.addEventListener("dblclick", function () {
+      if (panZoom) { panZoom.resetZoom(); panZoom.center(); panZoom.fit(); }
+    });
+
+    // Re-fit on viewport resize (device rotation)
+    const onResize = function () {
+      if (panZoom) { panZoom.resize(); panZoom.fit(); panZoom.center(); }
+    };
+    window.addEventListener("resize", onResize);
+
+    controls.addEventListener("click", function (e) {
+      const btn = e.target.closest("button[data-act]");
+      if (!btn || !panZoom) return;
+      const act = btn.dataset.act;
+      if (act === "in") panZoom.zoomIn();
+      else if (act === "out") panZoom.zoomOut();
+      else if (act === "reset") { panZoom.resetZoom(); panZoom.center(); panZoom.fit(); }
+    });
 
     function close() {
       try { if (panZoom) panZoom.destroy(); } catch (e) { /* noop */ }
+      window.removeEventListener("resize", onResize);
       overlay.remove();
       document.body.classList.remove("diagram-zoom-open");
       document.removeEventListener("keydown", onKey);
