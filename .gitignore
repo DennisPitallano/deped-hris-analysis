@@ -1,0 +1,31 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+
+# MkDocs build output
+/site/
+
+# Node.js
+tools/md-to-pdf/node_modules/
+tools/md-to-pdf/.render-*
+tools/md-to-pdf/render-preview.*
+tools/md-to-pdf/peek.mjs
+
+# Puppeteer cache (usually in the user home; excluded here just in case)
+tools/md-to-pdf/.cache/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/*.log
+*.log
+
+# Local secrets / drafts
+.env
+.env.*
+!.env.example

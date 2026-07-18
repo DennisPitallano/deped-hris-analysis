@@ -1,0 +1,1032 @@
+
+
+===== PAGE 68 =====
+Section V. Special Conditions of Contract
+GCC Clause
+functional, tested, documented, deployed to the agreed
+environment, traceable to the TOR or approved backlog, and
+accepted by the authorized DepEd Product Owner or process
+owner.
+If the Service Provider completes a milestone earlier than the
+applicable maximum delivery window, it may submit the
+milestone deliverables for DepEd review, acceptance, and
+payment processing.
+Progress Payment
+Progress Payment based on fixed milestones below:
+Payment processing for any milestone shall commence only
+after full completion and formal acceptance of all corresponding
+milestone deliverables.
+Payments shall be made on a milestone basis and shall be
+contingent upon completion, submission, review, and written
+acceptance of the required deliverables for the relevant
+milestone.
+Maximum
+Delivery Main
+Milestone Payment
+Window Deliverable
+from NTP
+Upon NTP,
+M1 not later Mobilization 10%
+than Day 30
+Project
+Inception,
+Product Proof,
+Not later
+M2 Technical 20%
+than Day 90
+Alignment, and
+Implementation
+Planning
+Not later
+Release 1: Core
+M3 than Day 15%
+HR Foundation
+150
+Release 2:
+Not later Payroll, Leave,
+M4 than Day Attendance, 10%
+190 and Employee
+Self-Service
+Release 3:
+Strategic
+Not later Talent,
+M5 than Day Learning, 15%
+235 Wellness,
+Rewards, and
+Succession
+68
+
+===== PAGE 69 =====
+Section V. Special Conditions of Contract
+GCC Clause
+Integrated
+Testing,
+Security
+Not later
+Validation,
+M6 than Day 10%
+Migration
+270
+Readiness, and
+Payroll Parallel
+Run
+Not later Pilot
+than Day Deployment,
+300, or Capacity
+M7 earlier upon Building, 10%
+completion Documentation,
+and and SLA
+acceptance Readiness
+Not earlier
+Production
+than Day
+Rollout, Final
+335, not
+Handover, SLA
+M8 later than 10%
+Transition, and
+Day 365
+Final
+from the
+Acceptance
+NTP
+Early completion shall not remove any continuing warranty,
+support, documentation, turnover, maintenance, remediation,
+or post-deployment obligations required under the TOR or
+contract.
+Payment Conditions
+Payment processing shall not be deferred solely because the
+corresponding maximum delivery window has not fully elapsed.
+Once a milestone is completed, submitted, reviewed, and
+accepted, the Service Provider may bill for the corresponding
+milestone payment, subject to submission of complete billing
+documents and compliance with applicable budgeting,
+accounting, auditing, procurement, and contract rules.
+No payment shall be processed based solely on:
+1. passage of time;
+2. issuance of the NTP;
+3. submission of plans without acceptance;
+4. presentation of a vanilla or baseline HRIS without
+DepEd-specific validation;
+5. presentation of prototypes or mockups without working
+functionality;
+6. deployment without test evidence;
+7. configuration without accepted user stories;
+69
+
+===== PAGE 70 =====
+Section V. Special Conditions of Contract
+GCC Clause
+8. unsupported claims of completion without sprint
+records, test logs, deployment evidence, documentation,
+or Product Owner sign-off.
+11.4 No further instructions.
+11.5 Payment using Letter of Credit is not allowed.
+13.4(c) No further instructions.
+16.1 The inspections and tests that will be conducted shall be in
+accordance with Section VI. Schedule of Requirements,
+including the prescribed milestone deliverables, acceptance
+requirements, and Definition of Done.
+17.3 Special bank guarantee equivalent to at least one percent (1%)
+but not to exceed five (5%) of the total Contract Price.
+17.3 (c) Not Applicable.
+17.4 Warranty shall be covered by Special bank guarantee
+equivalent to at least one percent (1%) but not to exceed five
+(5%) of the total Contract Price with validity until the end of
+contract period.
+17.5 No further instructions.
+20.2 Not Applicable.
+21.1 No further instructions.
+70
+
+===== PAGE 71 =====
+Section VI. Schedule of Requirements
+A. Delivery Schedule
+The delivery schedule expressed below stipulates the date of delivery to the project
+site.
+Lot No. Description Delivery Schedule
+The HRIS shall be implemented within three
+Human Resources
+1 lot hundred sixty-five (365) calendar days
+Information System
+from receipt of the Notice to Proceed (NTP)
+B. Contract Duration
+Complete delivery shall be made within the one (1) year contract duration, from
+the date of receipt of the Notice to Proceed.
+C. Deliverables and Delivery Period
+1. Purpose
+This document clarifies the deliverables, delivery period, acceptance requirements,
+and dependency rules for the Human Resource Information System (HRIS) project.
+This clarification does not replace the TOR. It shall be read together with the TOR
+provisions on HRIS scope, modules, implementation plan, data governance,
+service level agreement, training, documentation, reporting, monitoring, and final
+acceptance.
+2. Delivery Premise
+The HRIS engagement is premised on the Service Provider having an existing,
+operational, and configurable HRIS platform or solution with substantially
+available modules relevant to DepEd’s requirements.
+However, regardless of whether the Service Provider begins from an existing
+baseline, standard, or “vanilla” HRIS, the final HRIS delivered to DepEd shall be
+fully turned over with all source code, configurations, scripts, templates,
+workflows, reports, APIs, database schemas, deployment artifacts,
+documentation, and other technical materials necessary for DepEd to operate,
+maintain, audit, modify, enhance, migrate, and continue the system.
+Accordingly, the Service Provider shall ensure that it has the legal and technical
+right to turn over the complete HRIS source code and related technical assets to
+DepEd. A proprietary or closed-source baseline shall not be used if it prevents full
+71
+
+===== PAGE 72 =====
+Section VI. Schedule of Requirements
+source code turnover, continuity, auditability, maintainability, or DepEd’s
+independent operation of the system.
+For avoidance of doubt:
+1. a product demonstration is not equivalent to implementation;
+2. a vanilla HRIS is not equivalent to an accepted DepEd HRIS;
+3. staging deployment is not equivalent to production readiness;
+4. configuration is not equivalent to user acceptance;
+5. payroll readiness requires parallel-run validation;
+6. Final acceptance requires full source code turnover, documentation, SLA
+transition, and closure of critical defects.
+3. Delivery Period and Early Completion
+The delivery windows below are maximum target periods counted from NTP. They
+shall not be treated as mandatory waiting periods.
+4. Delivery Schedule
+Maximum Delivery
+Milestone Main Deliverable
+Window from NTP
+Mobilization
+Upon NTP, not later
+M1 Project Inception, Product Proof, Technical
+than Day 30
+Alignment, and Implementation Planning
+Not later than Day
+M2 Release 1: Core HR Foundation
+90
+Not later than Day Release 2: Payroll, Leave, Attendance, and
+M3
+150 Employee Self-Service
+Not later than Day Release 3: Strategic Talent, Learning,
+M4
+190 Wellness, Rewards, and Succession
+Integrated Testing, Security Validation,
+Not later than Day
+M5 Migration Readiness, and Payroll Parallel
+235
+Run
+Not later than Day Pilot Deployment, Capacity Building,
+M6
+270 Documentation, and SLA Readiness
+Not later than Day
+300, or earlier upon Production Rollout, Final Handover, SLA
+M7
+completion and Transition
+acceptance
+72
+
+===== PAGE 73 =====
+Section VI. Schedule of Requirements
+Maximum Delivery
+Milestone Main Deliverable
+Window from NTP
+Not earlier than Day
+335, not later than Project Closure, SLA Compliance
+M8
+Day 365 from the Verification, and Final Acceptance
+NTP
+The percentages above refer to billing milestones. Any retention money, warranty
+security, or substitute security instrument shall be governed by the contract and
+applicable procurement, budgeting, accounting, and auditing rules, and shall not
+be treated as an additional payment tranche.
+5. Milestone Deliverables and Acceptance
+M1. Project Inception, Product Proof, Technical Alignment, and Implementation
+Planning
+Maximum Delivery Window: Not later than Day 30 from NTP
+M1 shall cover project inception, stakeholder alignment, demonstration of the
+baseline HRIS, confirmation of the delivery approach, technical alignment, and
+approval of the implementation controls necessary to proceed.
+At minimum, M1 shall include:
+1. issuance of the NTP or contract effectivity;
+2. submission and DepEd acceptance of the required irrevocable standby
+letter of credit, bank guarantee, or equivalent security instrument;
+3. submission of initial mobilization details, including assigned project
+manager, principal technical contact, implementation team roster, and
+initial work schedule.
+4. signed-off Inception Report;
+5. approved Implementation Plan;
+6. Agile Team Charter identifying Service Provider and DepEd counterparts;
+7. initial Product Backlog covering all HRIS modules;
+8. Pre-Built Module Capability Matrix;
+9. baseline HRIS product capability demonstration report;
+10. fit-gap validation approach;
+11. configuration and customization blueprint;
+12. development, staging, and production environment plan;
+13. initial data migration plan;
+14. initial integration and API plan;
+15. initial security, privacy, access-control, and audit-log plan;
+16. risk register and dependency register;
+73
+
+===== PAGE 74 =====
+Section VI. Schedule of Requirements
+17. sprint cadence and reporting protocol;
+18. draft acceptance criteria for Release 1.
+M1 shall be accepted upon DepEd approval of the inception, product proof,
+governance, technical alignment, and implementation planning outputs.
+M1 acceptance shall not constitute acceptance of the baseline or vanilla HRIS as
+the final DepEd HRIS.
+M2. Release 1: Core HR Foundation
+Maximum Delivery Window: Not later than Day 90 from NTP
+M2 shall cover the first accepted HRIS release, prioritizing the foundational
+modules and workflows necessary to establish core HR records and recruitment
+processes.
+At minimum, M2 shall include configured, customized, tested, and documented
+Release 1 functionality for:
+1. Personnel Information Management;
+2. employee 201 file records;
+3. Personal Data Sheet-related records;
+4. Applicant Portal;
+5. Recruitment, Selection, and Placement;
+6. Appointment Processing;
+7. New Hire Processing;
+8. related recruitment, appointment, and personnel reports;
+9. role-based access control for Release 1 users;
+10. audit logging for Release 1 transactions;
+11. initial sample data migration for employee and applicant records;
+12. release notes;
+13. updated user and administrator guides;
+14. Sprint Review Reports;
+15. signed-off user stories meeting the Definition of Done;
+16. Release 1 test results and defect closure report.
+M2 shall be accepted only upon deployment to the agreed staging or approved
+release environment, completion of applicable tests, closure of critical defects,
+submission of documentation, and written sign-off by the authorized DepEd
+Product Owner or process owner.
+M3. Release 2: Payroll, Leave, Attendance, and Employee Self-Service
+Maximum Delivery Window: Not later than Day 150 from NTP
+M3 shall cover the second HRIS release, focusing on payroll-related and employee-
+facing functions.
+74
+
+===== PAGE 75 =====
+Section VI. Schedule of Requirements
+At minimum, M3 shall include configured, customized, tested, and documented
+Release 2 functionality for:
+1. Payroll and Remittance;
+2. General Payroll;
+3. Special Payroll;
+4. Personnel Voucher-related processing;
+5. Leave Management;
+6. Attendance Management;
+7. Employee Self-Service functions, including payslip access, leave balance
+viewing, leave filing, employee requests, and employee record access, as
+applicable;
+8. payroll computation test results;
+9. remittance report templates;
+10. leave and attendance rule configuration;
+11. API, file exchange, or data synchronization validation, where applicable;
+12. payroll parallel-run test plan;
+13. updated user and administrator guides;
+14. Sprint Review Reports;
+15. signed-off user stories meeting the Definition of Done.
+M3 shall be accepted upon completion of Release 2 testing, documentation, and
+Product Owner or process-owner sign-off.
+Full operational reliance on payroll shall still require the accepted payroll parallel-
+run accuracy report under M5.
+M4. Release 3: Strategic Talent, Learning, Wellness, Rewards, and Succession
+Maximum Delivery Window: Not later than Day 190 from NTP
+M4 shall cover the third HRIS release, focusing on strategic HR, employee
+development, and employee welfare modules.
+At minimum, M4 shall include configured, customized, tested, and documented
+Release 3 functionality for:
+1. Performance Management, including SPMS, IPCR, and OPCR;
+2. Learning and Development;
+3. Rewards and Recognition;
+4. Employee Wellness and Welfare;
+5. Health Profile;
+6. Succession Planning and career progression;
+7. related dashboards and reports;
+8. privacy controls for sensitive and health-related data;
+9. statistical reporting controls for health and wellness data;
+10. backlog refinement logs;
+75
+
+===== PAGE 76 =====
+Section VI. Schedule of Requirements
+11. updated user and administrator guides;
+12. Sprint Review Reports;
+13. user story sign-offs by DepEd process owners.
+M4 shall be accepted upon completion of Release 3 testing, documentation, and
+Product Owner or process-owner sign-off.
+Individual-level access to health-related or sensitive data shall be subject to
+applicable law, approved roles, access controls, and DepEd data governance
+requirements.
+M5. Integrated Testing, Security Validation, Migration Readiness, and Payroll
+Parallel Run
+Maximum Delivery Window: Not later than Day 235 from NTP
+M5 shall cover integrated validation of the HRIS releases prior to pilot deployment
+and phased production rollout.
+At minimum, M5 shall include:
+1. integrated User Acceptance Testing logs;
+2. system integration test results;
+3. regression test results;
+4. performance or load test results appropriate to the approved
+implementation scope;
+5. security validation report;
+6. access-control validation report;
+7. audit-log validation report;
+8. data privacy controls validation report or checklist;
+9. mock migration report;
+10. data reconciliation report;
+11. defect register and defect closure report;
+12. payroll parallel-run accuracy report;
+13. pilot Go/No-Go recommendation signed by authorized DepEd Product
+Owners or process owners;
+14. updated technical, user, administrator, and operational documentation.
+Security validation shall include, at minimum:
+1. review of user roles and permissions;
+2. validation of privileged access controls;
+3. testing of authentication and session controls;
+4. verification of audit-log generation and retrieval;
+5. review of sensitive data protections;
+6. validation of backup and restoration procedures;
+7. review of secure configuration settings;
+76
+
+===== PAGE 77 =====
+Section VI. Schedule of Requirements
+8. vulnerability scanning or equivalent internal security assessment;
+9. remediation tracking for identified findings;
+10. documented risk treatment for residual findings accepted by DepEd.
+Independent third-party penetration testing shall not be required for milestone
+acceptance. Internal security testing, vulnerability assessment, secure code
+review, dependency scanning, access-control testing, and remediation of critical
+findings shall be sufficient for M5 acceptance.
+Payroll shall not be treated as ready for full operational reliance unless the payroll
+parallel-run accuracy report has been accepted by authorized DepEd payroll,
+finance, and HR process owners.
+M6. Pilot Deployment, Capacity Building, Documentation, and SLA Readiness
+Maximum Delivery Window: Not later than Day 270 from NTP
+M6 shall cover pilot deployment, capacity building, operational readiness, and
+preparation for production rollout.
+At minimum, M6 shall include:
+1. pilot deployment report covering agreed Central Office, Regional Office,
+Schools Division Office, and school-level users or representatives;
+2. production-readiness checklist;
+3. training completion report for pilot users, administrators, HR personnel,
+ICTS support personnel, and identified trainers;
+4. knowledge-transfer materials;
+5. updated user manuals;
+6. updated administrator guides;
+7. updated technical maintenance documentation;
+8. training decks, job aids, FAQs, or video tutorials;
+9. helpdesk scripts;
+10. incident escalation matrix;
+11. SLA readiness report;
+12. pilot issue register and resolution report;
+13. phased rollout plan.
+Pilot deployment shall validate:
+production readiness;
+user access and role assignments;
+core HR workflows;
+recruitment and appointment workflows;
+payroll and leave/attendance readiness, where applicable;
+data accuracy;
+system performance;
+77
+
+===== PAGE 78 =====
+Section VI. Schedule of Requirements
+helpdesk readiness;
+training effectiveness;
+defect handling and escalation.
+Phased production rollout shall proceed only after pilot completion, closure of
+critical pilot defects, completion of required training, and approval of the Go/No-
+Go recommendation.
+M7. Production Rollout, Final Handover, and SLA Transition
+Maximum Delivery Window: Not later than Day 300 from NTP, or earlier upon
+completion and acceptance
+M7 shall cover phased production rollout, final handover, operational transition,
+and full source code turnover.
+At minimum, M7 shall include:
+1. production deployment report;
+2. phased rollout evidence;
+3. final accepted release deliverables for all required modules;
+4. final data migration and reconciliation report;
+5. final payroll parallel-run accuracy report;
+6. final security and access-control validation report;
+7. final audit-log validation report;
+8. final performance or load test report;
+9. final defect closure report;
+10. final training completion report;
+11. final user manuals;
+12. final administrator guides;
+13. technical maintenance manuals;
+14. operational runbook;
+15. as-built system architecture;
+16. data dictionary;
+17. API documentation;
+18. configuration documentation;
+19. deployment documentation;
+20. backup and restoration procedure;
+21. access credentials and administrative account turnover;
+22. complete source code turnover;
+23. version-controlled repository turnover;
+24. database schema and migration scripts;
+25. build, deployment, and rollback scripts;
+26. environment configuration templates;
+27. custom reports, forms, workflow definitions, templates, and rule
+configurations;
+78
+
+===== PAGE 79 =====
+Section VI. Schedule of Requirements
+28. integration source code, API connectors, middleware, adapters, and data
+exchange scripts;
+29. test scripts, automated test suites, and test data templates, where
+applicable;
+30. dependency list, package manifests, libraries, third-party components, and
+license inventory;
+31. system installation and local development setup guide;
+32. System Turnover Report;
+33. SLA transition report;
+34. warranty and post-deployment support confirmation;
+Full source code turnover shall be a condition for payment of M7.
+The Service Provider shall turn over the complete, buildable, deployable, and
+documented source code for the HRIS, including all modules, customizations,
+configurations, integrations, reports, scripts, templates, utilities, and deployment
+artifacts required to operate and maintain the system.
+The source code turnover shall be made through a DepEd-controlled or DepEd-
+accessible version-controlled repository, together with sufficient documentation to
+allow DepEd or its authorized technical personnel to build, deploy, inspect,
+maintain, modify, and continue the HRIS without dependence on the Service
+Provider beyond the contracted support period.
+M8. Project Closure, SLA Compliance Verification, and Final Acceptance
+Maximum Delivery Window: Not earlier than Day 335, not later than Day 365
+from the NTP
+M8 shall cover the post-deployment stabilization and SLA compliance monitoring
+period following production rollout and final handover under M7
+Final acceptance shall not be issued if the source code, repository access,
+deployment artifacts, configuration files, database schema, technical
+documentation, or administrative credentials necessary for system continuity
+remain incomplete or inaccessible.
+At minimum, M8 shall include:
+1. Final SLA Compliance Report including but not limited to system uptime
+logs and availability monitoring records as evidence
+2. Final Defect Closure Report
+3. Notarized Certificate of Data Return and/or Destruction
+4. Certificate of Final Acceptance
+79
+
+===== PAGE 80 =====
+Section VI. Schedule of Requirements
+For avoidance of doubt:
+1. deployment to a staging or production environment shall not, by itself,
+constitute completion;
+2. demonstration of a baseline HRIS shall not constitute acceptance of DepEd-
+specific requirements;
+3. user story completion shall require compliance with the Definition of Done;
+4. Product Owner or process-owner sign-off shall be required for each
+accepted release;
+5. critical defects must be closed before the relevant milestone may be
+accepted;
+6. high-severity defects must either be closed or covered by a DepEd-approved
+remediation plan;
+7. documentation must be updated with each release;
+8. data privacy, security, access-control, and audit-log requirements must be
+validated before pilot and production rollout;
+9. payroll shall not be considered ready for full operational reliance unless the
+payroll parallel-run accuracy report has been accepted by DepEd;
+10. final acceptance shall require completion of turnover, documentation,
+access arrangements, warranty transition, and SLA activation.
+6. Inspection and Testing Requirements
+1. Pre-Delivery Inspection
+Pre-Delivery Inspection refers to testing and validation conducted prior to
+the formal submission of milestone deliverables to DepEd for acceptance.
+2. Post Delivery Inspection
+Post-Delivery Inspection refers to testing and validation conducted by
+Procuring Entity upon submission of milestone deliverables by the Service
+Provider.
+Delivery of each milestone under this contract shall be subject to post-delivery
+inspection and testing in accordance with the Pre- and Post-Delivery Testing
+Parameters attached as Annexes to Section VII – Technical Specifications.
+7. Definition of Done
+No module, user story, sprint increment, release, configuration item,
+customization, integration, report, migration utility, workflow, or milestone shall
+be considered complete for acceptance or payment unless it is:
+1. traceable to a TOR requirement, approved backlog item, accepted user
+story, approved configuration item, or approved change item;
+2. configured, customized, integrated, implemented, or otherwise delivered in
+the appropriate HRIS environment;
+3. deployed to the agreed environment;
+80
+
+===== PAGE 81 =====
+Section VI. Schedule of Requirements
+4. tested by the Service Provider;
+5. validated through sprint review, system integration testing, UAT, payroll
+parallel run, migration test, security validation, or other applicable test
+procedure;
+6. supported by test evidence, defect records, and deployment evidence;
+7. free from unresolved critical supplier-controlled defects;
+8. covered by a DepEd-approved remediation plan for any unresolved high-
+severity defects;
+9. documented in the applicable user, administrator, technical, configuration,
+or process guide;
+10. integrated with prior accepted increments without material regression;
+11. compliant with applicable data privacy, security, audit trail, access-control,
+and records requirements;
+12. accepted in writing by the authorized DepEd Product Owner or process
+owner based on agreed acceptance criteria.
+A milestone shall not be deemed incomplete solely because a DepEd-controlled or
+third-party dependency remains pending, provided that the Service Provider has
+completed the supplier-controlled components and properly documented the
+dependency.
+Third-party VAPT certification is not part of the Definition of Done unless expressly
+required by the contract, procurement documents, or a subsequent written DepEd
+directive.
+8. Agile Governance and Release Management
+The Service Provider shall implement the HRIS through structured releases and
+sprint cycles, subject to DepEd governance and acceptance requirements.
+At minimum, the Service Provider shall:
+1. maintain a Product Backlog covering all required HRIS modules;
+2. conduct sprint planning, sprint review, and sprint retrospective activities;
+3. submit Sprint Review Reports every two (2) weeks or at another DepEd-
+approved cadence;
+4. identify completed user stories, pending user stories, defects, risks,
+blockers, and dependencies;
+5. obtain written sign-off from the authorized DepEd Product Owner or
+process owner for accepted user stories;
+6. update user guides, administrator guides, and technical documentation
+with each release;
+7. maintain a consolidated defect register;
+8. maintain a backlog refinement log;
+9. maintain traceability between TOR requirements, backlog items, test cases,
+and accepted deliverables.
+81
+
+===== PAGE 82 =====
+Section VI. Schedule of Requirements
+Agile delivery shall not waive the requirement for formal milestone acceptance,
+documentation, security validation, data migration validation, payroll parallel run
+validation, SLA transition, or final acceptance.
+9. Data Migration and Reconciliation Requirements
+Data migration shall be treated as a continuous implementation workstream
+beginning during project inception and continuing through pilot and production
+rollout.
+The Service Provider shall submit and maintain:
+1. data inventory;
+2. source system mapping;
+3. data cleansing rules;
+4. data migration templates;
+5. extraction, transformation, and loading procedures;
+6. mock migration reports;
+7. exception logs;
+8. reconciliation reports;
+9. production migration report;
+10. final data migration completion report.
+At minimum, migration planning shall cover employee master data, PDS records,
+employment history, plantilla information, leave balances, salary and payroll-
+related data, appointment records, training records, performance records, and
+other HR records required for the agreed module rollout.
+No production migration shall be accepted without reconciliation reports and
+written acceptance by the designated DepEd data owners or process owners.
+10. Payroll Parallel Run Requirement
+The Payroll and Remittance module shall undergo parallel run testing prior to full
+implementation or full operational reliance.
+The payroll parallel run shall include:
+1. identification of pilot payroll population;
+2. loading of payroll-relevant employee, salary, deduction, benefit, tax, and
+remittance data;
+3. payroll computation using the HRIS;
+4. comparison against existing payroll computation or reference payroll
+output;
+5. variance analysis;
+6. correction of configuration, computation, or data errors;
+7. issuance of a Payroll Parallel-Run Accuracy Report;
+82
+
+===== PAGE 83 =====
+Section VI. Schedule of Requirements
+8. written acceptance by authorized DepEd payroll, finance, and HR process
+owners.
+Payroll shall not be treated as finally accepted for full operational reliance unless
+the parallel-run accuracy report is accepted and all critical payroll defects are
+closed.
+11. Security, Privacy, and Audit Requirements
+Security, privacy, and audit controls shall be implemented throughout the project
+and shall not be deferred to final deployment.
+The Service Provider shall provide evidence of:
+1. role-based access control configuration;
+2. privileged access control;
+3. audit-log activation and retrieval;
+4. user activity logging;
+5. transaction history and data-change tracking;
+6. encryption or other approved safeguards for sensitive data;
+7. secure data transmission;
+8. data privacy controls for sensitive personal information and health-related
+data;
+9. internal vulnerability assessment, vulnerability scanning, configuration
+review, or equivalent security validation;
+10. remediation or risk acceptance of identified vulnerabilities;
+11. breach notification and incident response procedures;
+12. backup, restoration, and disaster recovery procedures;
+13. compliance with DepEd’s security, privacy, and data governance
+requirements.
+Pilot deployment and production rollout shall not proceed unless material security
+and privacy risks have been closed or formally accepted by DepEd through the
+appropriate governance process.
+Third-party VAPT certification shall not be required as a standard deliverable.
+Where DepEd later determines that independent testing is necessary for a specific
+release, module, integration, or production exposure, such requirement shall be
+separately directed and scheduled, and shall not be implied from this clarification.
+12. Training, Knowledge Transfer, and Documentation
+The Service Provider shall provide training and documentation in line with each
+release and deployment phase.
+Training shall cover, at minimum:
+83
+
+===== PAGE 84 =====
+Section VI. Schedule of Requirements
+1. Central Office process owners;
+2. Regional Office HR and administrative users;
+3. Schools Division Office HR and administrative users;
+4. school-level users or designated school HR/admin users, where applicable;
+5. ICTS administrators and technical support personnel;
+6. helpdesk and support personnel;
+7. trainers under the train-the-trainer model;
+8. end-users through self-paced guides, videos, FAQs, and job aids.
+Documentation shall include, as applicable:
+1. user manuals;
+2. administrator guides;
+3. technical maintenance manuals;
+4. operational runbooks;
+5. troubleshooting guides;
+6. process guides;
+7. training decks;
+8. video tutorials;
+9. data dictionary;
+10. API documentation;
+11. configuration documentation;
+12. as-built system architecture;
+13. deployment and environment documentation;
+14. backup and restoration documentation;
+15. release notes.
+Updated guides shall be submitted with each system release. One final manual at
+the end of the project shall not be sufficient.
+13. Pilot Deployment and Phased Rollout
+The HRIS shall not proceed directly from UAT to full nationwide rollout.
+The Service Provider shall conduct a pilot deployment covering agreed
+representatives from:
+1. Central Office;
+2. selected Regional Offices;
+3. selected Schools Division Offices;
+4. selected schools or school-level users, where applicable.
+The pilot deployment shall validate:
+1. production readiness;
+2. user access and role assignments;
+3. core HR workflows;
+84
+
+===== PAGE 85 =====
+Section VI. Schedule of Requirements
+4. recruitment and appointment workflows;
+5. payroll and leave/attendance readiness, where applicable;
+6. data accuracy;
+7. system performance;
+8. helpdesk readiness;
+9. training effectiveness;
+10. defect handling and escalation.
+Phased rollout shall proceed only after pilot completion, closure of critical pilot
+defects, completion of required training, and approval of the Go/No-Go
+recommendation.
+14. Dependency and Non-Supplier Delay Rule
+Milestone acceptance and payment shall be based on completion of supplier-
+controlled deliverables.
+The Service Provider shall not be considered in delay, and milestone payment shall
+not be withheld, where non-completion is caused by matters outside the Service
+Provider’s reasonable control, including delayed access to DepEd data, delayed
+approval of counterpart decisions, delayed availability of third-party systems,
+delayed issuance of credentials, delayed confirmation of integration endpoints, or
+delayed action by external agencies.
+In such cases, the Service Provider shall proceed with unaffected workstreams
+and, where appropriate, use interim mechanisms such as:
+1. representative data;
+2. masked data;
+3. synthetic data;
+4. sample data;
+5. sandbox integrations;
+6. mock services;
+7. file-based data exchange;
+8. configurable placeholders;
+9. documented manual workarounds.
+The Service Provider shall return to close the pending dependency once the
+required DepEd or third-party action is completed.
+This rule shall not excuse the Service Provider from completing deliverables that
+are within its control.
+15. Final Handover and Acceptance
+Final acceptance shall require completion and written acceptance of all required
+deliverables, including:
+85
+
+===== PAGE 86 =====
+Section VI. Schedule of Requirements
+1. accepted release deliverables for all required modules;
+2. final production deployment report;
+3. final data migration and reconciliation report;
+4. final payroll parallel-run accuracy report;
+5. final security and access-control validation report;
+6. final audit-log validation report;
+7. final performance or load test report;
+8. final defect closure report;
+9. final training completion report;
+10. final user and administrator manuals;
+11. technical maintenance manuals;
+12. operational runbook;
+13. as-built system architecture;
+14. data dictionary;
+15. API documentation;
+16. configuration documentation;
+17. complete source code turnover;
+18. version-controlled repository turnover;
+19. database schema and migration scripts;
+20. build, deployment, and rollback scripts;
+21. environment configuration templates;
+22. custom reports, forms, workflow definitions, templates, and rule
+configurations;
+23. integration source code, API connectors, middleware, adapters, and data
+exchange scripts;
+24. test scripts, automated test suites, and test data templates, where
+applicable;
+25. dependency list, package manifests, libraries, third-party components, and
+license inventory;
+26. system installation and local development setup guide;
+27. access credentials and administrative account turnover;
+28. System Turnover Report;
+29. SLA transition report;
+30. warranty and maintenance support confirmation;
+31. Signed Certificate of Final Acceptance.
+The Service Provider shall turn over all source code and technical assets necessary
+for DepEd to operate, maintain, audit, enhance, migrate, and continue the HRIS.
+The source code turnover shall include the complete source code of the HRIS
+application, including all modules, customizations, configurations, extensions,
+integrations, reports, forms, workflow definitions, scripts, database schemas,
+migration scripts, deployment scripts, build files, test scripts, and technical
+documentation.
+The source code shall be turned over in a complete, buildable, deployable, and
+version-controlled form. The Service Provider shall provide repository access,
+86
+
+===== PAGE 87 =====
+Section VI. Schedule of Requirements
+commit history where available, dependency documentation, environment setup
+instructions, and build/deployment procedures.
+The Service Provider shall also disclose and document all third-party libraries,
+frameworks, packages, services, and dependencies used in the HRIS, including
+applicable licenses and any restrictions affecting DepEd’s continued use,
+maintenance, modification, or deployment of the system.
+A proprietary, closed-source, or restricted component shall not be used if it
+prevents DepEd from receiving, inspecting, building, deploying, maintaining,
+modifying, or continuing the HRIS source code and system operations after
+turnover.
+Final acceptance shall not be issued unless DepEd has received and validated the
+complete source code, repository access, deployment artifacts, database schema,
+technical documentation, administrative credentials, and continuity materials
+required under this section.
+16. Source Code Ownership, Turnover, and Continuity
+All source code, configurations, scripts, database schemas, reports, forms,
+templates, workflow definitions, integrations, APIs, deployment artifacts, technical
+documentation, and other system materials developed, configured, customized, or
+delivered for the HRIS shall be turned over to DepEd.
+The Service Provider shall ensure that all such materials are complete, readable,
+organized, documented, buildable, deployable, and sufficient for DepEd or its
+authorized technical personnel to operate, maintain, audit, modify, enhance,
+migrate, and continue the HRIS.
+The source code turnover shall include, at minimum:
+1. complete application source code;
+2. module source code;
+3. custom extension source code;
+4. API and integration source code;
+5. middleware, connectors, adapters, and data exchange scripts;
+6. database schema;
+7. database migration scripts;
+8. seed, reference, and configuration data required for deployment;
+9. report templates;
+10. form templates;
+11. workflow definitions;
+12. business rule configurations;
+13. build scripts;
+14. deployment scripts;
+15. rollback scripts;
+16. environment configuration templates;
+17. automated test scripts, where applicable;
+87
+
+===== PAGE 88 =====
+Section VI. Schedule of Requirements
+18. manual test scripts and test cases;
+19. package manifests and dependency files;
+20. third-party library and license inventory;
+21. repository access credentials;
+22. administrator credentials;
+23. system setup and installation guide;
+24. local development environment setup guide;
+25. production deployment guide;
+26. troubleshooting and maintenance guide.
+The Service Provider shall not include any component, dependency, license, or
+proprietary restriction that would prevent DepEd from receiving, inspecting,
+building, deploying, maintaining, modifying, enhancing, migrating, or continuing
+the HRIS.
+Where third-party libraries, frameworks, packages, or services are used, the
+Service Provider shall disclose them fully and ensure that their use does not impair
+DepEd’s rights to operate, maintain, and continue the HRIS.
+Full source code turnover shall be a condition for final acceptance and final
+milestone payment.
+17. Data Return and Destruction
+Data return and destruction obligations shall apply upon contract expiration,
+termination, non-renewal, transition to another provider, or as otherwise required
+by DepEd.
+The ordinary implementation closure milestone shall require turnover of DepEd
+data, configuration records, migration artifacts, documentation, account access,
+and system access credentials.
+A notarized certificate of data destruction shall be required when DepEd data must
+be returned and deleted from the Service Provider’s systems in accordance with
+the contract, data governance provisions, and applicable law.
+Data destruction shall not be interpreted to require deletion of data from DepEd-
+controlled environments, official repositories, approved backups, or production
+systems that DepEd continues to use.
+STATEMENT OF COMPLIANCE
+I hereby commit to provide the above specified requirements in compliance with
+the Schedule of Requirements for the Project: Procurement of Human
+Resources Information System.
+__________________________________________________________
+Name and Signature of Bidder’s Authorized Representatives
+88
+
+===== PAGE 89 =====
+Section VII. Technical Specifications
+89
+
+===== PAGE 90 =====
+Section VII. Technical Specifications
+Technical Specifications
+Item Specification Statement of Compliance
+Bidders must state “Comply” or
+“Not Comply” for each specification
+and provide the corresponding
+performance parameters for offered
+equipment. Each response must be
+supported by a clear documentary
+support in the bid and properly cross-
+referenced. Acceptable evidence
+includes unaltered manufacturer sales
+brochures, official specification sheets,
+product samples, independent test
+results, and similar documents.
+Claims should be backed by
+documentary support. If the evidence
+contradicts the claim, the bid may be
+rejected. Any false statement—
+whether in the compliance form or
+supporting documents—found during
+evaluation, post-qualification, or
+contract implementation may be
+considered fraudulent in accordance
+with ITB Clause 3.1(a)(ii) and without
+prejudice to the imposition of
+appropriate administrative, civil, and
+criminal penalty in accordance with
+law.
+90
+
+===== PAGE 91 =====
+Section VII. Technical Specifications
+Detailed Specifications
+Description End-User’s Terms of Reference
+1. Project Title Human Resources Information System (HRIS).
+2. Objective 2.1. The Supplier shall provide DepEd with a modern, integrated, and
+scalable Human Resources Information System (HRIS).
+2.2. It shall include payroll and human capital management functionalities,
+ensure compliance with government regulations, improve data accuracy,
+and enhance employee services across the entire Department.
+3.1. The system shall cover all organizational levels of DepEd, including:
+3. Scope
+3.1.1. Central Office (CO)
+3.1.2. Regional Offices (RO)
+3.1.3. Schools Division Offices (SDO)
+3.1.4. District Offices
+3.1.5. Schools (elementary, junior high school, and senior high
+school).
+3.2. The HRIS will serve over one million employees, covering plantilla,
+contract of service (COS), job order (JO), and other employment categories.
+Specifications shall cater to teaching, related-teaching, and non-teaching
+personnel.
+3.3. Key functional areas to be included in phased implementation are:
+3.3.1. Personnel Information Management
+3.3.2. Applicant Portal
+3.3.3. Recruitment, Selection, and Placement (RSP)
+3.3.4. Employee Self-Service Portal
+3.3.5. Leave and Attendance Management
+3.3.6. Payroll (General, Special, Personnel Voucher)
+3.3.7. Performance Management (SPMS, IPCR, OPCR)
+3.3.8. Learning and Development
+3.3.9. Rewards and Recognition
+3.3.10. Employee Wellness and Welfare including Health Profile
+3.3.11. Succession Planning (to include career progression)
+3.4. The first three functional areas — Personnel Information Management,
+Applicant Portal, and Recruitment, Selection, and Placement (RSP) — are
+presented in detail within this document, with technical specifications
+describing their processes, workflows, and reporting requirements.
+3.5. The remaining functional areas — Employee Self-Service, Leave and
+Attendance Management, Payroll, Performance Management, Learning and
+Development, Rewards and Recognition, and Employee Wellness and
+Welfare including Health Profile — shall be finalized through further
+consultations with the concerned offices, process owners, and user groups
+91
+
+===== PAGE 92 =====
+Section VII. Technical Specifications
+Description End-User’s Terms of Reference
+within the Department. The design and implementation of these modules
+will be guided by existing DepEd policies, CSC and DBM requirements, and
+established government standards.
+3.6. It is understood that the delivery of these additional modules forms
+part of the service commitment under the Implementation Plan, with
+specifications to be confirmed and refined during the inception and
+business process validation stages. The Service Provider shall ensure that
+the system accommodates these modules in accordance with DepEd’s
+operational requirements and the phased rollout strategy.
+4. General 4.1. Integration and Data Exchange.
+Specifications
+4.1.1. The system shall ensure that all modules are seamlessly
+integrated, utilizing a centralized and common database.
+4.1.2. The system shall support full interoperability, enabling the
+secure exchange and sharing of information with other
+organizational systems through standardized Application
+Programming Interfaces (APIs).
+4.1.3. The technologies employed shall facilitate integration with
+current and future platforms used by the Department and its
+oversight bodies.
+4.2. Electronic Approval Workflow.
+4.2.1. The system shall provide a fully electronic, highly
+customizable approval workflow that enables the routing, processing,
+and storage of transactions to authorized recipients, supervisors, and
+managers.
+4.2.2. The approval process shall accommodate varying levels of
+reviewers and approvers depending on employee rank, position, or
+request type.
+4.2.3. The system shall support digital signatures and allow for
+future integration with the Department’s e-signature initiatives
+through APIs or similar mechanisms.
+4.3. Built-in Internal Controls and Business Rules Integration.
+4.3.1. The system shall enforce compliance with applicable policies
+and regulations through embedded program validation controls.
+4.3.2. Transactions shall only proceed in accordance with defined
+rules, ensuring adherence to the standards of government oversight
+bodies and internal policies.
+4.3.3. The system shall include automated checks to prevent errors,
+redundancies, or violations of established business rules.
+4.4. Online Forms and Audit Controls.
+4.4.1. The system shall provide electronic forms across all modules
+and submodules that can be filled out online and submitted with
+92

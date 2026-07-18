@@ -1,0 +1,81 @@
+/* Custom polish for the DepEd HRIS analysis site. */
+
+:root {
+  --md-primary-fg-color: #274069;
+  --md-primary-fg-color--light: #3b6db3;
+  --md-primary-fg-color--dark: #182644;
+  --md-accent-fg-color: #0b5cad;
+}
+
+/* Landing-page card grid */
+.md-typeset .grid.cards > :is(ol, ul) {
+  gap: 1rem;
+}
+
+.md-typeset .grid.cards > :is(ol, ul) > li,
+.md-typeset .grid > .card {
+  border-radius: 0.5rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  padding: 1rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.md-typeset .grid.cards > :is(ol, ul) > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* Tables — allow wide DDL / spec tables to scroll horizontally without breaking layout */
+.md-typeset__table {
+  overflow-x: auto;
+}
+
+.md-typeset table:not([class]) {
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* Mermaid — center diagrams and keep them from getting cramped */
+.md-typeset .mermaid {
+  text-align: center;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+.md-typeset .mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Buttons look better with a bit of spacing */
+.md-typeset .md-button + .md-button {
+  margin-left: 0.5rem;
+}
+
+/* Announcement / warning admonition color for the placeholder note */
+.md-typeset .admonition.info {
+  border-color: var(--md-primary-fg-color);
+}
+
+/* Reduce heading font size in dense doc pages */
+.md-typeset h1 {
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+}
+.md-typeset h2 {
+  color: var(--md-primary-fg-color--dark);
+}
+
+/* Slate (dark) mode adjustments */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #3b6db3;
+  --md-primary-fg-color--light: #5c8dd1;
+  --md-primary-fg-color--dark: #274069;
+  --md-hue: 220;
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: #1e365f;
+}

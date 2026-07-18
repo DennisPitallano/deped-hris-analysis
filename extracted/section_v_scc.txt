@@ -1,0 +1,868 @@
+
+
+===== PAGE 60 =====
+Section IV. General Conditions of Contract
+19.3 If delays are likely to be incurred beyond its control, the supplier,
+manufacturer, or distributor shall promptly notify the Procuring Entity
+in writing, providing details of the causes and duration of the expected
+delay. The Procuring Entity may, at its discretion, grant a time
+extension based on meritorious grounds, with or without the imposition
+of liquidated damages.
+20) Settlement of Disputes
+20.1 Any dispute arising from the implementation of a contract covered by
+the Act and the IRR shall primarily be resolved and settled amicably by
+mutual consultation or agreement.
+20.2 In case of failure to settle dispute amicably, the parties may mutually
+agree in writing to resort to other modes of alternative dispute
+resolution (ADR) to promote efficiency in the procurement process.
+Accordingly, they are encouraged to select the most expeditious mode
+of ADR available.
+If arbitration is chosen as the ADR method, this shall be incorporated
+as a provision in the contract and referred to the Arbitrator specified in
+the SCC.
+20.3 In case of disagreement or after exhausting the remedies provided in
+the preceding Section, the dispute may be submitted to arbitration or
+other forms of ADR which includes mediation, conciliation, early
+neutral evaluation, mini-trial, or any combination thereof in accordance
+with the provisions of RA No. 9285, otherwise known as the “Alternative
+Dispute Resolution Act of 2004.”
+20.4 Should the Parties fail to resolve their dispute or difference by such
+mutual consultation or agreement after thirty (30) days, either the
+Procuring Entity or the Supplier may signify its intention to commence
+arbitration by giving notice to the other Party, as hereinafter provided,
+as to the matter in dispute, and no arbitration in respect of this matter
+may be commenced unless such notice is given.
+20.5 Any dispute or difference in respect of which a notice of intention to
+commence arbitration has been given in accordance with this Clause
+shall be settled by arbitration. Arbitration may be commenced prior to
+or after delivery of the Goods under this Contract.
+20.6 Notwithstanding any reference to arbitration herein, the Parties shall
+continue to perform their respective obligations under the Contract
+unless otherwise agreed upon in writing.
+21) Liability of the Supplier
+21.1 The Supplier’s liability under this Contract shall be as provided by the
+laws of the Republic of the Philippines, subject to additional provisions,
+if any, set forth in the SCC.
+60
+
+===== PAGE 61 =====
+Section IV. General Conditions of Contract
+21.2 Except in cases of criminal negligence or willful misconduct, and in the
+case of infringement of patent rights, if applicable, the aggregate liability
+of the Supplier to the Procuring Entity shall not exceed the total
+Contract Price, provided that this limitation shall not apply to the cost
+of repair or replacement of the defective Goods.
+22) Termination for Breach of Contract
+The Procuring Entity may terminate for breach of contract when the Supplier
+fails to deliver or perform any or all of the Goods within the period(s) specified
+in the contract, or within any extension thereof granted by the Procuring
+Entity, pursuant to a request made by the Supplier prior to the delay, and
+such failure amounts to at least ten percent (10%) of the contract price,
+consistent with the provision of this IRR on liquidated damages. The
+Procuring Entity may likewise impose appropriate sanctions therein.
+23) Termination Due to Force Majeure
+23.1 For purposes of this Contract, the terms “force majeure” and “fortuitous
+event” may be used interchangeably. In this regard, a fortuitous event
+or force majeure shall be interpreted to mean as an event which the
+Supplier could not have been foreseen, or though foreseen, was
+inevitable. It shall not include ordinary unfavorable weather conditions,
+and any other causes the effect/s of which could have been avoided
+with the exercise of reasonable diligence by the Supplier. Such events
+may include, but not limited to, acts of the Procuring Entity in its
+sovereign capacity, wars or revolutions, fires, floods, epidemics,
+quarantine restrictions, and freight embargoes.
+23.2 The Procuring Entity may terminate this Contract and impose
+liquidated damages when, as a result of force majeure, the Supplier is
+unable to deliver or perform any or all of the Goods, amounting to at
+least ten percent (10%) of the Contract Price, for a period of not less
+than sixty (60) calendar days, or earlier, as deemed necessary by the
+Procuring Entity, after receipt of the written notice from the Procuring
+Entity stating that the circumstance of force majeure is deemed to have
+ceased.
+23.3 The Supplier shall not be subject to forfeiture of its performance
+security, payment of liquidated damages, or contract termination due
+to force majeure, provided that the Supplier’s delay in performance or
+other failure to perform its obligations under this Contract is the result
+of a force majeure.
+23.4 If a force majeure situation arises, the Supplier shall promptly notify
+the Procuring Entity in writing of such condition and the cause thereof.
+Unless otherwise directed by the Procuring Entity, the Supplier shall
+continue to perform its obligations under the Contract as far as may be
+practicable, when not prevented by the force majeure, and shall seek all
+reasonable alternative means in the performance of its obligation.
+24) Termination for Convenience
+61
+
+===== PAGE 62 =====
+Section IV. General Conditions of Contract
+24.1 The Procuring Entity, through a written notice sent to the Supplier, may
+terminate this Contract, in whole or in part, at any time, if it has
+determined the existence of any of the following conditions that make
+contract implementation economically, financially, or technically
+impractical or unnecessary:
+a) When physical and economic conditions have significantly
+changed so as to render the project no longer economically,
+financially, or technically feasible, as determined by the HoPE;
+b) When the HoPE has determined the existence of conditions that
+make project implementation impractical or unnecessary, such
+as, but not limited to, fortuitous event/s, changes in laws, and
+government policies;
+c) When funding for the Project has been withheld or reduced by
+higher authorities through no fault of the Procuring Entity; or
+d) Any circumstance analogous to the foregoing.
+24.2 The Goods that have been performed or are ready to be delivered or
+performed within thirty (30) calendar days after the Supplier’s receipt
+of Notice to Terminate shall be accepted by the Procuring Entity at the
+contract terms and prices thereof. For Goods not yet delivered,
+performed and/or ready to be delivered or performed, the Procuring
+Entity may elect:
+a) To have any portion delivered and/or performed and paid at the
+contract terms and prices thereof; or
+b) To cancel the remainder and pay to the Supplier an agreed
+amount for partially completed and/or performed goods and for
+materials and parts previously procured by the Supplier.
+25) Termination for Unlawful Acts
+25.1 The Procuring Entity may terminate this Contract in case it is
+determined prima facie that the Supplier, including any joint venture
+partner therein, has engaged, before or during the implementation of
+this Contract, in unlawful deeds and behaviors relative to contract
+acquisition and implementation. Unlawful acts include, but are not
+limited to, the following:
+a) Corrupt, fraudulent, collusive, and coercive practices as defined in
+ITB Clause 3.1;
+b) Drawing up or using forged documents;
+c) Using adulterated materials, means or methods, or engaging in
+production contrary to rules of science or the trade; and
+d) Any other act analogous to the foregoing.
+26) Procedures for Termination of Contracts
+62
+
+===== PAGE 63 =====
+Section IV. General Conditions of Contract
+26.1 The following provisions shall govern the procedures for termination of
+this Contract:
+a) Verification - Upon receipt of a written report of acts or causes
+which may constitute grounds for termination as aforementioned,
+or upon its own initiative, the End-User or Implementing Unit
+shall, within a period of seven (7) calendar days, verify the
+existence of such grounds and cause the execution of a Verified
+Report, with all relevant evidence attached.
+b) Notice to Terminate - Upon recommendation by the End-User or
+Implementing Unit, the HoPE shall terminate contracts only by
+written notice to the supplier conveying the termination of the
+contract. The notice shall state:
+i) That the contract is being terminated for any of the grounds
+aforementioned, and a statement of the acts that constitute
+the grounds constituting the same;
+ii) The extent of termination, whether in whole or in part;
+iii) An instruction to the Supplier, to show cause as to why the
+contract should not be terminated; and
+iv) Special instructions of the Procuring Entity, if any.
+The Notice to Terminate shall be accompanied by a copy of the
+Verified Report.
+c) Show Cause - Within a period of seven (7) calendar days from
+receipt of the Notice of Termination, the Supplier shall submit to
+the HoPE a verified position paper stating why the contract should
+not be terminated. If the Supplier, fails to show cause after the
+lapse of the seven (7) day period, either by inaction or by default,
+the HoPE shall issue an order terminating the contract.
+d) Rescission of Notice of Termination - The Procuring Entity may,
+at any time before receipt of the Supplier’s verified position paper,
+withdraw the Notice to Terminate if it is determined that certain
+items or works subject of the notice had been completed,
+delivered, or performed before the Supplier’s receipt of the notice.
+e) Decision - Within a non-extendible period of ten (10) calendar
+days from receipt of the verified position paper, the HoPE shall
+decide whether or not to terminate the contract. It shall serve a a
+written notice to the Supplier of its decision and, unless otherwise
+provided, the contract is deemed terminated from receipt of the
+Supplier of the notice of the decision. The termination shall only
+be based on the grounds stated in the Notice to Terminate.
+f) Contract Termination Review Committee (CTRC) - The HoPE
+may create a committee to assist in the discharge of its functions
+under the IRR. All decisions recommended by the CTRC shall be
+subject to the approval of the HoPE.
+63
+
+===== PAGE 64 =====
+Section IV. General Conditions of Contract
+g) Take-over of Contracts - If a Procuring Entity terminates the
+contract due to default, insolvency, or for a cause, it may enter
+into a Negotiated Procurement (Take-over of Contracts) pursuant
+to Section 35(c) of RA No. 12009.
+h) Procuring Entity’s Options in Termination for Convenience in
+Contracts for Goods - The Goods that have been performed or
+are ready for delivery within thirty (30) calendar days after the
+supplier’s receipt of Notice to Terminate shall be accepted by the
+Procuring Entity at the contract terms and prices. For Goods not
+yet performed or ready for delivery, the Procuring Entity may elect:
+i) To have any portion delivered or performed and paid at the
+contract terms and prices; or
+ii) To cancel the remainder and pay to the supplier an agreed
+amount for partially completed or performed goods and for
+materials and parts previously procured by the supplier.
+27) Assignment of Rights
+The Supplier shall not assign its rights or obligations under this Contract, in
+whole or in part, except upon prior written consent of the Procuring Entity.
+28) Amendment to Order
+No variation in or modification of the terms of this Contract shall be made
+except by written amendment signed by the parties in accordance with the
+provisions on Amendment to Order, subject to applicable laws, rules and
+regulations.
+29) Application
+These General Conditions shall apply to the extent that they are not
+suspended by the provisions from other parts of this Contract.
+64
+
+===== PAGE 65 =====
+Section V. Special Conditions of Contract
+65
+
+===== PAGE 66 =====
+Special Conditions of Contract
+GCC Clause
+1(a) The Procuring Entity is the Department of Education, through
+its Information and Communication Technology Service –
+Solutions Development Division (ICTS-SDD).
+1(b) The Supplier is [to be inserted at the time of contract award].
+1(c) The Funding Source is the General Appropriations Act (GAA)
+Fiscal Year (FY) 2025, particularly the allocation for the DepEd
+Computerization Program (DCP) - Strengthening Assistance for
+Government Infrastructure and Social Programs (SAGIP) 2025
+(Continuing Fund), in the amount of Philippine Pesos Five
+Hundred Million and 00/100 (PhP500,000,000.00).
+1(d) The Project Site is DepEd Central Office, TechZone Building
+Malugay St., San Antonio, Makati City.
+2 No further instructions.
+5.1 The Procuring Entity’s address for Notices is:
+ATTY. MARCELINO G. VELOSO III
+Assistant Secretary
+Office of the Assistant Secretary for ICT
+18th Floor TechZone Building Malugay St. San Antonio Makati
+Telephone Number: 8633-7256
+Email address: oasict@deped.gov.ph
+The Supplier’s address for Notices is: [Insert address including,
+name of contact, fax and telephone number].
+5.2 No further instructions.
+6.2 Delivery and Documents
+For purposes of this Contract, “EXW,” “FOB,” “FCA,” “CIF,”
+“CIP,” “DDP” and other trade terms used to describe the
+obligations of the parties shall have the meanings assigned to
+them by the current edition of INCOTERMS published by the
+International Chamber of Commerce, Paris. The Delivery terms
+of this Contract shall be as follows:
+The delivery terms applicable to this Contract are delivered to
+DepEd Central Office – TechZone Makati City. Risk and title will
+pass from the Supplier to the Procuring Entity upon receipt and
+final acceptance of the Goods at their final destination.
+Delivery of the Goods shall be made by the Supplier in
+accordance with the terms specified in Section VI. Schedule
+of Requirements. The details of shipping and/or other
+documents to be furnished by the Supplier are as follows:
+For Goods supplied from within the Philippines:
+66
+
+===== PAGE 67 =====
+Section V. Special Conditions of Contract
+GCC Clause
+Upon delivery of the Goods to the Project Site, the Supplier shall
+notify the Procuring Entity and present the following original
+documents to the Procuring Entity:
+i) Supplier’s invoice showing the goods’ description,
+quantity, unit price, and total amount;
+ii) Delivery receipt/note, railway receipt, or truck receipt;
+iii) Supplier’s factory inspection report;
+iv) Manufacturer’s and/or Supplier’s warranty certificate;
+v) Certificate of origin (for imported Goods);
+vi) Delivery receipt detailing number and description of
+items received signed by the authorized receiving
+personnel;
+vii) Certificate of Acceptance/Inspection Report signed by
+the Procuring Entity’s representative at the Project Site;
+and
+viii) Four copies of the Invoice Receipt for Property signed by
+the Procuring Entity’s representative at the Project Site.
+For purposes of this Clause the Procuring Entity’s
+Representative at the Project Site is Mr. Noel E. Reyes, ICTS-
+SDD.
+The Contract price for the goods shall include the prices
+charged by the Supplier for incidental services and shall not
+exceed the prevailing rates charged to other parties by the
+Supplier for similar services.
+Patent Rights
+The Supplier shall indemnify the Procuring Entity against all
+third-party claims of infringement of patent, trademark, or
+industrial design rights arising from use of the goods or any
+part thereof.
+7 Subcontracting is not allowed.
+10 Advance payment is not allowed.
+10.2 Not Applicable.
+10.3 Advance payment is not allowed.
+11 Schedule of Payment
+The milestone payments are tied to accepted, functional, tested,
+documented, and deployable deliverables.
+DepEd shall not withhold acceptance or payment solely
+because the milestone was completed earlier than the stated
+window, provided that the milestone deliverables are complete,
+67
+
+===== PAGE 68 =====
+Section V. Special Conditions of Contract
+GCC Clause
+functional, tested, documented, deployed to the agreed
+environment, traceable to the TOR or approved backlog, and
+accepted by the authorized DepEd Product Owner or process
+owner.
+If the Service Provider completes a milestone earlier than the
+applicable maximum delivery window, it may submit the
+milestone deliverables for DepEd review, acceptance, and
+payment processing.
+Progress Payment
+Progress Payment based on fixed milestones below:
+Payment processing for any milestone shall commence only
+after full completion and formal acceptance of all corresponding
+milestone deliverables.
+Payments shall be made on a milestone basis and shall be
+contingent upon completion, submission, review, and written
+acceptance of the required deliverables for the relevant
+milestone.
+Maximum
+Delivery Main
+Milestone Payment
+Window Deliverable
+from NTP
+Upon NTP,
+M1 not later Mobilization 10%
+than Day 30
+Project
+Inception,
+Product Proof,
+Not later
+M2 Technical 20%
+than Day 90
+Alignment, and
+Implementation
+Planning
+Not later
+Release 1: Core
+M3 than Day 15%
+HR Foundation
+150
+Release 2:
+Not later Payroll, Leave,
+M4 than Day Attendance, 10%
+190 and Employee
+Self-Service
+Release 3:
+Strategic
+Not later Talent,
+M5 than Day Learning, 15%
+235 Wellness,
+Rewards, and
+Succession
+68
+
+===== PAGE 69 =====
+Section V. Special Conditions of Contract
+GCC Clause
+Integrated
+Testing,
+Security
+Not later
+Validation,
+M6 than Day 10%
+Migration
+270
+Readiness, and
+Payroll Parallel
+Run
+Not later Pilot
+than Day Deployment,
+300, or Capacity
+M7 earlier upon Building, 10%
+completion Documentation,
+and and SLA
+acceptance Readiness
+Not earlier
+Production
+than Day
+Rollout, Final
+335, not
+Handover, SLA
+M8 later than 10%
+Transition, and
+Day 365
+Final
+from the
+Acceptance
+NTP
+Early completion shall not remove any continuing warranty,
+support, documentation, turnover, maintenance, remediation,
+or post-deployment obligations required under the TOR or
+contract.
+Payment Conditions
+Payment processing shall not be deferred solely because the
+corresponding maximum delivery window has not fully elapsed.
+Once a milestone is completed, submitted, reviewed, and
+accepted, the Service Provider may bill for the corresponding
+milestone payment, subject to submission of complete billing
+documents and compliance with applicable budgeting,
+accounting, auditing, procurement, and contract rules.
+No payment shall be processed based solely on:
+1. passage of time;
+2. issuance of the NTP;
+3. submission of plans without acceptance;
+4. presentation of a vanilla or baseline HRIS without
+DepEd-specific validation;
+5. presentation of prototypes or mockups without working
+functionality;
+6. deployment without test evidence;
+7. configuration without accepted user stories;
+69
+
+===== PAGE 70 =====
+Section V. Special Conditions of Contract
+GCC Clause
+8. unsupported claims of completion without sprint
+records, test logs, deployment evidence, documentation,
+or Product Owner sign-off.
+11.4 No further instructions.
+11.5 Payment using Letter of Credit is not allowed.
+13.4(c) No further instructions.
+16.1 The inspections and tests that will be conducted shall be in
+accordance with Section VI. Schedule of Requirements,
+including the prescribed milestone deliverables, acceptance
+requirements, and Definition of Done.
+17.3 Special bank guarantee equivalent to at least one percent (1%)
+but not to exceed five (5%) of the total Contract Price.
+17.3 (c) Not Applicable.
+17.4 Warranty shall be covered by Special bank guarantee
+equivalent to at least one percent (1%) but not to exceed five
+(5%) of the total Contract Price with validity until the end of
+contract period.
+17.5 No further instructions.
+20.2 Not Applicable.
+21.1 No further instructions.
+70
+
+===== PAGE 71 =====
+Section VI. Schedule of Requirements
+A. Delivery Schedule
+The delivery schedule expressed below stipulates the date of delivery to the project
+site.
+Lot No. Description Delivery Schedule
+The HRIS shall be implemented within three
+Human Resources
+1 lot hundred sixty-five (365) calendar days
+Information System
+from receipt of the Notice to Proceed (NTP)
+B. Contract Duration
+Complete delivery shall be made within the one (1) year contract duration, from
+the date of receipt of the Notice to Proceed.
+C. Deliverables and Delivery Period
+1. Purpose
+This document clarifies the deliverables, delivery period, acceptance requirements,
+and dependency rules for the Human Resource Information System (HRIS) project.
+This clarification does not replace the TOR. It shall be read together with the TOR
+provisions on HRIS scope, modules, implementation plan, data governance,
+service level agreement, training, documentation, reporting, monitoring, and final
+acceptance.
+2. Delivery Premise
+The HRIS engagement is premised on the Service Provider having an existing,
+operational, and configurable HRIS platform or solution with substantially
+available modules relevant to DepEd’s requirements.
+However, regardless of whether the Service Provider begins from an existing
+baseline, standard, or “vanilla” HRIS, the final HRIS delivered to DepEd shall be
+fully turned over with all source code, configurations, scripts, templates,
+workflows, reports, APIs, database schemas, deployment artifacts,
+documentation, and other technical materials necessary for DepEd to operate,
+maintain, audit, modify, enhance, migrate, and continue the system.
+Accordingly, the Service Provider shall ensure that it has the legal and technical
+right to turn over the complete HRIS source code and related technical assets to
+DepEd. A proprietary or closed-source baseline shall not be used if it prevents full
+71
+
+===== PAGE 72 =====
+Section VI. Schedule of Requirements
+source code turnover, continuity, auditability, maintainability, or DepEd’s
+independent operation of the system.
+For avoidance of doubt:
+1. a product demonstration is not equivalent to implementation;
+2. a vanilla HRIS is not equivalent to an accepted DepEd HRIS;
+3. staging deployment is not equivalent to production readiness;
+4. configuration is not equivalent to user acceptance;
+5. payroll readiness requires parallel-run validation;
+6. Final acceptance requires full source code turnover, documentation, SLA
+transition, and closure of critical defects.
+3. Delivery Period and Early Completion
+The delivery windows below are maximum target periods counted from NTP. They
+shall not be treated as mandatory waiting periods.
+4. Delivery Schedule
+Maximum Delivery
+Milestone Main Deliverable
+Window from NTP
+Mobilization
+Upon NTP, not later
+M1 Project Inception, Product Proof, Technical
+than Day 30
+Alignment, and Implementation Planning
+Not later than Day
+M2 Release 1: Core HR Foundation
+90
+Not later than Day Release 2: Payroll, Leave, Attendance, and
+M3
+150 Employee Self-Service
+Not later than Day Release 3: Strategic Talent, Learning,
+M4
+190 Wellness, Rewards, and Succession
+Integrated Testing, Security Validation,
+Not later than Day
+M5 Migration Readiness, and Payroll Parallel
+235
+Run
+Not later than Day Pilot Deployment, Capacity Building,
+M6
+270 Documentation, and SLA Readiness
+Not later than Day
+300, or earlier upon Production Rollout, Final Handover, SLA
+M7
+completion and Transition
+acceptance
+72
+
+===== PAGE 73 =====
+Section VI. Schedule of Requirements
+Maximum Delivery
+Milestone Main Deliverable
+Window from NTP
+Not earlier than Day
+335, not later than Project Closure, SLA Compliance
+M8
+Day 365 from the Verification, and Final Acceptance
+NTP
+The percentages above refer to billing milestones. Any retention money, warranty
+security, or substitute security instrument shall be governed by the contract and
+applicable procurement, budgeting, accounting, and auditing rules, and shall not
+be treated as an additional payment tranche.
+5. Milestone Deliverables and Acceptance
+M1. Project Inception, Product Proof, Technical Alignment, and Implementation
+Planning
+Maximum Delivery Window: Not later than Day 30 from NTP
+M1 shall cover project inception, stakeholder alignment, demonstration of the
+baseline HRIS, confirmation of the delivery approach, technical alignment, and
+approval of the implementation controls necessary to proceed.
+At minimum, M1 shall include:
+1. issuance of the NTP or contract effectivity;
+2. submission and DepEd acceptance of the required irrevocable standby
+letter of credit, bank guarantee, or equivalent security instrument;
+3. submission of initial mobilization details, including assigned project
+manager, principal technical contact, implementation team roster, and
+initial work schedule.
+4. signed-off Inception Report;
+5. approved Implementation Plan;
+6. Agile Team Charter identifying Service Provider and DepEd counterparts;
+7. initial Product Backlog covering all HRIS modules;
+8. Pre-Built Module Capability Matrix;
+9. baseline HRIS product capability demonstration report;
+10. fit-gap validation approach;
+11. configuration and customization blueprint;
+12. development, staging, and production environment plan;
+13. initial data migration plan;
+14. initial integration and API plan;
+15. initial security, privacy, access-control, and audit-log plan;
+16. risk register and dependency register;
+73
+
+===== PAGE 74 =====
+Section VI. Schedule of Requirements
+17. sprint cadence and reporting protocol;
+18. draft acceptance criteria for Release 1.
+M1 shall be accepted upon DepEd approval of the inception, product proof,
+governance, technical alignment, and implementation planning outputs.
+M1 acceptance shall not constitute acceptance of the baseline or vanilla HRIS as
+the final DepEd HRIS.
+M2. Release 1: Core HR Foundation
+Maximum Delivery Window: Not later than Day 90 from NTP
+M2 shall cover the first accepted HRIS release, prioritizing the foundational
+modules and workflows necessary to establish core HR records and recruitment
+processes.
+At minimum, M2 shall include configured, customized, tested, and documented
+Release 1 functionality for:
+1. Personnel Information Management;
+2. employee 201 file records;
+3. Personal Data Sheet-related records;
+4. Applicant Portal;
+5. Recruitment, Selection, and Placement;
+6. Appointment Processing;
+7. New Hire Processing;
+8. related recruitment, appointment, and personnel reports;
+9. role-based access control for Release 1 users;
+10. audit logging for Release 1 transactions;
+11. initial sample data migration for employee and applicant records;
+12. release notes;
+13. updated user and administrator guides;
+14. Sprint Review Reports;
+15. signed-off user stories meeting the Definition of Done;
+16. Release 1 test results and defect closure report.
+M2 shall be accepted only upon deployment to the agreed staging or approved
+release environment, completion of applicable tests, closure of critical defects,
+submission of documentation, and written sign-off by the authorized DepEd
+Product Owner or process owner.
+M3. Release 2: Payroll, Leave, Attendance, and Employee Self-Service
+Maximum Delivery Window: Not later than Day 150 from NTP
+M3 shall cover the second HRIS release, focusing on payroll-related and employee-
+facing functions.
+74
+
+===== PAGE 75 =====
+Section VI. Schedule of Requirements
+At minimum, M3 shall include configured, customized, tested, and documented
+Release 2 functionality for:
+1. Payroll and Remittance;
+2. General Payroll;
+3. Special Payroll;
+4. Personnel Voucher-related processing;
+5. Leave Management;
+6. Attendance Management;
+7. Employee Self-Service functions, including payslip access, leave balance
+viewing, leave filing, employee requests, and employee record access, as
+applicable;
+8. payroll computation test results;
+9. remittance report templates;
+10. leave and attendance rule configuration;
+11. API, file exchange, or data synchronization validation, where applicable;
+12. payroll parallel-run test plan;
+13. updated user and administrator guides;
+14. Sprint Review Reports;
+15. signed-off user stories meeting the Definition of Done.
+M3 shall be accepted upon completion of Release 2 testing, documentation, and
+Product Owner or process-owner sign-off.
+Full operational reliance on payroll shall still require the accepted payroll parallel-
+run accuracy report under M5.
+M4. Release 3: Strategic Talent, Learning, Wellness, Rewards, and Succession
+Maximum Delivery Window: Not later than Day 190 from NTP
+M4 shall cover the third HRIS release, focusing on strategic HR, employee
+development, and employee welfare modules.
+At minimum, M4 shall include configured, customized, tested, and documented
+Release 3 functionality for:
+1. Performance Management, including SPMS, IPCR, and OPCR;
+2. Learning and Development;
+3. Rewards and Recognition;
+4. Employee Wellness and Welfare;
+5. Health Profile;
+6. Succession Planning and career progression;
+7. related dashboards and reports;
+8. privacy controls for sensitive and health-related data;
+9. statistical reporting controls for health and wellness data;
+10. backlog refinement logs;
+75
+
+===== PAGE 76 =====
+Section VI. Schedule of Requirements
+11. updated user and administrator guides;
+12. Sprint Review Reports;
+13. user story sign-offs by DepEd process owners.
+M4 shall be accepted upon completion of Release 3 testing, documentation, and
+Product Owner or process-owner sign-off.
+Individual-level access to health-related or sensitive data shall be subject to
+applicable law, approved roles, access controls, and DepEd data governance
+requirements.
+M5. Integrated Testing, Security Validation, Migration Readiness, and Payroll
+Parallel Run
+Maximum Delivery Window: Not later than Day 235 from NTP
+M5 shall cover integrated validation of the HRIS releases prior to pilot deployment
+and phased production rollout.
+At minimum, M5 shall include:
+1. integrated User Acceptance Testing logs;
+2. system integration test results;
+3. regression test results;
+4. performance or load test results appropriate to the approved
+implementation scope;
+5. security validation report;
+6. access-control validation report;
+7. audit-log validation report;
+8. data privacy controls validation report or checklist;
+9. mock migration report;
+10. data reconciliation report;
+11. defect register and defect closure report;
+12. payroll parallel-run accuracy report;
+13. pilot Go/No-Go recommendation signed by authorized DepEd Product
+Owners or process owners;
+14. updated technical, user, administrator, and operational documentation.
+Security validation shall include, at minimum:
+1. review of user roles and permissions;
+2. validation of privileged access controls;
+3. testing of authentication and session controls;
+4. verification of audit-log generation and retrieval;
+5. review of sensitive data protections;
+6. validation of backup and restoration procedures;
+7. review of secure configuration settings;
+76
+
+===== PAGE 77 =====
+Section VI. Schedule of Requirements
+8. vulnerability scanning or equivalent internal security assessment;
+9. remediation tracking for identified findings;
+10. documented risk treatment for residual findings accepted by DepEd.
+Independent third-party penetration testing shall not be required for milestone
+acceptance. Internal security testing, vulnerability assessment, secure code
+review, dependency scanning, access-control testing, and remediation of critical
+findings shall be sufficient for M5 acceptance.
+Payroll shall not be treated as ready for full operational reliance unless the payroll
+parallel-run accuracy report has been accepted by authorized DepEd payroll,
+finance, and HR process owners.
+M6. Pilot Deployment, Capacity Building, Documentation, and SLA Readiness
+Maximum Delivery Window: Not later than Day 270 from NTP
+M6 shall cover pilot deployment, capacity building, operational readiness, and
+preparation for production rollout.
+At minimum, M6 shall include:
+1. pilot deployment report covering agreed Central Office, Regional Office,
+Schools Division Office, and school-level users or representatives;
+2. production-readiness checklist;
+3. training completion report for pilot users, administrators, HR personnel,
+ICTS support personnel, and identified trainers;
+4. knowledge-transfer materials;
+5. updated user manuals;
+6. updated administrator guides;
+7. updated technical maintenance documentation;
+8. training decks, job aids, FAQs, or video tutorials;
+9. helpdesk scripts;
+10. incident escalation matrix;
+11. SLA readiness report;
+12. pilot issue register and resolution report;
+13. phased rollout plan.
+Pilot deployment shall validate:
+production readiness;
+user access and role assignments;
+core HR workflows;
+recruitment and appointment workflows;
+payroll and leave/attendance readiness, where applicable;
+data accuracy;
+system performance;
+77
+
+===== PAGE 78 =====
+Section VI. Schedule of Requirements
+helpdesk readiness;
+training effectiveness;
+defect handling and escalation.
+Phased production rollout shall proceed only after pilot completion, closure of
+critical pilot defects, completion of required training, and approval of the Go/No-
+Go recommendation.
+M7. Production Rollout, Final Handover, and SLA Transition
+Maximum Delivery Window: Not later than Day 300 from NTP, or earlier upon
+completion and acceptance
+M7 shall cover phased production rollout, final handover, operational transition,
+and full source code turnover.
+At minimum, M7 shall include:
+1. production deployment report;
+2. phased rollout evidence;
+3. final accepted release deliverables for all required modules;
+4. final data migration and reconciliation report;
+5. final payroll parallel-run accuracy report;
+6. final security and access-control validation report;
+7. final audit-log validation report;
+8. final performance or load test report;
+9. final defect closure report;
+10. final training completion report;
+11. final user manuals;
+12. final administrator guides;
+13. technical maintenance manuals;
+14. operational runbook;
+15. as-built system architecture;
+16. data dictionary;
+17. API documentation;
+18. configuration documentation;
+19. deployment documentation;
+20. backup and restoration procedure;
+21. access credentials and administrative account turnover;
+22. complete source code turnover;
+23. version-controlled repository turnover;
+24. database schema and migration scripts;
+25. build, deployment, and rollback scripts;
+26. environment configuration templates;
+27. custom reports, forms, workflow definitions, templates, and rule
+configurations;
+78
+
+===== PAGE 79 =====
+Section VI. Schedule of Requirements
+28. integration source code, API connectors, middleware, adapters, and data
+exchange scripts;
+29. test scripts, automated test suites, and test data templates, where
+applicable;
+30. dependency list, package manifests, libraries, third-party components, and
+license inventory;
+31. system installation and local development setup guide;
+32. System Turnover Report;
+33. SLA transition report;
+34. warranty and post-deployment support confirmation;
+Full source code turnover shall be a condition for payment of M7.
+The Service Provider shall turn over the complete, buildable, deployable, and
+documented source code for the HRIS, including all modules, customizations,
+configurations, integrations, reports, scripts, templates, utilities, and deployment
+artifacts required to operate and maintain the system.
+The source code turnover shall be made through a DepEd-controlled or DepEd-
+accessible version-controlled repository, together with sufficient documentation to
+allow DepEd or its authorized technical personnel to build, deploy, inspect,
+maintain, modify, and continue the HRIS without dependence on the Service
+Provider beyond the contracted support period.
+M8. Project Closure, SLA Compliance Verification, and Final Acceptance
+Maximum Delivery Window: Not earlier than Day 335, not later than Day 365
+from the NTP
+M8 shall cover the post-deployment stabilization and SLA compliance monitoring
+period following production rollout and final handover under M7
+Final acceptance shall not be issued if the source code, repository access,
+deployment artifacts, configuration files, database schema, technical
+documentation, or administrative credentials necessary for system continuity
+remain incomplete or inaccessible.
+At minimum, M8 shall include:
+1. Final SLA Compliance Report including but not limited to system uptime
+logs and availability monitoring records as evidence
+2. Final Defect Closure Report
+3. Notarized Certificate of Data Return and/or Destruction
+4. Certificate of Final Acceptance
+79
+
+===== PAGE 80 =====
+Section VI. Schedule of Requirements
+For avoidance of doubt:
+1. deployment to a staging or production environment shall not, by itself,
+constitute completion;
+2. demonstration of a baseline HRIS shall not constitute acceptance of DepEd-
+specific requirements;
+3. user story completion shall require compliance with the Definition of Done;
+4. Product Owner or process-owner sign-off shall be required for each
+accepted release;
+5. critical defects must be closed before the relevant milestone may be
+accepted;
+6. high-severity defects must either be closed or covered by a DepEd-approved
+remediation plan;
+7. documentation must be updated with each release;
+8. data privacy, security, access-control, and audit-log requirements must be
+validated before pilot and production rollout;
+9. payroll shall not be considered ready for full operational reliance unless the
+payroll parallel-run accuracy report has been accepted by DepEd;
+10. final acceptance shall require completion of turnover, documentation,
+access arrangements, warranty transition, and SLA activation.
+6. Inspection and Testing Requirements
+1. Pre-Delivery Inspection
+Pre-Delivery Inspection refers to testing and validation conducted prior to
+the formal submission of milestone deliverables to DepEd for acceptance.
+2. Post Delivery Inspection
+Post-Delivery Inspection refers to testing and validation conducted by
+Procuring Entity upon submission of milestone deliverables by the Service
+Provider.
+Delivery of each milestone under this contract shall be subject to post-delivery
+inspection and testing in accordance with the Pre- and Post-Delivery Testing
+Parameters attached as Annexes to Section VII – Technical Specifications.
+7. Definition of Done
+No module, user story, sprint increment, release, configuration item,
+customization, integration, report, migration utility, workflow, or milestone shall
+be considered complete for acceptance or payment unless it is:
+1. traceable to a TOR requirement, approved backlog item, accepted user
+story, approved configuration item, or approved change item;
+2. configured, customized, integrated, implemented, or otherwise delivered in
+the appropriate HRIS environment;
+3. deployed to the agreed environment;
+80

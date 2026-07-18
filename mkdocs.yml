@@ -1,0 +1,126 @@
+site_name: DepEd HRIS — Analysis, Response and Architecture
+site_description: >-
+  Independent technical analysis of the DepEd Human Resources Information System
+  (HRIS) Philippine Bidding Document, a placeholder bid response, and a
+  reference architecture with C4 diagrams and PostgreSQL data model.
+site_author: deped-hris
+site_url: https://dennispitallano.github.io/deped-hris-analysis/
+
+repo_url: https://github.com/DennisPitallano/deped-hris-analysis
+repo_name: DennisPitallano/deped-hris-analysis
+edit_uri: edit/main/deliverables/
+
+copyright: >-
+  © 2026 deped-hris. Content is an independent analysis of a public Philippine
+  Bidding Document; all placeholders remain placeholders.
+
+docs_dir: deliverables
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    logo: material/domain
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/DennisPitallano
+      name: GitHub
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Link to this section
+      toc_depth: 4
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.magiclink
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: iso_date
+      fallback_to_build_date: true
+
+nav:
+  - Home: index.md
+  - "A · Technical Specifications Brief": A_technical_specifications_brief.md
+  - "B · Bid Response (placeholders)": B_tor_response_outline.md
+  - "C · Architecture & Data Model": C_architecture_and_data_model.md
+  - Downloads: downloads.md
+
+extra_css:
+  - assets/extra.css
