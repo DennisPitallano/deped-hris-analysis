@@ -120,11 +120,11 @@ plugins:
 
 nav:
   - Home: index.md
-  - "A · Technical Specifications Brief": A_technical_specifications_brief.md
-  - "B · Bid Response (placeholders)": B_tor_response_outline.md
-  - "C · Architecture & Data Model": C_architecture_and_data_model.md
-  - "D · Value-Added Components": D_value_added.md
-  - "E · International Benchmarks": E_international_benchmarks.md
+  - "A · Brief": A_technical_specifications_brief.md
+  - "B · Response": B_tor_response_outline.md
+  - "C · Architecture": C_architecture_and_data_model.md
+  - "D · Value-Add": D_value_added.md
+  - "E · Benchmarks": E_international_benchmarks.md
   - Downloads: downloads.md
 
 extra_css:
