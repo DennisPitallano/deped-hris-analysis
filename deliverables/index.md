@@ -109,11 +109,12 @@ PostgreSQL data model.
 
     ---
 
-    Seven strategic differentiators offered **at no additional cost**
+    Eight strategic differentiators offered **at no additional cost**
     to the ABC: bilingual UI + SMS/USSD channels, offline-first PWA with
     CRDT sync, self-hosted HR Copilot, M6 payroll anomaly detector,
-    hash-chained audit ledger, public transparency portal, and 10-year
-    source escrow with a community edition.
+    hash-chained audit ledger, public transparency portal, 10-year
+    source escrow with a community edition, and an advisory teacher-
+    to-school placement optimiser (Chile SIGE pattern).
 
     <span class="tag-row">
       <span class="tag">Bid edge</span>
@@ -153,7 +154,7 @@ PostgreSQL data model.
 | :---------------- | :------------------------- | :---------------------------- | :-------------------------- | :--------------------------- | :---------------------------- |
 | **You are…**      | Reading the RFP            | Preparing a bid               | Building the system         | Looking for the edge         | Wanting international proof   |
 | **Best for**      | Orientation, scope, SLAs   | Compliance, evidence, pricing | Design, data model, C4      | Winning the bid              | Citing precedent to evaluators|
-| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   | Seven-component pitch        | Country tables + lessons      |
+| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   | Eight-component pitch        | Country tables + lessons      |
 | **Diagrams**      | —                          | Risk map                      | 8 Mermaid (C4/ER/state)     | Milestone Gantt              | —                             |
 | **Length**        | ~22 KB · 20 min read       | ~56 KB · 45 min read          | ~74 KB · 60 min read        | ~14 KB · 15 min read         | ~18 KB · 20 min read           |
 | **Key sections**  | Milestones, P1–P4, reports | Milestone entry/exit, risks   | Container, deployment, ERDs | AI, offline, audit, escrow   | Novopay, Chile solver, OPM    |
@@ -209,7 +210,7 @@ PostgreSQL data model.
 - **New here?** Start with **[Paper A](A_technical_specifications_brief.md)** for a guided read of the PBD scope, SLAs, and milestones.
 - **Reviewing a bid?** Open **[Paper B](B_tor_response_outline.md)** and search for `[[PLACEHOLDER]]` to see every bidder-specific field.
 - **Building the system?** Jump to **[Paper C](C_architecture_and_data_model.md)** — C4 diagrams and PostgreSQL DDL are the fast path to a prototype.
-- **Looking to win the bid?** Read **[Paper D](D_value_added.md)** — the seven value-added components that beat competitors at no extra cost.
+- **Looking to win the bid?** Read **[Paper D](D_value_added.md)** — the eight value-added components that beat competitors at no extra cost.
 - **Need international precedent?** Study **[Paper E](E_international_benchmarks.md)** — comparable systems worldwide and the three disasters worth citing as ones you avoid.
 - **Prefer offline reading?** All papers are available as [PDFs](downloads.md) with rendered diagrams.
 

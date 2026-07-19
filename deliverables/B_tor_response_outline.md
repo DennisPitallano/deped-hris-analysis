@@ -750,7 +750,7 @@ Initial risk register (Bidder-owned mitigations). Refined during M1 inception.
 
 ## 16.5 Value-Added Components — at no additional cost
 
-The seven components below are offered as **bundled value-adds** at no incremental cost to the ABC. Each one either (a) re-uses a component already scoped in §5 Architecture, (b) hardens a mandatory PBD requirement, or (c) discharges a specific risk that would otherwise fall on DepEd. Full narrative is in the companion paper **[D · Value-Added Components](D_value_added.md)**.
+The eight components below are offered as **bundled value-adds** at no incremental cost to the ABC. Each one either (a) re-uses a component already scoped in §5 Architecture, (b) hardens a mandatory PBD requirement, or (c) discharges a specific risk that would otherwise fall on DepEd. Full narrative is in the companion paper **[D · Value-Added Components](D_value_added.md)**.
 
 | # | Component                                     | Milestone   | Base-scope tie-in                          | Marginal cost |
 | - | --------------------------------------------- | ----------- | ------------------------------------------ | ------------- |
@@ -761,10 +761,13 @@ The seven components below are offered as **bundled value-adds** at no increment
 | 5 | Immutable, hash-chained audit ledger with daily Merkle-root anchor | M2, M5 | Extends the audit-log requirement (§7)     | Zero — schema-level extension |
 | 6 | Public transparency portal (aggregate, anonymised) | M7 | Reuses reporting engine and RBAC           | Marginal — one additional read-only surface |
 | 7 | 10-year source escrow + community edition beyond the PBD minimum | M8 + | Extends §11 Turnover commitments           | Zero — contractual only |
+| 8 | Teacher-to-school placement optimiser (advisory-only) | M4, M6, M7, M8 | Extends plantilla and 201 file modules; imports Chile SIGE pattern | Marginal — one solver service + UI |
 
 **Bidder commitment:** each VAC will be delivered under the same SLA, warranty and audit obligations as the base scope. Withdrawal of any VAC after award requires DepEd written approval; failure to deliver a VAC does **not** trigger LDs but does forfeit `[[PLACEHOLDER: e.g. 0.5%]]` of the corresponding milestone payment as goodwill reduction.
 
-**Why these seven:** each was selected against three criteria — (i) it addresses a documented DepEd pain point that the PBD acknowledges but does not price; (ii) it is buildable within the 365-day timeline without displacing base scope; (iii) it survives audit by CSC, COA, NPC and DICT without additional legal review.
+**On VAC #8 specifically.** The placement optimiser is an **advisory tool only** — every recommendation is reviewed and either approved, rejected, or overridden by the CSC-authorised appointing authority. The system never triggers an automated personnel record change. Every human decision is logged to the audit ledger (VAC #5) with actor, timestamp, and reason. This matches the deployment pattern proven at scale in Chile's SIGE system (~240 K teachers).
+
+**Why these eight:** each was selected against three criteria — (i) it addresses a documented DepEd pain point that the PBD acknowledges but does not price; (ii) it is buildable within the 365-day timeline without displacing base scope; (iii) it survives audit by CSC, COA, NPC and DICT without additional legal review.
 
 See paper D for the design sketch, milestone entry/exit criteria and evidence pack references for each component.
 

@@ -95,7 +95,9 @@ Naming these in **Paper B §15 Risk Management** signals maturity — evaluators
 
 ## Uncovered VAC candidate — Chile-style teacher placement optimiser
 
-Not yet in Paper D. Recommending its addition as **VAC #23** subject to the bid team's approval.
+> **Update (post-review):** this candidate has been **promoted to Paper D as VAC #8** (advisory teacher-to-school placement optimiser). See [Paper D §8](D_value_added.md) for the design and delivery plan, and [Paper B §16.5](B_tor_response_outline.md#165-value-added-components-at-no-additional-cost) for the contractual wording.
+
+Original analysis retained below for context:
 
 > **Teacher-to-school placement optimiser** — a small optimisation service (Google OR-Tools CP-SAT) that ingests plantilla vacancies, subject requirements, current teacher assignments, distance-to-school, seniority tenure, and hardship-post premiums. It emits candidate reassignments and a Pareto-front of trade-offs (e.g. "reassign 12 teachers to close 8 vacancies at the cost of 47 km average commute increase"). DepEd Central approves, rejects, or overrides each recommendation; decisions feed back as constraints for the next cycle.
 

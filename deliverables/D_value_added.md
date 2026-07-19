@@ -1,13 +1,13 @@
 ---
 title: D · Value-Added Components
-description: Seven strategic differentiators offered at no additional cost — bilingual UI, offline-first PWA, HR Copilot, payroll anomaly detector, hash-chained audit ledger, transparency portal, 10-year escrow.
+description: Eight strategic differentiators offered at no additional cost — bilingual UI, offline-first PWA, HR Copilot, payroll anomaly detector, hash-chained audit ledger, transparency portal, 10-year escrow, and a teacher-to-school placement optimiser.
 ---
 
 # D · Value-Added Components
 
 !!! info "About this paper"
     Papers **A**, **B** and **C** describe the base scope demanded by the PBD.
-    **This paper is different** — it describes seven **discretionary components** offered *in addition* to the base scope, at **no incremental cost** to the ABC of PHP 500 M. Each one is either a re-use of a component already scoped, a hardening of a mandatory requirement, or a discharge of a risk that would otherwise fall on DepEd. Formal contract wording is in [Paper B §16.5](B_tor_response_outline.md#165-value-added-components-at-no-additional-cost).
+    **This paper is different** — it describes eight **discretionary components** offered *in addition* to the base scope, at **no incremental cost** to the ABC of PHP 500 M. Each one is either a re-use of a component already scoped, a hardening of a mandatory requirement, or a discharge of a risk that would otherwise fall on DepEd. Formal contract wording is in [Paper B §16.5](B_tor_response_outline.md#165-value-added-components-at-no-additional-cost).
 
 ## Design principle
 
@@ -21,7 +21,7 @@ Ideas that did not clear all three gates are recorded but not offered — becaus
 
 ---
 
-## The seven components
+## The eight components
 
 ### 1 · Bilingual UI + SMS / USSD channels
 
@@ -124,9 +124,30 @@ Ideas that did not clear all three gates are recorded but not offered — becaus
 
 ---
 
+### 8 · Teacher-to-school placement optimiser (advisory)
+
+**What.** A recommendation engine that reads plantilla vacancies and current teacher assignments, and emits candidate reassignments with a trade-off analysis — for example, *"reassigning 12 teachers closes 8 subject-specific vacancies at the cost of a 47 km average commute increase."* Every recommendation is reviewed by the appropriate authority (Schools Division Superintendent for intra-division moves; DepEd Central for cross-region moves). **No automated writes to any personnel record.** Every decision — accept, reject, or override — is logged to the audit ledger (VAC #5) with the human decision-maker, timestamp, and reason.
+
+**Why.** Solves the perennial DepEd headline *“no math teachers in Mindanao”* by turning the plantilla module from a record store into a management decision tool. Import of a **proven-in-production pattern from Chile** (SIGE, ~240 K teachers) — not novel research. No competitor for this bid is likely to offer this.
+
+**Delivery.** Data model in place at M4 (reads existing plantilla and 201 file tables). First solver runs at M6 in shadow mode against historical assignments. UI and human-in-the-loop decision workflow at M7. Production hand-off at M8.
+
+**Base-scope tie-in.** Reads from the plantilla and 201 file tables defined in Paper C's Core-HR and Recruitment bounded contexts. Writes only to a new advisory table plus the audit ledger. Reuses the workflow engine and approval routing that the base scope already ships.
+
+**Political & governance guardrails.**
+
+- **Advisory only.** All final decisions remain with the CSC-authorised appointing authority. The solver never triggers a personnel record change.
+- **Union-safe framing.** Every recommendation is accompanied by a natural-language rationale (subject match, distance, seniority, hardship-post premium) that the decision-maker can share with the affected teacher.
+- **CSC rule engine.** Solver constraints include CSC merit-and-fitness rules and DepEd Orders on assignment; a recommendation that violates any hard rule is filtered before it reaches the UI.
+- **DPO sign-off.** Data-flow is inside the perimeter (RA 10173 safe); DPIA delivered alongside the anomaly detector at M6.
+
+**Evidence.** Solver technical design, CSC rule-set encoding, DPIA, shadow-mode evaluation report showing agreement rate with historical human decisions (Annex `V-08`).
+
+---
+
 ## Delivery timeline
 
-The seven VACs are folded into the base milestone plan — no additional milestones, no critical-path additions:
+The eight VACs are folded into the base milestone plan — no additional milestones, no critical-path additions:
 
 ```mermaid
 gantt
@@ -143,6 +164,7 @@ gantt
     SMS / USSD gateway              :m4b, 3, 1
     Offline PWA shell               :m4c, 3, 1
     Anomaly detector — training     :m4d, 3, 1
+    Placement solver — data model   :m4e, 3, 1
 
     section M5 · Integration
     CRDT sync layer                 :m5a, 4, 1
@@ -154,13 +176,16 @@ gantt
     Anomaly detector — gated        :m6, 5, 1
     Snapshot pipeline               :m6b, 5, 1
     DPIA sign-off                   :m6c, 5, 1
+    Placement solver — shadow mode  :m6d, 5, 1
 
     section M7 · Rollout
     Copilot assistant UI            :m7a, 6, 1
     Transparency portal             :m7b, 6, 1
+    Placement solver — UI + HITL    :m7c, 6, 1
 
     section M8 · Turnover
     Community-edition repo seed     :m8, 7, 1
+    Placement solver — production   :m8b, 7, 1
 ```
 
 ## Fit against the compare table
@@ -174,6 +199,7 @@ gantt
 | Hash-chained audit ledger           | A (audit) · B (§7 Security response)    |
 | Public transparency portal          | A (28 reports) · C (reporting engine)   |
 | 10-year escrow + community edition  | A (turnover) · B (§11 Continuity)       |
+| Placement optimiser (advisory)      | C (Plantilla/Recruitment) · E (Chile SIGE precedent) |
 
 ## Formal offer wording
 
