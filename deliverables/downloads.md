@@ -32,7 +32,7 @@ All three papers are available as high-quality PDFs — A4, page numbered, with 
     milestone entry/exit criteria, and a twelve-item risk register.
 
     <span class="tag-row">
-      <span class="tag">846 KB</span>
+      <span class="tag">868 KB</span>
       <span class="tag">A4</span>
       <span class="tag">Placeholders</span>
     </span>
@@ -55,6 +55,23 @@ All three papers are available as high-quality PDFs — A4, page numbered, with 
 
     [Download PDF](pdf/C_architecture_and_data_model.pdf){ .md-button .md-button--primary }
     [Read online](C_architecture_and_data_model.md){ .md-button }
+
+- :material-file-pdf-box: __D · Value-Added Components__ <span class="badge-new">New</span>
+
+    ---
+
+    Seven strategic differentiators offered at no incremental cost —
+    AI copilot, offline-first PWA, payroll anomaly detector, hash-chained
+    audit ledger, transparency portal, and 10-year escrow.
+
+    <span class="tag-row">
+      <span class="tag">Bid edge</span>
+      <span class="tag">159 KB</span>
+      <span class="tag">A4 · Mermaid Gantt</span>
+    </span>
+
+    [Download PDF](pdf/D_value_added.pdf){ .md-button .md-button--primary }
+    [Read online](D_value_added.md){ .md-button }
 
 </div>
 

@@ -123,6 +123,7 @@ nav:
   - "A · Technical Specifications Brief": A_technical_specifications_brief.md
   - "B · Bid Response (placeholders)": B_tor_response_outline.md
   - "C · Architecture & Data Model": C_architecture_and_data_model.md
+  - "D · Value-Added Components": D_value_added.md
   - Downloads: downloads.md
 
 extra_css:

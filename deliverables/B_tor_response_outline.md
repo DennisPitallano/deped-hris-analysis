@@ -748,6 +748,28 @@ Initial risk register (Bidder-owned mitigations). Refined during M1 inception.
 
 ---
 
+## 16.5 Value-Added Components — at no additional cost
+
+The seven components below are offered as **bundled value-adds** at no incremental cost to the ABC. Each one either (a) re-uses a component already scoped in §5 Architecture, (b) hardens a mandatory PBD requirement, or (c) discharges a specific risk that would otherwise fall on DepEd. Full narrative is in the companion paper **[D · Value-Added Components](D_value_added.md)**.
+
+| # | Component                                     | Milestone   | Base-scope tie-in                          | Marginal cost |
+| - | --------------------------------------------- | ----------- | ------------------------------------------ | ------------- |
+| 1 | Bilingual UI (Filipino + 2 regional locales) + SMS/USSD payslip & leave channels | M2, M4 | Web/mobile UI already scoped               | Zero — i18n at build time |
+| 2 | Offline-first PWA with CRDT-based conflict-free sync for remote schools | M4, M5 | "Offline access" mandated by PBD           | Marginal — reuses existing sync layer |
+| 3 | HR Copilot (self-hosted LLM over 201 files + DepEd Orders) | M5, M7 | Search & retrieval already scoped          | Marginal — self-hosted inference on existing infra |
+| 4 | Payroll anomaly detector gating the M6 parallel-run sign-off | M6 | Directly hardens the mandatory parallel-run gate | Zero — analytical extension of payroll engine |
+| 5 | Immutable, hash-chained audit ledger with daily Merkle-root anchor | M2, M5 | Extends the audit-log requirement (§7)     | Zero — schema-level extension |
+| 6 | Public transparency portal (aggregate, anonymised) | M7 | Reuses reporting engine and RBAC           | Marginal — one additional read-only surface |
+| 7 | 10-year source escrow + community edition beyond the PBD minimum | M8 + | Extends §11 Turnover commitments           | Zero — contractual only |
+
+**Bidder commitment:** each VAC will be delivered under the same SLA, warranty and audit obligations as the base scope. Withdrawal of any VAC after award requires DepEd written approval; failure to deliver a VAC does **not** trigger LDs but does forfeit `[[PLACEHOLDER: e.g. 0.5%]]` of the corresponding milestone payment as goodwill reduction.
+
+**Why these seven:** each was selected against three criteria — (i) it addresses a documented DepEd pain point that the PBD acknowledges but does not price; (ii) it is buildable within the 365-day timeline without displacing base scope; (iii) it survives audit by CSC, COA, NPC and DICT without additional legal review.
+
+See paper D for the design sketch, milestone entry/exit criteria and evidence pack references for each component.
+
+---
+
 ## 17. Annexes (evidence pack)
 
 Bidder to attach:

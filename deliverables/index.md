@@ -105,20 +105,39 @@ PostgreSQL data model.
     [Read the architecture :octicons-arrow-right-24:](C_architecture_and_data_model.md){ .md-button .md-button--primary }
     [PDF](pdf/C_architecture_and_data_model.pdf){ .md-button }
 
+- :material-star-four-points-outline: __D · Value-Added Components__ <span class="badge-new">New</span>
+
+    ---
+
+    Seven strategic differentiators offered **at no additional cost**
+    to the ABC: bilingual UI + SMS/USSD channels, offline-first PWA with
+    CRDT sync, self-hosted HR Copilot, M6 payroll anomaly detector,
+    hash-chained audit ledger, public transparency portal, and 10-year
+    source escrow with a community edition.
+
+    <span class="tag-row">
+      <span class="tag">Bid edge</span>
+      <span class="tag">Zero incremental cost</span>
+      <span class="tag">AI + offline + audit</span>
+    </span>
+
+    [Read the value-adds :octicons-arrow-right-24:](D_value_added.md){ .md-button .md-button--primary }
+    [Formal wording in B §16.5](B_tor_response_outline.md#165-value-added-components-at-no-additional-cost){ .md-button }
+
 </div>
 
 ## Which paper is for you? { .section-heading }
 
 <div class="compare-table" markdown>
 
-|                   | **A · Brief**              | **B · Response**              | **C · Architecture**        |
-| :---------------- | :------------------------- | :---------------------------- | :-------------------------- |
-| **You are…**      | Reading the RFP            | Preparing a bid               | Building the system         |
-| **Best for**      | Orientation, scope, SLAs   | Compliance, evidence, pricing | Design, data model, C4      |
-| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   |
-| **Diagrams**      | —                          | Risk map                      | 8 Mermaid (C4/ER/state)     |
-| **Length**        | ~22 KB · 20 min read       | ~56 KB · 45 min read          | ~74 KB · 60 min read        |
-| **Key sections**  | Milestones, P1–P4, reports | Milestone entry/exit, risks   | Container, deployment, ERDs |
+|                   | **A · Brief**              | **B · Response**              | **C · Architecture**        | **D · Value-Add**            |
+| :---------------- | :------------------------- | :---------------------------- | :-------------------------- | :--------------------------- |
+| **You are…**      | Reading the RFP            | Preparing a bid               | Building the system         | Looking for the edge         |
+| **Best for**      | Orientation, scope, SLAs   | Compliance, evidence, pricing | Design, data model, C4      | Winning the bid              |
+| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   | Seven-component pitch        |
+| **Diagrams**      | —                          | Risk map                      | 8 Mermaid (C4/ER/state)     | Milestone Gantt              |
+| **Length**        | ~22 KB · 20 min read       | ~56 KB · 45 min read          | ~74 KB · 60 min read        | ~14 KB · 15 min read         |
+| **Key sections**  | Milestones, P1–P4, reports | Milestone entry/exit, risks   | Container, deployment, ERDs | AI, offline, audit, escrow   |
 
 </div>
 
@@ -171,7 +190,8 @@ PostgreSQL data model.
 - **New here?** Start with **[Paper A](A_technical_specifications_brief.md)** for a guided read of the PBD scope, SLAs, and milestones.
 - **Reviewing a bid?** Open **[Paper B](B_tor_response_outline.md)** and search for `[[PLACEHOLDER]]` to see every bidder-specific field.
 - **Building the system?** Jump to **[Paper C](C_architecture_and_data_model.md)** — C4 diagrams and PostgreSQL DDL are the fast path to a prototype.
-- **Prefer offline reading?** All three papers are available as [PDFs](downloads.md) with rendered diagrams.
+- **Looking to win the bid?** Read **[Paper D](D_value_added.md)** — the seven value-added components that beat competitors at no extra cost.
+- **Prefer offline reading?** All papers are available as [PDFs](downloads.md) with rendered diagrams.
 
 </div>
 
