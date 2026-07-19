@@ -212,6 +212,7 @@ PostgreSQL data model.
 - **Building the system?** Jump to **[Paper C](C_architecture_and_data_model.md)** — C4 diagrams and PostgreSQL DDL are the fast path to a prototype.
 - **Looking to win the bid?** Read **[Paper D](D_value_added.md)** — the eight value-added components that beat competitors at no extra cost.
 - **Need international precedent?** Study **[Paper E](E_international_benchmarks.md)** — comparable systems worldwide and the three disasters worth citing as ones you avoid.
+- **Looking at a different DepEd bid?** A **[sibling analysis of the DepEd DTI REI](https://dennispitallano.github.io/deped-dti-analysis/)** (`2026C-ICTS2-003-B5-CB-044`, ABC PHP 105 M, Managed Services for Adopt-a-School + School Management System) is live on its own site.
 - **Prefer offline reading?** All papers are available as [PDFs](downloads.md) with rendered diagrams.
 
 </div>
@@ -221,6 +222,8 @@ PostgreSQL data model.
 <section class="page-footer" markdown>
 
 **Source material:** The Philippine Bidding Document `PBD_HRIS_For-Posting.pdf` published by the DepEd BAC Secretariat. Extracted text is in [`extracted/`](https://github.com/DennisPitallano/deped-hris-analysis/tree/main/extracted) and all deliverables are in [`deliverables/`](https://github.com/DennisPitallano/deped-hris-analysis/tree/main/deliverables).
+
+**Related work:** an independent analysis of the DepEd DTI REI (Managed Services for Digital Transformation Initiatives, Project `2026C-ICTS2-003-B5-CB-044`, ABC PHP 105 M) sits at [dennispitallano.github.io/deped-dti-analysis](https://dennispitallano.github.io/deped-dti-analysis/) — same author, same ICTS-SDD account, same analytical template.
 
 **About:** Prepared by **deped-hris**, Solutions architect — HRIS and data platforms. This site is a public analysis; no official association with the Department of Education is implied. Feedback and issues welcome on [GitHub](https://github.com/DennisPitallano/deped-hris-analysis).
 
