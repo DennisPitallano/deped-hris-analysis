@@ -73,6 +73,23 @@ All three papers are available as high-quality PDFs — A4, page numbered, with 
     [Download PDF](pdf/D_value_added.pdf){ .md-button .md-button--primary }
     [Read online](D_value_added.md){ .md-button }
 
+- :material-file-pdf-box: __E · International Benchmarks__
+
+    ---
+
+    Comparable government HRIS systems worldwide — India, Kenya, Chile,
+    UK NHS, Malaysia, Estonia and more — six borrowable patterns and
+    three disasters worth explicitly avoiding.
+
+    <span class="tag-row">
+      <span class="tag">13 systems</span>
+      <span class="tag">A4</span>
+      <span class="tag">Cross-refs to A/B/C/D</span>
+    </span>
+
+    [Download PDF](pdf/E_international_benchmarks.pdf){ .md-button .md-button--primary }
+    [Read online](E_international_benchmarks.md){ .md-button }
+
 </div>
 
 ## Source material

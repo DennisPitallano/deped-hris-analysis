@@ -507,10 +507,12 @@ body.diagram-zoom-open { overflow: hidden; }
 .md-typeset .grid.cards.docs-grid > ul > li:nth-child(2) { --card-accent: #0e8a6b; }
 .md-typeset .grid.cards.docs-grid > ul > li:nth-child(3) { --card-accent: #6f3ee0; }
 .md-typeset .grid.cards.docs-grid > ul > li:nth-child(4) { --card-accent: #d97706; }
+.md-typeset .grid.cards.docs-grid > ul > li:nth-child(5) { --card-accent: #0891b2; }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards.docs-grid > ul > li:nth-child(1) { --card-accent: #6b95d6; }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards.docs-grid > ul > li:nth-child(2) { --card-accent: #3ecfa1; }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards.docs-grid > ul > li:nth-child(3) { --card-accent: #a37cff; }
 [data-md-color-scheme="slate"] .md-typeset .grid.cards.docs-grid > ul > li:nth-child(4) { --card-accent: #f59e0b; }
+[data-md-color-scheme="slate"] .md-typeset .grid.cards.docs-grid > ul > li:nth-child(5) { --card-accent: #22d3ee; }
 
 /* Card 4 (Value-Add) gets extra emphasis — subtle gradient background + gold ring */
 .md-typeset .grid.cards.docs-grid > ul > li:nth-child(4) {
@@ -573,6 +575,7 @@ body.diagram-zoom-open { overflow: hidden; }
 .md-typeset .grid.cards.downloads-grid > ul > li:nth-child(2) { --card-accent: #0e8a6b; }
 .md-typeset .grid.cards.downloads-grid > ul > li:nth-child(3) { --card-accent: #6f3ee0; }
 .md-typeset .grid.cards.downloads-grid > ul > li:nth-child(4) { --card-accent: #d97706; }
+.md-typeset .grid.cards.downloads-grid > ul > li:nth-child(5) { --card-accent: #0891b2; }
 
 /* --- Tag chips inside cards ------------------------------------- */
 
@@ -639,6 +642,7 @@ body.diagram-zoom-open { overflow: hidden; }
 .md-typeset .compare-table table thead th:nth-child(3) { box-shadow: inset 0 3px 0 #0e8a6b; }
 .md-typeset .compare-table table thead th:nth-child(4) { box-shadow: inset 0 3px 0 #6f3ee0; }
 .md-typeset .compare-table table thead th:nth-child(5) { box-shadow: inset 0 3px 0 #d97706; }
+.md-typeset .compare-table table thead th:nth-child(6) { box-shadow: inset 0 3px 0 #0891b2; }
 
 .md-typeset .compare-table table tbody th,
 .md-typeset .compare-table table tbody td {

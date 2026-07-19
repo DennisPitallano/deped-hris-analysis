@@ -124,20 +124,39 @@ PostgreSQL data model.
     [Read the value-adds :octicons-arrow-right-24:](D_value_added.md){ .md-button .md-button--primary }
     [Formal wording in B §16.5](B_tor_response_outline.md#165-value-added-components-at-no-additional-cost){ .md-button }
 
+- :material-earth: __E · International Benchmarks__
+
+    ---
+
+    Comparable government HRIS systems worldwide — India (Shala Darpan,
+    DIKSHA), Kenya (TPAD), Chile (SIGE), NHS ESR, Malaysia HRMIS,
+    Estonia X‑Road, and more. Six patterns worth borrowing, three
+    disasters worth explicitly avoiding, and one uncovered value-add
+    candidate.
+
+    <span class="tag-row">
+      <span class="tag">13 systems</span>
+      <span class="tag">Novopay lesson</span>
+      <span class="tag">Chile solver</span>
+    </span>
+
+    [Read the benchmarks :octicons-arrow-right-24:](E_international_benchmarks.md){ .md-button .md-button--primary }
+    [PDF](pdf/E_international_benchmarks.pdf){ .md-button }
+
 </div>
 
 ## Which paper is for you? { .section-heading }
 
 <div class="compare-table" markdown>
 
-|                   | **A · Brief**              | **B · Response**              | **C · Architecture**        | **D · Value-Add**            |
-| :---------------- | :------------------------- | :---------------------------- | :-------------------------- | :--------------------------- |
-| **You are…**      | Reading the RFP            | Preparing a bid               | Building the system         | Looking for the edge         |
-| **Best for**      | Orientation, scope, SLAs   | Compliance, evidence, pricing | Design, data model, C4      | Winning the bid              |
-| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   | Seven-component pitch        |
-| **Diagrams**      | —                          | Risk map                      | 8 Mermaid (C4/ER/state)     | Milestone Gantt              |
-| **Length**        | ~22 KB · 20 min read       | ~56 KB · 45 min read          | ~74 KB · 60 min read        | ~14 KB · 15 min read         |
-| **Key sections**  | Milestones, P1–P4, reports | Milestone entry/exit, risks   | Container, deployment, ERDs | AI, offline, audit, escrow   |
+|                   | **A · Brief**              | **B · Response**              | **C · Architecture**        | **D · Value-Add**            | **E · Benchmarks**            |
+| :---------------- | :------------------------- | :---------------------------- | :-------------------------- | :--------------------------- | :---------------------------- |
+| **You are…**      | Reading the RFP            | Preparing a bid               | Building the system         | Looking for the edge         | Wanting international proof   |
+| **Best for**      | Orientation, scope, SLAs   | Compliance, evidence, pricing | Design, data model, C4      | Winning the bid              | Citing precedent to evaluators|
+| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   | Seven-component pitch        | Country tables + lessons      |
+| **Diagrams**      | —                          | Risk map                      | 8 Mermaid (C4/ER/state)     | Milestone Gantt              | —                             |
+| **Length**        | ~22 KB · 20 min read       | ~56 KB · 45 min read          | ~74 KB · 60 min read        | ~14 KB · 15 min read         | ~18 KB · 20 min read           |
+| **Key sections**  | Milestones, P1–P4, reports | Milestone entry/exit, risks   | Container, deployment, ERDs | AI, offline, audit, escrow   | Novopay, Chile solver, OPM    |
 
 </div>
 
@@ -191,6 +210,7 @@ PostgreSQL data model.
 - **Reviewing a bid?** Open **[Paper B](B_tor_response_outline.md)** and search for `[[PLACEHOLDER]]` to see every bidder-specific field.
 - **Building the system?** Jump to **[Paper C](C_architecture_and_data_model.md)** — C4 diagrams and PostgreSQL DDL are the fast path to a prototype.
 - **Looking to win the bid?** Read **[Paper D](D_value_added.md)** — the seven value-added components that beat competitors at no extra cost.
+- **Need international precedent?** Study **[Paper E](E_international_benchmarks.md)** — comparable systems worldwide and the three disasters worth citing as ones you avoid.
 - **Prefer offline reading?** All papers are available as [PDFs](downloads.md) with rendered diagrams.
 
 </div>
