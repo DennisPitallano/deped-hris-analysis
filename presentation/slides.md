@@ -27,10 +27,6 @@ Independent technical read of the Philippine Bidding Document<br/>
 Project <code>2026C-ICTS2-002-B5-CB-034</code> · ABC PHP 500 M · 365 days
 </div>
 
-<div class="abs-br m-6 flex gap-2 opacity-60 text-xs">
-  dennispitallano.github.io/deped-hris-analysis
-</div>
-
 ---
 layout: default
 ---
