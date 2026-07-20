@@ -1,0 +1,47 @@
+/*
+ * DepEd HRIS deck — global overrides
+ *
+ * Slidev auto-imports this file at build time. Rules here run on top of
+ * the theme's styles and can hide built-in UI we don't want.
+ */
+
+/* -------------------------------------------------------------------------
+ * Hide the built-in slide-list drawer + its trigger button.
+ *
+ * Slidev renders a "Menu" icon in the bottom-left control bar which opens
+ * a right-side panel listing every slide by title. It does *not* auto-fade
+ * once opened. We already have:
+ *   - a custom clickable table of contents on slide 3
+ *   - the O keyboard shortcut for the overview grid
+ *   - the SectionNav breadcrumb on every section header
+ * so the built-in drawer is redundant and gets in the way of live
+ * presentations. Hide the trigger, and hide the drawer itself as a
+ * belt-and-suspenders measure in case a future Slidev release changes
+ * class names.
+ * -------------------------------------------------------------------- */
+
+/* The menu icon inside the bottom navigation controls */
+.slidev-nav-controls button[title="Menu"],
+.slidev-nav-controls .slidev-icon-btn[title="Menu"],
+.slidev-nav-controls button[title="Slides overview"] {
+  display: none !important;
+}
+
+/* The drawer / popover that lists every slide */
+.slidev-nav-controls-menu,
+.v-popper__popper:has(.slidev-nav-controls-menu),
+.slidev-slide-list,
+[data-slidev-drawer],
+[class*="SlideSelector"],
+[class*="slide-selector"] {
+  display: none !important;
+}
+
+/* -------------------------------------------------------------------------
+ * Bottom control bar polish — make it fade a little faster and stay out
+ * of the way during a live presentation. Slidev already fades on idle;
+ * this just shortens the transition so it feels snappier.
+ * -------------------------------------------------------------------- */
+.slidev-nav-controls {
+  transition: opacity 0.25s ease-in-out !important;
+}
