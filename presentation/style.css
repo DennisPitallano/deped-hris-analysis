@@ -2,46 +2,56 @@
  * DepEd HRIS deck — global overrides
  *
  * Slidev auto-imports this file at build time. Rules here run on top of
- * the theme's styles and can hide built-in UI we don't want.
+ * the theme's styles and hide built-in UI we don't want during a live
+ * presentation.
+ *
+ * NOTE ON SELECTORS: Slidev's NavControls.vue wraps its buttons in a
+ * plain <nav class="flex flex-col"> (no "slidev-nav-controls" class),
+ * so we anchor to .slidev-icon-btn[title="..."] which is what every
+ * IconButton renders. Earlier drafts used a made-up parent class and
+ * matched nothing — this file supersedes them.
  */
 
 /* -------------------------------------------------------------------------
- * Hide the built-in slide-list drawer + its trigger button.
+ * Hide Slidev's "Show slide overview" (QuickOverview).
  *
- * Slidev renders a "Menu" icon in the bottom-left control bar which opens
- * a right-side panel listing every slide by title. It does *not* auto-fade
- * once opened. We already have:
- *   - a custom clickable table of contents on slide 3
- *   - the O keyboard shortcut for the overview grid
- *   - the SectionNav breadcrumb on every section header
- * so the built-in drawer is redundant and gets in the way of live
- * presentations. Hide the trigger, and hide the drawer itself as a
- * belt-and-suspenders measure in case a future Slidev release changes
- * class names.
+ * Triggers we neutralise:
+ *   1. The grid-of-squares icon in the bottom nav control bar
+ *      (title="Show slide overview")
+ *   2. The O keyboard shortcut → intercepted in setup/main.ts
+ *   3. The right-click "Show slide overview" context-menu item →
+ *      still fires, but the overlay itself is hidden by rule (b) below
+ *
+ * Why: the overlay does NOT auto-fade like the control bar does, so a
+ * stray click or keypress leaves it draped over the slide until it is
+ * manually dismissed. The deck already has its own clickable TOC on
+ * slide 3 plus a SectionNav breadcrumb on every section header.
  * -------------------------------------------------------------------- */
 
-/* The menu icon inside the bottom navigation controls */
-.slidev-nav-controls button[title="Menu"],
-.slidev-nav-controls .slidev-icon-btn[title="Menu"],
-.slidev-nav-controls button[title="Slides overview"] {
+/* (a) Hide the icon button in the bottom control bar */
+.slidev-icon-btn[title="Show slide overview"] {
   display: none !important;
 }
 
-/* The drawer / popover that lists every slide */
-.slidev-nav-controls-menu,
-.v-popper__popper:has(.slidev-nav-controls-menu),
-.slidev-slide-list,
-[data-slidev-drawer],
-[class*="SlideSelector"],
-[class*="slide-selector"] {
+/* (b) Hide the full-screen overlay itself if it is ever shown. The
+ *     QuickOverview root is a fixed, z-20, full-height div carrying
+ *     the backdrop-blur-5px utility (see QuickOverview.vue in
+ *     @slidev/client). Multiple attribute-substring selectors keep the
+ *     rule resilient to minor class re-orderings across Slidev versions. */
+div.fixed.z-20[class*="backdrop-blur-5px"],
+div.fixed.z-20[class*="bg-opacity-75"][class*="overflow-y-auto"] {
+  display: none !important;
+}
+
+/* (c) Hide the small close/list-view button column the overlay adds
+ *     to the top-right of the viewport when it is open. */
+.fixed.top-4.right-4.z-20 {
   display: none !important;
 }
 
 /* -------------------------------------------------------------------------
- * Bottom control bar polish — make it fade a little faster and stay out
- * of the way during a live presentation. Slidev already fades on idle;
- * this just shortens the transition so it feels snappier.
+ * Bottom control bar polish — snappier fade during a live presentation.
  * -------------------------------------------------------------------- */
-.slidev-nav-controls {
+nav.flex.flex-col > div.flex.flex-wrap-reverse {
   transition: opacity 0.25s ease-in-out !important;
 }
