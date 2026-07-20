@@ -72,9 +72,10 @@ git push -u origin main
 
 ## 6. Watch the workflow run
 
-- On the repo page → **Actions** tab → wait for the "Deploy site to GitHub Pages" workflow to finish (≈ 1–2 minutes).
+- On the repo page → **Actions** tab → wait for the "Deploy site to GitHub Pages" workflow to finish (≈ 2–4 minutes; MkDocs + Slidev build in one job).
 - Once green, the site is live at:
-  `https://YOUR_GITHUB_USERNAME.github.io/deped-hris-analysis/`
+  - Papers: `https://YOUR_GITHUB_USERNAME.github.io/deped-hris-analysis/`
+  - Slide deck: `https://YOUR_GITHUB_USERNAME.github.io/deped-hris-analysis/slides/`
 
 ## 7. Every future update
 

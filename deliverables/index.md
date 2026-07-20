@@ -21,6 +21,7 @@ PostgreSQL data model.
 <div class="hero-cta" markdown>
 [Read the brief :octicons-arrow-right-24:](A_technical_specifications_brief.md){ .md-button .md-button--primary }
 [View architecture](C_architecture_and_data_model.md){ .md-button }
+[Open slides ↗](slides/){ .md-button }
 [Download PDFs](downloads.md){ .md-button }
 </div>
 
@@ -214,6 +215,7 @@ PostgreSQL data model.
 - **Need international precedent?** Study **[Paper E](E_international_benchmarks.md)** — comparable systems worldwide and the three disasters worth citing as ones you avoid.
 - **Looking at a different DepEd bid?** A **[sibling analysis of the DepEd DTI REI](https://dennispitallano.github.io/deped-dti-analysis/)** (`2026C-ICTS2-003-B5-CB-044`, ABC PHP 105 M, Managed Services for Adopt-a-School + School Management System) is live on its own site.
 - **Prefer offline reading?** All papers are available as [PDFs](downloads.md) with rendered diagrams.
+- **Presenting to stakeholders?** A 20-slide [executive deck](slides/) walks through all five papers with the C4 diagrams and milestone Gantt embedded.
 
 </div>
 

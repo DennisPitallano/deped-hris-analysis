@@ -18,8 +18,9 @@ PostgreSQL data model.
   - `pdf/` — rendered PDF copies with live Mermaid diagrams.
   - `index.md`, `downloads.md`, `assets/` — MkDocs site content.
 - `tools/md-to-pdf/` — Node.js Markdown → PDF converter (Puppeteer + Mermaid).
+- `presentation/` — Slidev deck summarising all five papers (`slides.md`). Deployed to `/slides/` on GitHub Pages.
 - `mkdocs.yml` — site configuration (Material for MkDocs).
-- `.github/workflows/deploy-pages.yml` — CI/CD to GitHub Pages.
+- `.github/workflows/deploy-pages.yml` — CI/CD to GitHub Pages (builds MkDocs + Slidev).
 
 ## Local preview
 
@@ -45,6 +46,22 @@ node .\tools\md-to-pdf\md2pdf.mjs `
   .\deliverables\B_tor_response_outline.md `
   .\deliverables\C_architecture_and_data_model.md `
   --out-dir .\deliverables\pdf
+```
+
+## Preview the slide deck
+
+```powershell
+cd presentation
+npm install                 # first time only
+npm run dev                 # → http://localhost:3030
+```
+
+Export the deck to PDF or PowerPoint:
+
+```powershell
+cd presentation
+npm run export              # → slides-export.pdf
+npm run export-pptx         # → slides-export.pptx
 ```
 
 ## Publishing

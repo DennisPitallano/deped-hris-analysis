@@ -126,6 +126,7 @@ nav:
   - "D · Value-Add": D_value_added.md
   - "E · Benchmarks": E_international_benchmarks.md
   - Downloads: downloads.md
+  - Slides ↗: https://dennispitallano.github.io/deped-hris-analysis/slides/
 
 extra_css:
   - assets/extra.css
