@@ -38,6 +38,54 @@ npm run dev
 # → http://localhost:3030
 ```
 
+## Presenting as a normal slideshow (no visible controls)
+
+Slidev is a browser-based deck, so there are two clean ways to present:
+
+### 1 · Fullscreen (recommended)
+
+- Press **`F`** — enters fullscreen. The bottom control bar fades after
+  ~2 s of mouse idle, giving a PowerPoint-like presentation surface.
+- Navigate with **`→ / ←`** (or **`Space`** / **`Shift+Space`**).
+- Press **`Esc`** to leave fullscreen.
+
+### 2 · Presenter mode (with speaker notes and next-slide preview)
+
+- Open [`http://localhost:3030/presenter`](http://localhost:3030/presenter)
+  on your laptop.
+- Open [`http://localhost:3030/`](http://localhost:3030/) on the projector
+  (or drag the browser window to the external display and press `F`).
+- Both stay in sync automatically.
+
+### 3 · Export and play offline
+
+If you cannot rely on a network (or want a truly "PowerPoint-style" file):
+
+```powershell
+npm run export         # → slides-export.pdf  (open, then hit F5 in your PDF reader)
+npm run export-pptx    # → slides-export.pptx (open in PowerPoint / Keynote)
+```
+
+### In-deck keyboard shortcuts
+
+| Key | Action |
+|---|---|
+| `F` | Fullscreen |
+| `→` / `Space` | Next click / slide |
+| `←` / `Shift+Space` | Previous |
+| `O` | Overview of all slides (click to jump) |
+| `D` | Toggle dark mode |
+| `G` | Go-to slide (type number + Enter) |
+| `?` | Show every shortcut |
+
+### In-deck navigation
+
+- Slide 3 is a **clickable table of contents** — jump straight to any
+  paper section.
+- Every section header slide (A / B / C / D / E) shows a small
+  **A · B · C · D · E** breadcrumb in the top-right, plus a **TOC**
+  link back to slide 3.
+
 ## Export
 
 ```powershell

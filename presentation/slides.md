@@ -85,21 +85,19 @@ Subcontracting <strong>not allowed</strong> · No advance payment · Liability c
 
 ---
 layout: two-cols
+routeAlias: toc
 ---
 
 # Five papers, one thesis
 
-The parent repository publishes **five independent papers**. This deck
-walks through each one and its role in the bid.
+Click any card to jump straight to that section.
 
-<div class="pt-4 text-sm opacity-80">
-
-- **A · Brief** — what the RFP actually says
-- **B · Response** — how to answer it, clause-by-clause
-- **C · Architecture** — C4 model + PostgreSQL DDL
-- **D · Value-Added** — 8 differentiators at zero incremental cost
-- **E · Benchmarks** — international precedent
-
+<div class="pt-3 grid grid-cols-1 gap-2 text-sm">
+  <Link to="paper-a" class="nav-card"><b>A · Brief</b> — what the RFP actually says</Link>
+  <Link to="paper-b" class="nav-card"><b>B · Response</b> — how to answer it, clause-by-clause</Link>
+  <Link to="paper-c" class="nav-card"><b>C · Architecture</b> — C4 model + PostgreSQL DDL</Link>
+  <Link to="paper-d" class="nav-card"><b>D · Value-Added</b> — 8 differentiators, zero incremental cost</Link>
+  <Link to="paper-e" class="nav-card"><b>E · Benchmarks</b> — international precedent</Link>
 </div>
 
 ::right::
@@ -116,8 +114,25 @@ walks through each one and its role in the bid.
 
 </div>
 
+<div class="pt-4 pl-6 text-xs opacity-60">
+Tip: press <kbd>O</kbd> for overview · <kbd>F</kbd> for fullscreen · <kbd>?</kbd> for all shortcuts.
+</div>
+
+<style>
+.nav-card {
+  @apply block p-2 rounded border border-gray-200 dark:border-gray-700 no-underline;
+  background: rgba(2,132,199,0.05);
+  transition: background .15s ease, transform .15s ease;
+}
+.nav-card:hover {
+  background: rgba(2,132,199,0.15);
+  transform: translateX(2px);
+}
+</style>
+
 ---
 layout: section
+routeAlias: paper-a
 ---
 
 # Paper A
@@ -126,6 +141,8 @@ layout: section
 <div class="opacity-70 pt-4">
 What the Philippine Bidding Document actually requires
 </div>
+
+<SectionNav current="A" />
 
 ---
 
@@ -270,6 +287,7 @@ Full source-code turnover a condition of final acceptance at M8.
 
 ---
 layout: section
+routeAlias: paper-b
 ---
 
 # Paper B
@@ -278,6 +296,8 @@ layout: section
 <div class="opacity-70 pt-4">
 A placeholder-populated compliance matrix — every Section VII clause answered
 </div>
+
+<SectionNav current="B" />
 
 ---
 
@@ -349,6 +369,7 @@ Every Section VII requirement gets three fixed rows:
 
 ---
 layout: section
+routeAlias: paper-c
 ---
 
 # Paper C
@@ -357,6 +378,8 @@ layout: section
 <div class="opacity-70 pt-4">
 C4 diagrams, PostgreSQL DDL, and event flows
 </div>
+
+<SectionNav current="C" />
 
 ---
 
@@ -554,6 +577,7 @@ report-coverage traceability included.
 
 ---
 layout: section
+routeAlias: paper-d
 ---
 
 # Paper D
@@ -562,6 +586,8 @@ layout: section
 <div class="opacity-70 pt-4">
 Eight differentiators offered at <strong>zero incremental cost</strong> to the ABC
 </div>
+
+<SectionNav current="D" />
 
 ---
 
@@ -678,6 +704,7 @@ production at M8.
 
 ---
 layout: section
+routeAlias: paper-e
 ---
 
 # Paper E
@@ -686,6 +713,8 @@ layout: section
 <div class="opacity-70 pt-4">
 Government HRIS ≥ 100,000 employees · deployed in production · English-accessible sources
 </div>
+
+<SectionNav current="E" />
 
 ---
 
@@ -755,9 +784,12 @@ evaluators recognise them.
 
 ---
 layout: section
+routeAlias: summary
 ---
 
 # Bringing it together
+
+<SectionNav current="·" />
 
 ---
 
