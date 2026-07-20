@@ -56,6 +56,32 @@ jobs:
           mkdir -p site/slides
           cp -R presentation/dist/. site/slides/
 
+      - name: Add SPA fallbacks for Slidev routes
+        # GitHub Pages only serves 404.html from the site root, so direct
+        # visits to Slidev sub-routes (/slides/presenter/, /slides/overview/,
+        # per-slide URLs like /slides/5/ or /slides/presenter/5/) would fall
+        # through to the MkDocs 404. We pre-generate real index.html files
+        # for every known route so the SPA boots and Vue Router takes over.
+        run: |
+          set -e
+          # Count slides in the deck so we know how many per-slide routes to seed
+          SLIDE_COUNT=$(grep -c '^---$' presentation/slides.md || true)
+          echo "Seeding SPA fallbacks for $SLIDE_COUNT slides"
+          for route in presenter overview entry notes print play embedded; do
+            mkdir -p "site/slides/$route"
+            cp site/slides/index.html "site/slides/$route/index.html"
+          done
+          for n in $(seq 1 "$SLIDE_COUNT"); do
+            mkdir -p "site/slides/$n" \
+                     "site/slides/presenter/$n" \
+                     "site/slides/notes/$n" \
+                     "site/slides/embedded/$n"
+            cp site/slides/index.html "site/slides/$n/index.html"
+            cp site/slides/index.html "site/slides/presenter/$n/index.html"
+            cp site/slides/index.html "site/slides/notes/$n/index.html"
+            cp site/slides/index.html "site/slides/embedded/$n/index.html"
+          done
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
