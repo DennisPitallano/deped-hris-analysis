@@ -2,30 +2,30 @@
 import { defineAppSetup } from '@slidev/types'
 
 /**
- * Disable Slidev's built-in "Show slide overview" (QuickOverview) so it
- * cannot be triggered by the O keyboard shortcut. The deck already has:
- *   - a clickable custom TOC on slide 3
- *   - the SectionNav breadcrumb on every section header
- * and the built-in overlay does not auto-fade the way the control bar
- * does, so leaving it enabled means a stray keypress covers the slide
- * mid-presentation.
+ * Swallow certain built-in Slidev keyboard shortcuts that open overlays
+ * which get in the way of a live presentation:
+ *   - O / o → "Show slide overview" (fullscreen thumbnail grid)
+ *   - G / g → "Go to slide" dialog (autocomplete list of every slide,
+ *             see internals/Goto.vue). This is the one that shows up
+ *             stuck on the right side of the screen.
+ * The deck already has its own clickable TOC on slide 3 plus the
+ * SectionNav breadcrumb on section headers.
  */
 export default defineAppSetup(() => {
   if (typeof window === 'undefined') return
 
-  // Swallow the O / o keypress before Slidev's global handler sees it.
-  // Capture-phase + high priority ensures we run first.
+  const blocked = new Set(['o', 'O', 'g', 'G'])
+
   window.addEventListener(
     'keydown',
     (e) => {
-      if (e.key === 'o' || e.key === 'O') {
-        // Only intercept when not typing into an input / editor
-        const target = e.target as HTMLElement | null
-        const tag = target?.tagName?.toLowerCase()
-        if (tag === 'input' || tag === 'textarea' || target?.isContentEditable) return
-        e.stopPropagation()
-        e.preventDefault()
-      }
+      if (!blocked.has(e.key)) return
+      // Do not intercept if the user is typing in an input / editor.
+      const target = e.target as HTMLElement | null
+      const tag = target?.tagName?.toLowerCase()
+      if (tag === 'input' || tag === 'textarea' || target?.isContentEditable) return
+      e.stopPropagation()
+      e.preventDefault()
     },
     { capture: true },
   )

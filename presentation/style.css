@@ -50,6 +50,23 @@ div.fixed.z-20[class*="bg-opacity-75"][class*="overflow-y-auto"] {
 }
 
 /* -------------------------------------------------------------------------
+ * Hide Slidev's "Goto" dialog (#slidev-goto-dialog).
+ *
+ * This is the one that actually appeared in the screenshots — a right-side
+ * autocomplete list of slide titles. It is triggered by the G key and by
+ * clicking the "n / total" slide counter in the control bar. It has a
+ * Vue quirk where the autocomplete-list child stays rendered inside the
+ * viewport even when the outer wrapper is pushed off-screen at -top-20,
+ * so the list appears to be permanently open.
+ *
+ * G is also intercepted in setup/main.ts. This CSS is the belt.
+ * -------------------------------------------------------------------- */
+#slidev-goto-dialog,
+#slidev-goto-dialog .autocomplete-list {
+  display: none !important;
+}
+
+/* -------------------------------------------------------------------------
  * Bottom control bar polish — snappier fade during a live presentation.
  * -------------------------------------------------------------------- */
 nav.flex.flex-col > div.flex.flex-wrap-reverse {
