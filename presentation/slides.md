@@ -94,6 +94,7 @@ Click any card to jump straight to that section.
   <Link to="paper-c" class="nav-card"><b>C · Architecture</b> — C4 model + PostgreSQL DDL</Link>
   <Link to="paper-d" class="nav-card"><b>D · Value-Added</b> — 8 differentiators, zero incremental cost</Link>
   <Link to="paper-e" class="nav-card"><b>E · Benchmarks</b> — international precedent</Link>
+  <Link to="paper-f" class="nav-card"><b>F · Delivery & Cost</b> — bottom-up model, PHP 421 M vs 500 M ABC</Link>
 </div>
 
 ::right::
@@ -107,6 +108,7 @@ Click any card to jump straight to that section.
 | **C** | System design | Diagrams + DDL |
 | **D** | Winning the bid | Component pitch |
 | **E** | Evaluators | Country tables |
+| **F** | Cost & delivery plan | Bottom-up model |
 
 </div>
 
@@ -776,6 +778,229 @@ Government HRIS ≥ 100,000 employees · deployed in production · English-acces
 <div class="pt-6 text-xs opacity-70 text-center">
 Naming disasters in <b>Paper B §15 Risk Management</b> signals maturity —
 evaluators recognise them.
+</div>
+
+---
+layout: section
+routeAlias: paper-f
+---
+
+# Paper F
+## Delivery Plan, Infrastructure & Cost Model
+
+<div class="opacity-70 pt-4">
+Is PHP 500 M realistic for what the PBD asks? Bottom-up model at 2026 PH rates.
+</div>
+
+<SectionNav current="F" />
+
+---
+
+# The team · 69 FTE at peak · fully-loaded 2026 PH rates
+
+<div class="grid grid-cols-2 gap-6 pt-2 text-xs">
+
+<div>
+
+| Function | Count | PHP/mo |
+|---|---:|---:|
+| Program leadership | 3 | 756,000 |
+| Architecture | 2 | 621,000 |
+| Engineering leadership (Tech Leads) | 3 | 729,000 |
+| Senior engineering | 10 | 1,890,000 |
+| Mid engineering | 14 | 1,701,000 |
+| Junior engineering | 6 | 445,500 |
+| Platform / SRE | 4 | 837,000 |
+| Data + DB | 4 | 769,500 |
+| Security | 2 | 513,000 |
+| QA (leads + engineers) | 10 | 1,161,000 |
+| Product / BA | 4 | 567,000 |
+| Design | 3 | 384,750 |
+| Documentation | 2 | 175,500 |
+| Adoption / trainers | 4 | 432,000 |
+| Migration | 2 | 310,500 |
+| **Peak** | **69** | **PHP 11.3 M / mo** |
+
+</div>
+
+<div class="text-sm opacity-90">
+
+### Rate assumptions
+
+- **Loaded rates** (base × 1.35) — 13th month, HMO, SSS/PhilHealth/Pag-IBIG,
+  retirement, equipment.
+- **Median 2026 PH-market values** from WTW, JobStreet PH, Kalibrr.
+- **In-house team**, no subcontracting (SCC clause 7).
+- Consulting-firm rates (T&M) would be **1.8–2.5×** these numbers —
+  outside the ABC.
+
+### Curve, not level-loaded
+
+- **M1:** 12 FTE (inception, hiring)
+- **M2:** 42 FTE (architecture)
+- **M3–M5 peak:** 69 FTE
+- **M7:** 40 FTE (UAT + training)
+- **Build total: PHP 102 M** over 12 months
+- **Warranty year: 17.5 FTE, PHP 40 M** over 12 months
+
+</div>
+
+</div>
+
+<div class="pt-4 text-xs opacity-60 text-center">
+Full role-by-role table and monthly curve: <b>Paper F §F.3 · §F.4</b>.
+</div>
+
+---
+
+# Infrastructure · on-premises sizing
+
+<div class="grid grid-cols-2 gap-6 pt-2 text-xs">
+
+<div>
+
+### Design point
+
+- **80,000 concurrent users** (1.5× historical peak)
+- **P95 ≤ 3 s** for core transactions
+- **6,700 req/s** API-tier peak
+- **99% uptime** excluding scheduled maintenance
+- **RTO 4 h · RPO 15 min** for DR
+
+### Production DC (Central Office)
+
+- Kubernetes: 3 master + 12 worker (32 vCPU / 128 GB each)
+- **PostgreSQL 16**: primary + sync + async replica (32 vCPU / 256 GB / 4 TB NVMe)
+- Redis 3-node · OpenSearch 3-node · Ceph object storage (80 TB usable)
+- WAF appliance HA · NGFW HA · dedicated backup server
+- **CAPEX PHP 58.3 M**
+
+</div>
+
+<div>
+
+### DR site (colo or GovCloud PH)
+
+- 40% capacity warm-standby
+- Streaming replication, per-15-min PITR
+- Single WAF + HA firewall
+- **CAPEX PHP 25.8 M**
+
+### Non-prod environments
+
+- DEV · SIT · UAT · Training envs
+- 20–40% of prod sizing each
+- **CAPEX PHP 16.9 M**
+
+### Total infrastructure CAPEX
+
+<div class="text-2xl font-bold text-sky-500 pt-2">PHP 101 M</div>
+<div class="opacity-70">Plus PHP 32.5 M OPEX over 24 months (power, bandwidth, warranties, colo).</div>
+
+</div>
+
+</div>
+
+---
+
+# On-prem vs cloud · 24-month TCO
+
+<div class="grid grid-cols-2 gap-8 pt-4 text-sm">
+
+<div>
+
+### On-premises (recommended)
+
+- CAPEX: **PHP 101 M** (year 1)
+- OPEX 24 mo: **PHP 32.5 M**
+- Residual value at 24 mo: **~ PHP 45 M**
+- **Net 24-mo TCO: ~ PHP 88.5 M**
+- Data residency: **inside DepEd DC**
+- FX exposure: **none**
+- Hardware amortised over 5 years → drops to **~ PHP 20 M/yr from year 3**
+
+</div>
+
+<div>
+
+### Full cloud (AWS Manila / GovCloud PH)
+
+- CAPEX: 0
+- OPEX 24 mo (RI-heavy): **PHP 95.1 M**
+- Residual value: 0
+- **Net 24-mo TCO: PHP 95.1 M**
+- FX exposure: **material** (USD-denominated)
+- No 5-year amortisation benefit
+- Cheaper in months 1–24 by **~ PHP 6.6 M only** if hardware is fully written off
+
+</div>
+
+</div>
+
+<div class="pt-8 text-sm text-center opacity-90">
+<b>Recommendation:</b> on-prem primary at DepEd Central Office, <b>GovCloud PH for DR only</b>.
+Cross-over point where on-prem becomes cheaper: <b>month 30</b>.
+</div>
+
+---
+
+# The cost breakdown · PHP 421 M against a PHP 500 M ABC
+
+<div class="grid grid-cols-2 gap-6 pt-2 text-xs">
+
+<div>
+
+### Build phase (M1–M8, 12 mo)
+
+| Bucket | PHP | % |
+|---|---:|---:|
+| Personnel | 102.0 M | 26.4% |
+| Infra CAPEX (on-prem) | 101.0 M | 26.1% |
+| Infra OPEX (12 mo) | 16.3 M | 4.2% |
+| Software + licensing | 10.4 M | 2.7% |
+| Training + change mgmt | 20.5 M | 5.3% |
+| Project overhead (8%) | 20.0 M | 5.2% |
+| Compliance + audit | 6.5 M | 1.7% |
+| Insurance | 2.8 M | 0.7% |
+| Bond financing | 2.5 M | 0.6% |
+| Contingency (7%) | 17.5 M | 4.5% |
+| Margin (12%) | 40.8 M | 10.6% |
+| **Build** | **PHP 340.3 M** | **88.0%** |
+
+</div>
+
+<div>
+
+### Warranty year (12 mo post go-live)
+
+| Bucket | PHP |
+|---|---:|
+| Personnel (17.5 FTE) | 40.2 M |
+| Infra OPEX (12 mo) | 16.3 M |
+| Software (year 2) | 10.4 M |
+| Overhead + contingency | 6.9 M |
+| Margin (10%) | 7.4 M |
+| **Warranty** | **PHP 81.1 M** |
+
+### Total
+
+<div class="pt-2 text-lg">
+Build + warranty · <b class="text-sky-500">PHP 421.4 M</b> · <span class="opacity-70">84.3% of ABC</span>
+</div>
+<div class="pt-1 text-lg">
+Bid headroom · <b class="text-emerald-500">PHP 78.6 M</b> · <span class="opacity-70">15.7%</span>
+</div>
+<div class="pt-3 opacity-80">
+Headroom absorbs FX, hardware inflation, or funds a 5% below-ABC competitive bid at ~ PHP 475 M.
+</div>
+
+</div>
+
+</div>
+
+<div class="pt-4 text-xs opacity-60 text-center">
+Full sensitivity analysis + comparables (Novopay, HRMIS, SIASN):
+<b>Paper F §F.10 · §F.13</b>.
 </div>
 
 ---

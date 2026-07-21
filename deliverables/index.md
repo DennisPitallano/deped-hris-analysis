@@ -145,20 +145,40 @@ PostgreSQL data model.
     [Read the benchmarks :octicons-arrow-right-24:](E_international_benchmarks.md){ .md-button .md-button--primary }
     [PDF](pdf/E_international_benchmarks.pdf){ .md-button }
 
+- :material-cash-multiple: __F · Delivery Plan, Infrastructure & Cost__ <span class="badge-new">New</span>
+
+    ---
+
+    A grounded, bottom-up model — **is PHP 500 M realistic for what
+    the PBD asks?** 2026 PH-market rates for a 69-FTE peak team,
+    on-premises infrastructure sizing (with a public-cloud
+    alternative), month-by-month staffing curve across 12 build
+    months + 12 warranty months, and a full cost breakdown that
+    lands at **PHP 421 M** — inside the ABC with 15.7% headroom.
+
+    <span class="tag-row">
+      <span class="tag">Cost model</span>
+      <span class="tag">2026 PH rates</span>
+      <span class="tag">On-prem vs cloud</span>
+      <span class="tag">24-month roadmap</span>
+    </span>
+
+    [Read the delivery model :octicons-arrow-right-24:](F_delivery_and_cost.md){ .md-button .md-button--primary }
+
 </div>
 
 ## Which paper is for you? { .section-heading }
 
 <div class="compare-table" markdown>
 
-|                   | **A · Brief**              | **B · Response**              | **C · Architecture**        | **D · Value-Add**            | **E · Benchmarks**            |
-| :---------------- | :------------------------- | :---------------------------- | :-------------------------- | :--------------------------- | :---------------------------- |
-| **You are…**      | Reading the RFP            | Preparing a bid               | Building the system         | Looking for the edge         | Wanting international proof   |
-| **Best for**      | Orientation, scope, SLAs   | Compliance, evidence, pricing | Design, data model, C4      | Winning the bid              | Citing precedent to evaluators|
-| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   | Eight-component pitch        | Country tables + lessons      |
-| **Diagrams**      | —                          | Risk map                      | 8 Mermaid (C4/ER/state)     | Milestone Gantt              | —                             |
-| **Length**        | ~22 KB · 20 min read       | ~56 KB · 45 min read          | ~74 KB · 60 min read        | ~14 KB · 15 min read         | ~18 KB · 20 min read           |
-| **Key sections**  | Milestones, P1–P4, reports | Milestone entry/exit, risks   | Container, deployment, ERDs | AI, offline, audit, escrow   | Novopay, Chile solver, OPM    |
+|                   | **A · Brief**              | **B · Response**              | **C · Architecture**        | **D · Value-Add**            | **E · Benchmarks**            | **F · Delivery & Cost**        |
+| :---------------- | :------------------------- | :---------------------------- | :-------------------------- | :--------------------------- | :---------------------------- | :----------------------------- |
+| **You are…**      | Reading the RFP            | Preparing a bid               | Building the system         | Looking for the edge         | Wanting international proof   | Costing the delivery            |
+| **Best for**      | Orientation, scope, SLAs   | Compliance, evidence, pricing | Design, data model, C4      | Winning the bid              | Citing precedent to evaluators| Sizing the team, infra, budget  |
+| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   | Eight-component pitch        | Country tables + lessons      | Bottom-up cost model            |
+| **Diagrams**      | —                          | Risk map                      | 8 Mermaid (C4/ER/state)     | Milestone Gantt              | —                             | 24-month Gantt + staffing curve |
+| **Length**        | ~22 KB · 20 min read       | ~56 KB · 45 min read          | ~74 KB · 60 min read        | ~14 KB · 15 min read         | ~18 KB · 20 min read           | ~26 KB · 25 min read            |
+| **Key sections**  | Milestones, P1–P4, reports | Milestone entry/exit, risks   | Container, deployment, ERDs | AI, offline, audit, escrow   | Novopay, Chile solver, OPM    | 2026 PH rates, on-prem vs cloud |
 
 </div>
 
@@ -213,6 +233,7 @@ PostgreSQL data model.
 - **Building the system?** Jump to **[Paper C](C_architecture_and_data_model.md)** — C4 diagrams and PostgreSQL DDL are the fast path to a prototype.
 - **Looking to win the bid?** Read **[Paper D](D_value_added.md)** — the eight value-added components that beat competitors at no extra cost.
 - **Need international precedent?** Study **[Paper E](E_international_benchmarks.md)** — comparable systems worldwide and the three disasters worth citing as ones you avoid.
+- **Costing the delivery?** Read **[Paper F](F_delivery_and_cost.md)** — bottom-up cost model at 2026 PH rates, on-prem vs cloud, 24-month roadmap. Lands at PHP 421 M against the PHP 500 M ABC.
 - **Looking at a different DepEd bid?** A **[sibling analysis of the DepEd DTI REI](https://dennispitallano.github.io/deped-dti-analysis/)** (`2026C-ICTS2-003-B5-CB-044`, ABC PHP 105 M, Managed Services for Adopt-a-School + School Management System) is live on its own site.
 - **Prefer offline reading?** All papers are available as [PDFs](downloads.md) with rendered diagrams.
 - **Presenting to stakeholders?** A 20-slide [executive deck](slides/) walks through all five papers with the C4 diagrams and milestone Gantt embedded.

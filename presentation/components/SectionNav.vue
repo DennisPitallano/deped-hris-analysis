@@ -7,6 +7,7 @@ const sections = [
   { letter: 'C', alias: 'paper-c', label: 'Architecture' },
   { letter: 'D', alias: 'paper-d', label: 'Value-Add' },
   { letter: 'E', alias: 'paper-e', label: 'Benchmarks' },
+  { letter: 'F', alias: 'paper-f', label: 'Delivery & Cost' },
 ]
 </script>
 
