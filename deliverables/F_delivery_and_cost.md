@@ -20,7 +20,7 @@ description: A grounded, bottom-up cost and delivery model for the DepEd HRIS �
 
 Before any peso is committed, six assumptions have to be true. Change any of them and the cost model shifts materially.
 
-1. **On-premises primary, in DepEd-owned facilities.** The default deployment target is the DepEd Central Office DR-capable data centre (Malugay St., Makati) plus a second site for DR. Rationale: RA 10173 data residency, COA audit trail simplicity, and the fact that the PBD explicitly names Central Office as the delivery site (see [Paper A §A.1](A_technical_specifications_brief.md#a1-project-fundamentals)). A managed-service cloud variant is priced in §F.6.2 for comparison but is **not** the recommended primary.
+1. **Two deployment options priced — DepEd (or the bidder) selects at inception.** [Option A](#f5-deployment-option-a--on-premises) is on-premises in DepEd-owned facilities (Central Office + a DR site). [Option B](#f6-deployment-option-b--public-cloud) is public cloud on GovCloud PH or an in-country region of AWS Manila / Azure PH. Both are fully compliant with RA 10173 data-residency requirements when configured per [Paper I §I.5](I_privacy_impact_assessment.md#i5-data-flow-diagram). This paper prices, sizes, and compares both — pros, cons, and 24-month cost. The single-option recommendation is deferred to inception (M1), where local DC readiness, DICT policy, FX appetite, and 5-year TCO can be weighed against actual conditions. **Both fit inside the PHP 500 M ABC.**
 2. **Modular monolith at go-live, extracted to services only where the load profile demands.** Payroll gets its own service first (M6 gate), everything else stays modular within a common code base. Rationale: reduces the surface area of change during a 365-day build, and matches the working-set the internal team can hire against at PH rates.
 3. **Team is Philippines-based, senior-heavy, and blended in-house + subcontract-free.** SCC clause 7 forbids subcontracting, so consulting-firm augmentation is explicitly excluded. This constrains the team to what the prime contractor can staff directly.
 4. **Rates are 2026 PH market medians** taken from JobStreet PH, Kalibrr, and the WTW Philippines IT compensation report (median values, private-sector, 5-yr-experience tier where applicable). Rates are **fully-loaded** (base × 1.35 to cover 13th month, allowances, HMO, SSS/PhilHealth/Pag-IBIG employer share, retirement fund, and equipment). Consulting-firm billable rates would be 1.8×–2.5× these numbers — outside the ABC without major scope cuts.
@@ -136,7 +136,9 @@ The curve is drawn as a Mermaid chart in §F.11.
 
 ---
 
-## F.5 Infrastructure — on-premises primary
+## F.5 Deployment Option A — On-premises
+
+**Primary DC** at DepEd Central Office (Malugay St., Makati). **DR site** at a DICT-designated GovCloud PH facility or contracted colocation. This option is chosen when data residency is a hard control, upfront capital is available, 5-year TCO is prioritised over month-1 spend, and DepEd's DC has space / power / cooling / staff capacity confirmed by M1.
 
 ### F.5.1 Sizing model — the numbers this is built on
 
@@ -224,9 +226,9 @@ Four non-prod environments run in the primary DC on a dedicated smaller cluster 
 | Cert authority + code signing | 25,000 | 600,000 |
 | **OPEX subtotal (24 mo)** | | **PHP 32,520,000** |
 
-## F.6 Cloud alternative — priced for comparison
+## F.6 Deployment Option B — Public cloud
 
-If DepEd instead deploys to **GovCloud PH** or a hyperscaler with data residency in-country, the CAPEX collapses into OPEX. This is priced for AWS Manila / Singapore with an ap-southeast-1 primary and a warm DR in ap-southeast-3 (Jakarta), or the equivalent on GovCloud PH via DICT.
+If DepEd instead deploys to **GovCloud PH** (DICT-managed sovereign cloud) or a hyperscaler with data residency in-country, the CAPEX collapses into OPEX. This option is priced for AWS Manila / Singapore with an ap-southeast-1 primary and a warm DR in ap-southeast-3 (Jakarta), or the equivalent on GovCloud PH via DICT. This option is chosen when speed of provisioning outweighs capital planning, managed services (RDS, ElastiCache, OpenSearch) meaningfully reduce ops burden, elastic scaling is preferred to over-provisioning, or DC readiness is uncertain.
 
 ### F.6.1 Reserved-instance model, 24-month term
 
@@ -248,9 +250,9 @@ If DepEd instead deploys to **GovCloud PH** or a hyperscaler with data residency
 | **Monthly total** | | **PHP 3,962,000** |
 | **24 months** | | **PHP 95,088,000** |
 
-### F.6.2 On-prem vs cloud, over 24 months
+### F.6.2 Cost comparison over 24 months
 
-| | On-prem (§F.5) | Cloud (§F.6.1) |
+| | Option A · On-prem (§F.5) | Option B · Cloud (§F.6.1) |
 |---|---:|---:|
 | Capital investment | PHP 101,000,000 | 0 |
 | Operating cost 24 mo | 32,520,000 | 95,088,000 |
@@ -258,7 +260,68 @@ If DepEd instead deploys to **GovCloud PH** or a hyperscaler with data residency
 | Residual value at 24 mo | ~ PHP 45 M (hardware, 3–5 yr useful life) | 0 |
 | **Net 24-mo cost of ownership** | **~ PHP 88,500,000** | **PHP 95,088,000** |
 
-Cloud is cheaper in month 24 by ~ PHP 6.6 M **only if** the on-prem hardware is written off in 24 months. Assumed 5-year hardware life amortises the CAPEX to ~ PHP 20 M/yr, making **on-prem the lower TCO after month 30**. Cloud also has USD exposure and no residency guarantee unless GovCloud PH is used. **Recommendation: on-prem primary, GovCloud PH for DR only.**
+Two ways to read the same numbers:
+
+- **Over 24 months only** — cloud is ~PHP 6.6 M more expensive if the on-prem hardware is fully written off in that window. Meaningless because hardware has 5-yr useful life.
+- **Amortised over 5 years** — on-prem hardware drops to ~PHP 20 M/yr, making **on-prem cheaper from month 30 onwards**. Cloud OPEX stays flat at ~PHP 47.5 M/yr.
+
+Neither number is a recommendation. Both are inputs to the decision framework in §F.6.4.
+
+### F.6.3 Pros and cons
+
+**Option A · On-premises**
+
+| ✓ Pros | ✗ Cons |
+|---|---|
+| **Data residency by construction** — data never leaves DepEd-owned premises | **High upfront CAPEX** — PHP 101 M concentrated in month 1–2 |
+| **No FX exposure** — all PHP-denominated hardware and warranties | **Long lead time** — 90–120 days to procure and rack hardware; procurement compresses M1 |
+| **Physical control assurance** for COA audit and DPO oversight | **Requires DepEd DC readiness** — space, power, cooling, staff must be confirmed by M1 |
+| **Hardware amortises to ~PHP 20 M/yr from year 3** (5-yr useful life) — cheaper long-term | **Slower capacity expansion** — need to buy hardware for scale-up |
+| **No cloud egress or bandwidth charges** in the operating model | **Hardware refresh cycle every 5 years** — a separate capital ask |
+| **Predictable cost line** — CAPEX is one-time, OPEX is fixed | **Requires in-house SRE talent** to operate 24×7 (~4 FTE minimum) |
+| **Full customisation of network topology** — VLANs, firewalls, air-gaps | **DR-site provisioning takes 6–9 months** — cannot go live in DR before that |
+| **Simplest compliance narrative** — physical assurance for RA 10173, COA, NPC | **Vendor lock-in for hardware warranties** — 3-yr commitments per vendor |
+
+**Option B · Public cloud**
+
+| ✓ Pros | ✗ Cons |
+|---|---|
+| **Zero CAPEX** — converts entirely to OPEX; no capital ask upfront | **Higher OPEX over 24 months** — PHP 95 M vs PHP 32.5 M for on-prem |
+| **Elastic scaling** — payroll-cutoff bursts scale automatically; no over-provisioning | **FX exposure** if not on GovCloud PH — AWS / Azure prices are USD-denominated |
+| **Rapid provisioning** — new environments in hours, not months | **Data residency requires strict region pinning** — every service must be checked |
+| **Managed services** (RDS, ElastiCache, OpenSearch) reduce ops burden | **Cross-over point** where on-prem becomes cheaper: month 30 (5-yr TCO) |
+| **Built-in multi-AZ DR** at lower cost than physical DR | **Cloud egress and inter-region transfer** charges add up quickly |
+| **Continuous security updates** handled by provider | **COA audit trail more complex** when infra is a shared-tenant service |
+| **No hardware refresh cycle** — infrastructure is always current | **Cloud-vendor API lock-in** (KMS, IAM, managed services) needs mitigation |
+| **Smaller ops team** — 3 FTE cloud-native SRE vs 4+ on-prem | **Requires FinOps discipline** — cost predictability depends on RI + budget alerts |
+| **Faster non-prod provisioning** — DEV / SIT / UAT / Training envs spun in hours | **Compliance narrative more layered** — must attest provider SOC 2 + ISO 27001 |
+
+### F.6.4 Decision framework — six questions to answer at inception
+
+The choice between A and B should be made at M1, not in the bid, and should be documented in the inception report. Six questions drive the decision:
+
+| # | Question | Answer favours Option A | Answer favours Option B |
+|---:|---|---|---|
+| 1 | Is DepEd DC readiness (space, power, cooling, staff) confirmed by end of M1? | Yes | No / uncertain |
+| 2 | Is upfront CAPEX of PHP 101 M available in year 1? | Yes | No / prefer OPEX |
+| 3 | Is FX exposure acceptable? (Only if on GovCloud PH is fully in scope: cloud can be FX-neutral) | Prefer none | Acceptable / hedged |
+| 4 | Is the 5-year horizon more important than the 2-year contract window? | Yes | Only 2 years matter |
+| 5 | Is the ops team hire-able at target scale (4+ FTE SRE + DBA)? | Yes | Prefer smaller cloud-native team |
+| 6 | Do payroll and recruitment peaks demand elastic scaling? | No (steady load) | Yes (2–5× peak) |
+
+**Rule of thumb.** Four or more answers in one column → that option. A mixed profile means a **hybrid** (Option A primary + Option B DR, or the reverse) is worth pricing as a third scenario at inception.
+
+### F.6.5 Both options are inside the ABC
+
+The full cost breakdown for each option is in §F.9. Preview:
+
+| | Option A · On-prem | Option B · Cloud |
+|---|---:|---:|
+| Total 24-month contract price | **PHP 421.4 M** | **PHP 358.5 M** |
+| % of ABC (PHP 500 M) | 84.3% | 71.7% |
+| Bid headroom | PHP 78.6 M (15.7%) | PHP 141.5 M (28.3%) |
+
+Cloud is cheaper over the contract window; on-prem is cheaper from month 30 onwards. Both leave meaningful bid headroom for competitive positioning or additional value-adds.
 
 ## F.7 Software, licensing, and third-party services
 
@@ -303,26 +366,26 @@ DepEd's 1 M+ employees do not need bespoke training — the ESS is designed for 
 
 ## F.9 Cost model — full bottom-up
 
-### F.9.1 Build phase (M1–M8, 12 months)
+### F.9.1 Build phase — Option A (on-prem, M1–M8, 12 months)
 
 | Bucket | PHP | % of build |
 |---|---:|---:|
-| Personnel (build, §F.4) | 102,000,000 | 26.4% |
-| Infrastructure CAPEX (on-prem, §F.5.5) | 101,000,000 | 26.1% |
-| Infrastructure OPEX (build 12 mo, §F.5.6 pro-rata) | 16,260,000 | 4.2% |
-| Software + licensing (build 12 mo, §F.7 pro-rata) | 10,410,000 | 2.7% |
-| Training + change mgmt (§F.8) | 20,500,000 | 5.3% |
-| **Subtotal — direct costs** | **PHP 250,170,000** | **64.7%** |
-| Project overhead (office, tooling, comms, T&L) — 8% | 20,014,000 | 5.2% |
-| Compliance & audit (ISO 27001, 27701, NPC filings, third-party pen-test) | 6,500,000 | 1.7% |
-| Insurance (professional indemnity, cyber) — 12 mo | 2,800,000 | 0.7% |
-| Bond & performance security financing cost — 5% of ABC × ~1% cost of capital | 2,500,000 | 0.6% |
-| Contingency (7% of direct) | 17,512,000 | 4.5% |
-| **Subtotal — burdened cost** | **PHP 299,496,000** | **77.5%** |
-| Margin (12%) | 40,833,000 | 10.6% |
-| **Build price to DepEd (M1–M8)** | **PHP 340,329,000** | **88.0%** |
+| Personnel (build, §F.4) | 102,000,000 | 30.0% |
+| Infrastructure CAPEX (on-prem, §F.5.5) | 101,000,000 | 29.7% |
+| Infrastructure OPEX (build 12 mo, §F.5.6 pro-rata) | 16,260,000 | 4.8% |
+| Software + licensing (build 12 mo, §F.7 pro-rata) | 10,410,000 | 3.1% |
+| Training + change mgmt (§F.8) | 20,500,000 | 6.0% |
+| **Subtotal — direct costs** | **PHP 250,170,000** | **73.5%** |
+| Project overhead (office, tooling, comms, T&L) — 8% | 20,014,000 | 5.9% |
+| Compliance & audit (ISO 27001, 27701, NPC filings, third-party pen-test) | 6,500,000 | 1.9% |
+| Insurance (professional indemnity, cyber) — 12 mo | 2,800,000 | 0.8% |
+| Bond & performance security financing cost — 5% of ABC × ~1% cost of capital | 2,500,000 | 0.7% |
+| Contingency (7% of direct) | 17,512,000 | 5.1% |
+| **Subtotal — burdened cost** | **PHP 299,496,000** | **88.0%** |
+| Margin (12%) | 40,833,000 | 12.0% |
+| **Build price to DepEd, Option A (M1–M8)** | **PHP 340,329,000** | **100%** |
 
-### F.9.2 Warranty year (M9–M20, 12 months after final acceptance)
+### F.9.2 Warranty year — Option A (M9–M20)
 
 | Bucket | PHP |
 |---|---:|
@@ -332,40 +395,80 @@ DepEd's 1 M+ employees do not need bespoke training — the ESS is designed for 
 | Overhead (5%) | 3,342,500 |
 | Contingency (5%) | 3,509,600 |
 | Margin (10%) | 7,370,200 |
-| **Warranty year price to DepEd** | **PHP 81,072,300** |
+| **Warranty year price to DepEd, Option A** | **PHP 81,072,300** |
 
-### F.9.3 Total against ABC
+### F.9.3 Build phase — Option B (cloud, M1–M8, 12 months)
 
-| | PHP | % of ABC |
+Cloud eliminates CAPEX and reduces some software lines (managed RDS removes DB backup software, managed OS removes RHEL subscription, cloud-native monitoring reduces APM), at the cost of higher monthly OPEX.
+
+| Bucket | PHP | % of build |
 |---|---:|---:|
-| Build price (M1–M8, 12 mo) | 340,329,000 | 68.1% |
-| Warranty year (12 mo post-acceptance) | 81,072,300 | 16.2% |
-| **Total 24-month contract price** | **PHP 421,401,300** | **84.3%** |
-| **ABC** | **PHP 500,000,000** | 100% |
-| **Bid headroom** | **PHP 78,598,700** | **15.7%** |
+| Personnel (build, §F.4) | 102,000,000 | 42.1% |
+| Cloud OPEX (build 12 mo, §F.6.1) | 47,544,000 | 19.6% |
+| Software + licensing (reduced for managed services) | 7,900,000 | 3.3% |
+| Training + change mgmt (§F.8) | 20,500,000 | 8.5% |
+| **Subtotal — direct costs** | **PHP 177,944,000** | **73.5%** |
+| Project overhead (office, tooling, comms, T&L) — 8% | 14,236,000 | 5.9% |
+| Compliance & audit + provider attestation review | 7,200,000 | 3.0% |
+| Insurance (professional indemnity, cyber) — 12 mo | 2,800,000 | 1.2% |
+| Bond & performance security financing cost | 2,500,000 | 1.0% |
+| Contingency (7% of direct) | 12,456,000 | 5.1% |
+| FX hedge / provisional (2% of cloud spend) | 951,000 | 0.4% |
+| **Subtotal — burdened cost** | **PHP 218,087,000** | **90.1%** |
+| Margin (12%) | 24,013,000 | 9.9% |
+| **Build price to DepEd, Option B (M1–M8)** | **PHP 242,100,000** | **100%** |
 
-The 15.7% headroom is a **deliberate design margin** — it can be redeployed as:
-- Additional value-adds beyond the 8 offered in Paper D
-- A more aggressive competitive bid (Filipino gov bids typically win at 5–15% below ABC)
-- Absorbed as safety-margin against foreign-exchange or hardware-price movement
-- Held as extra contingency
+### F.9.4 Warranty year — Option B (M9–M20)
 
-**A bid at PHP 421 M is inside ABC and defensible line-by-line.** A bid at PHP 475 M (5% below ABC) gives more margin but the same technical scope.
+| Bucket | PHP |
+|---|---:|
+| Personnel (warranty, §F.4) | 40,180,000 |
+| Cloud OPEX (12 mo, §F.6.1) | 47,544,000 |
+| Software + licensing (year 2, reduced) | 7,900,000 |
+| Overhead (5%) | 4,781,000 |
+| Contingency (5%) | 5,020,000 |
+| FX hedge (2% of cloud spend) | 951,000 |
+| Margin (10%) | 10,637,000 |
+| **Warranty year price to DepEd, Option B** | **PHP 117,013,000** |
+
+### F.9.5 Total against ABC — both options
+
+| | Option A · On-prem | Option B · Cloud | ABC |
+|---|---:|---:|---:|
+| Build (M1–M8) | 340,329,000 | 242,100,000 | — |
+| Warranty year | 81,072,300 | 117,013,000 | — |
+| **24-month contract price** | **PHP 421,401,300** | **PHP 359,113,000** | PHP 500,000,000 |
+| % of ABC | **84.3%** | **71.8%** | 100% |
+| **Bid headroom** | **PHP 78,598,700** | **PHP 140,887,000** | — |
+| Headroom % | 15.7% | 28.2% | — |
+| Year 3 projected run-rate (informational) | ~ PHP 65 M | ~ PHP 105 M | — |
+
+**Reading the table**
+
+- **Cloud is cheaper over the 24-month contract window** by ~PHP 62 M — no CAPEX, lower software cost, larger headroom for competitive bidding.
+- **On-prem is cheaper from year 3 onwards** — hardware amortises to ~PHP 20 M/yr, cloud OPEX stays flat at ~PHP 95 M/yr.
+- Both leave meaningful bid headroom for **competitive positioning, additional value-adds, or absorbed contingency**.
+- Filipino gov bids typically win at **5–15% below ABC**. That means:
+  - Option A supports bids from **PHP 421 M (min) to PHP 475 M (5% below ABC)** with 12% margin intact
+  - Option B supports bids from **PHP 359 M (min) to PHP 425 M (5% below ABC)** with substantially wider margin
 
 ## F.10 Sensitivity analysis — what breaks the model
 
 | Scenario | Effect on price | Mitigation |
 |---|---|---|
-| **Peso weakens to 60/USD** | +PHP 4–6 M (cloud + USD software) | Currency hedge or PHP-denominated contracts |
-| **DR site is required to be a second DepEd-owned facility (not colo)** | +PHP 15–20 M | Push back in inception; propose GovCloud PH for DR |
-| **Full cloud instead of on-prem** | +PHP 25–35 M over 24 mo (see §F.6.2) | Use only if DepEd cannot secure DC readiness by M2 |
+| **Peso weakens to 60/USD** | Option A: +PHP 2–3 M (USD software only) · Option B: +PHP 5–8 M (cloud + software) | FX hedge; GovCloud PH for Option B eliminates most exposure |
+| **DR site is required to be a second DepEd-owned facility (not colo)** | Option A: +PHP 15–20 M · Option B: n/a | Push back in inception; propose GovCloud PH for DR |
+| **Option A chosen but DepEd DC not ready at M2** | +PHP 8–12 M (temporary colo bridge) | Add DC-readiness as an M1 gate; fall back to Option B if the gate fails |
+| **Option B chosen but data-residency policy tightens** | +PHP 4–6 M (all services must pin to GovCloud PH) | Standardise on GovCloud PH from M1 to avoid mid-flight migration |
 | **Consulting-firm delivery model (SCC 7 lifted)** | +PHP 100–150 M | Not allowed; do not model |
-| **Warranty extended to 2 years** | +PHP 70–80 M | Price as an add-on; do not bundle into build |
+| **Warranty extended to 2 years** | +PHP 70–115 M (option A / B respectively) | Price as an add-on; do not bundle into build |
 | **User training extended to all 1 M employees in-person** | +PHP 40–60 M | Refuse; self-service ESS is the design |
-| **PostgreSQL replaced with Oracle DB** | +PHP 60–120 M (licenses) | Refuse; PostgreSQL 16 meets every PBD requirement |
+| **PostgreSQL replaced with Oracle DB** | +PHP 60–120 M (licenses); larger delta on Option A (no managed alternative) | Refuse; PostgreSQL 16 meets every PBD requirement |
 | **Payroll parallel-run extended by 2 cycles** | +PHP 6–8 M (personnel + infra) | Absorb in contingency |
 | **Adoption at schools slower than projected** | +PHP 5–10 M (extended trainer T&L) | Absorb in contingency |
 | **Data-privacy incident during build** | +PHP 15–25 M | Cyber insurance + rapid-response retainer |
+| **Cloud provider price rise mid-contract (Option B)** | +PHP 3–6 M | 3-yr RI locks pricing; contract clause for major provider changes |
+| **On-prem hardware refresh brought forward (Option A)** | +PHP 15–20 M (year 5 → year 4) | Warranty capex; DBM continuing appropriation |
 
 ## F.11 Roadmap — month-by-month, with staffing curve
 

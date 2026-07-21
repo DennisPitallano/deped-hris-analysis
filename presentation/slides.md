@@ -853,154 +853,171 @@ Full role-by-role table and monthly curve: <b>Paper F §F.3 · §F.4</b>.
 
 ---
 
-# Infrastructure · on-premises sizing
+# Two deployment options · same team, same scope
+
+<div class="grid grid-cols-2 gap-6 pt-2 text-xs">
+
+<div class="opt-card">
+
+### 🏢 Option A · On-premises
+
+**Sizing at 80,000 concurrent users**
+- K8s 3 master + 12 worker (32 vCPU / 128 GB each)
+- **PostgreSQL 16** HA: primary + sync + async replica
+- Redis · OpenSearch · Ceph 80 TB · WAF · NGFW
+- Primary DC (DepEd Central Office) + DR site + 4 non-prod envs
+
+**Cost profile**
+- **CAPEX: PHP 101 M** (year 1)
+- OPEX: PHP 1.35 M/mo (power, colo DR, warranties)
+- 24-mo TCO: PHP 88.5 M net of residual
+
+**Best when**
+- DepEd DC readiness confirmed by M1
+- Capital available upfront
+- 5-year horizon matters
+- Physical control required
+
+</div>
+
+<div class="opt-card">
+
+### ☁️ Option B · Public cloud
+
+**Sizing at 80,000 concurrent users**
+- EKS + c6i.8xlarge workers × 12 (RI, 3-yr)
+- **RDS PostgreSQL** Multi-AZ (managed HA)
+- ElastiCache · OpenSearch Service · S3
+- Primary ap-southeast-1 · warm DR ap-southeast-3
+
+**Cost profile**
+- **CAPEX: 0** — zero upfront
+- OPEX: PHP 3.96 M/mo (RI-heavy)
+- 24-mo TCO: PHP 95 M
+
+**Best when**
+- Speed of provisioning matters
+- Managed services reduce ops burden
+- Elastic scaling for payroll cutoff bursts
+- DC readiness uncertain
+
+</div>
+
+</div>
+
+<div class="pt-4 text-xs opacity-70 text-center">
+Both options fully comply with RA 10173 residency. Decision made at inception (M1), not bid-time. Full comparison: <b>Paper F §F.6.4</b>.
+</div>
+
+<style>
+.opt-card {
+  @apply p-4 rounded-lg border border-gray-200 dark:border-gray-700;
+  background: rgba(2,132,199,0.05);
+}
+</style>
+
+---
+
+# Pros and cons · at a glance
 
 <div class="grid grid-cols-2 gap-6 pt-2 text-xs">
 
 <div>
 
-### Design point
+### 🏢 Option A · On-premises
 
-- **80,000 concurrent users** (1.5× historical peak)
-- **P95 ≤ 3 s** for core transactions
-- **6,700 req/s** API-tier peak
-- **99% uptime** excluding scheduled maintenance
-- **RTO 4 h · RPO 15 min** for DR
+**Pros**
+- Data residency by construction
+- No FX exposure — all PHP
+- Cheaper from year 3+ (hardware amortises)
+- Predictable cost line — CAPEX one-time
+- Full physical control for COA audit
+- No cloud egress or bandwidth charges
 
-### Production DC (Central Office)
-
-- Kubernetes: 3 master + 12 worker (32 vCPU / 128 GB each)
-- **PostgreSQL 16**: primary + sync + async replica (32 vCPU / 256 GB / 4 TB NVMe)
-- Redis 3-node · OpenSearch 3-node · Ceph object storage (80 TB usable)
-- WAF appliance HA · NGFW HA · dedicated backup server
-- **CAPEX PHP 58.3 M**
+**Cons**
+- High upfront CAPEX (PHP 101 M)
+- 90–120 day hardware procurement
+- Requires DepEd DC readiness
+- Slower scale-up (need to buy hardware)
+- Requires 4-FTE in-house SRE team
+- Hardware refresh every 5 years
 
 </div>
 
 <div>
 
-### DR site (colo or GovCloud PH)
+### ☁️ Option B · Public cloud
 
-- 40% capacity warm-standby
-- Streaming replication, per-15-min PITR
-- Single WAF + HA firewall
-- **CAPEX PHP 25.8 M**
+**Pros**
+- Zero CAPEX — pure OPEX
+- Elastic scaling for payroll peaks
+- Rapid provisioning (hours, not months)
+- Managed services reduce ops burden
+- Built-in multi-AZ DR
+- Smaller ops team (3 FTE)
+- No hardware refresh cycle
 
-### Non-prod environments
-
-- DEV · SIT · UAT · Training envs
-- 20–40% of prod sizing each
-- **CAPEX PHP 16.9 M**
-
-### Total infrastructure CAPEX
-
-<div class="text-2xl font-bold text-sky-500 pt-2">PHP 101 M</div>
-<div class="opacity-70">Plus PHP 32.5 M OPEX over 24 months (power, bandwidth, warranties, colo).</div>
+**Cons**
+- Higher OPEX (PHP 95 M vs 32.5 M / 24 mo)
+- FX exposure (unless GovCloud PH)
+- Cross-over at month 30 — on-prem cheaper long-term
+- Cloud egress + transfer charges
+- Vendor API lock-in (KMS, IAM)
+- Requires FinOps discipline
 
 </div>
 
+</div>
+
+<div class="pt-4 text-xs opacity-70 text-center">
+Six-question decision framework: <b>Paper F §F.6.4</b>. Neither wins outright — the answer depends on DepEd's own conditions at inception.
 </div>
 
 ---
 
-# On-prem vs cloud · 24-month TCO
-
-<div class="grid grid-cols-2 gap-8 pt-4 text-sm">
-
-<div>
-
-### On-premises (recommended)
-
-- CAPEX: **PHP 101 M** (year 1)
-- OPEX 24 mo: **PHP 32.5 M**
-- Residual value at 24 mo: **~ PHP 45 M**
-- **Net 24-mo TCO: ~ PHP 88.5 M**
-- Data residency: **inside DepEd DC**
-- FX exposure: **none**
-- Hardware amortised over 5 years → drops to **~ PHP 20 M/yr from year 3**
-
-</div>
-
-<div>
-
-### Full cloud (AWS Manila / GovCloud PH)
-
-- CAPEX: 0
-- OPEX 24 mo (RI-heavy): **PHP 95.1 M**
-- Residual value: 0
-- **Net 24-mo TCO: PHP 95.1 M**
-- FX exposure: **material** (USD-denominated)
-- No 5-year amortisation benefit
-- Cheaper in months 1–24 by **~ PHP 6.6 M only** if hardware is fully written off
-
-</div>
-
-</div>
-
-<div class="pt-8 text-sm text-center opacity-90">
-<b>Recommendation:</b> on-prem primary at DepEd Central Office, <b>GovCloud PH for DR only</b>.
-Cross-over point where on-prem becomes cheaper: <b>month 30</b>.
-</div>
-
----
-
-# The cost breakdown · PHP 421 M against a PHP 500 M ABC
+# The cost breakdown · both options inside the PHP 500 M ABC
 
 <div class="grid grid-cols-2 gap-6 pt-2 text-xs">
 
 <div>
 
-### Build phase (M1–M8, 12 mo)
+### 🏢 Option A · On-premises
 
-| Bucket | PHP | % |
-|---|---:|---:|
-| Personnel | 102.0 M | 26.4% |
-| Infra CAPEX (on-prem) | 101.0 M | 26.1% |
-| Infra OPEX (12 mo) | 16.3 M | 4.2% |
-| Software + licensing | 10.4 M | 2.7% |
-| Training + change mgmt | 20.5 M | 5.3% |
-| Project overhead (8%) | 20.0 M | 5.2% |
-| Compliance + audit | 6.5 M | 1.7% |
-| Insurance | 2.8 M | 0.7% |
-| Bond financing | 2.5 M | 0.6% |
-| Contingency (7%) | 17.5 M | 4.5% |
-| Margin (12%) | 40.8 M | 10.6% |
-| **Build** | **PHP 340.3 M** | **88.0%** |
-
-</div>
-
-<div>
-
-### Warranty year (12 mo post go-live)
-
-| Bucket | PHP |
+| Phase | PHP |
 |---|---:|
-| Personnel (17.5 FTE) | 40.2 M |
-| Infra OPEX (12 mo) | 16.3 M |
-| Software (year 2) | 10.4 M |
-| Overhead + contingency | 6.9 M |
-| Margin (10%) | 7.4 M |
-| **Warranty** | **PHP 81.1 M** |
-
-### Total
-
-<div class="pt-2 text-lg">
-Build + warranty · <b class="text-sky-500">PHP 421.4 M</b> · <span class="opacity-70">84.3% of ABC</span>
-</div>
-<div class="pt-1 text-lg">
-Bid headroom · <b class="text-emerald-500">PHP 78.6 M</b> · <span class="opacity-70">15.7%</span>
-</div>
-<div class="pt-3 opacity-80">
-Headroom absorbs FX, hardware inflation, or funds a 5% below-ABC competitive bid at ~ PHP 475 M.
-</div>
+| Build (M1–M8) — personnel 102 + CAPEX 101 + rest | 340.3 M |
+| Warranty year — personnel 40 + infra 16 + rest | 81.1 M |
+| **24-month contract price** | **PHP 421.4 M** |
+| % of ABC (500 M) | **84.3%** |
+| Bid headroom | **PHP 78.6 M** (15.7%) |
+| Year 3+ run-rate (informational) | ~ PHP 65 M/yr |
 
 </div>
 
+<div>
+
+### ☁️ Option B · Public cloud
+
+| Phase | PHP |
+|---|---:|
+| Build (M1–M8) — personnel 102 + cloud OPEX 48 + rest | 242.1 M |
+| Warranty year — personnel 40 + cloud OPEX 48 + rest | 117.0 M |
+| **24-month contract price** | **PHP 359.1 M** |
+| % of ABC (500 M) | **71.8%** |
+| Bid headroom | **PHP 140.9 M** (28.2%) |
+| Year 3+ run-rate (informational) | ~ PHP 105 M/yr |
+
 </div>
 
-<div class="pt-4 text-xs opacity-60 text-center">
-Full sensitivity analysis + comparables (Novopay, HRMIS, SIASN):
-<b>Paper F §F.10 · §F.13</b>.
+</div>
+
+<div class="pt-4 text-sm text-center opacity-90">
+<b>Cloud is cheaper over the contract window · on-prem is cheaper from year 3+.</b><br/>
+Both leave meaningful bid headroom for competitive positioning or additional value-adds.
+</div>
+
+<div class="pt-3 text-xs opacity-60 text-center">
+Full sensitivity analysis + comparables (Novopay, HRMIS, SIASN): <b>Paper F §F.10 · §F.13</b>.
 </div>
 
 ---

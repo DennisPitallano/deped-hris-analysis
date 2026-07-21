@@ -151,15 +151,16 @@ PostgreSQL data model.
 
     A grounded, bottom-up model — **is PHP 500 M realistic for what
     the PBD asks?** 2026 PH-market rates for a 69-FTE peak team,
-    on-premises infrastructure sizing (with a public-cloud
-    alternative), month-by-month staffing curve across 12 build
-    months + 12 warranty months, and a full cost breakdown that
-    lands at **PHP 421 M** — inside the ABC with 15.7% headroom.
+    **two deployment options priced side-by-side** (on-premises and
+    public cloud) with pros, cons, and a six-question decision
+    framework. Month-by-month staffing curve across 12 build months
+    + 12 warranty months. Lands at **PHP 421 M (on-prem)** or
+    **PHP 359 M (cloud)** — both inside the ABC.
 
     <span class="tag-row">
       <span class="tag">Cost model</span>
       <span class="tag">2026 PH rates</span>
-      <span class="tag">On-prem vs cloud</span>
+      <span class="tag">Two deployment options</span>
       <span class="tag">24-month roadmap</span>
     </span>
 
@@ -305,7 +306,7 @@ Which paper answers which PBD section — a quick confidence check that nothing 
 | **[C · Architecture](C_architecture_and_data_model.md)** | Building the system | Design, data model, C4 | 8 Mermaid diagrams + PostgreSQL DDL | ~74 KB · 60 min |
 | **[D · Value-Add](D_value_added.md)** | Looking for the edge | Winning the bid | Eight-component pitch + Gantt | ~14 KB · 15 min |
 | **[E · Benchmarks](E_international_benchmarks.md)** | Wanting international proof | Citing precedent to evaluators | Country tables + lessons | ~18 KB · 20 min |
-| **[F · Delivery & Cost](F_delivery_and_cost.md)** | Costing the delivery | Sizing team, infra, budget | Bottom-up cost model + 24-mo Gantt | ~26 KB · 25 min |
+| **[F · Delivery & Cost](F_delivery_and_cost.md)** | Costing the delivery | Sizing team, infra, budget | Bottom-up model · two deployment options | ~34 KB · 30 min |
 | **[G · Exec](G_executive_one_pager.md)** | An evaluator / exec | 90-second pitch | Single-page brief | ~4 KB · 3 min |
 | **[H · Migration](H_data_migration.md)** | Planning cutover | Sources, waves, reconciliation | Wave plan + rollback + pipeline diagram | ~18 KB · 20 min |
 | **[I · Privacy (PIA)](I_privacy_impact_assessment.md)** | The DPO / NPC reviewer | RA 10173 · NPC filing | PIA sections + risk + breach sequence | ~28 KB · 30 min |
@@ -366,7 +367,7 @@ Which paper answers which PBD section — a quick confidence check that nothing 
 - **Building the system?** Jump to **[Paper C](C_architecture_and_data_model.md)** — C4 diagrams and PostgreSQL DDL are the fast path to a prototype.
 - **Looking to win the bid?** Read **[Paper D](D_value_added.md)** — the eight value-added components that beat competitors at no extra cost.
 - **Need international precedent?** Study **[Paper E](E_international_benchmarks.md)** — comparable systems worldwide and the three disasters worth citing as ones you avoid.
-- **Costing the delivery?** Read **[Paper F](F_delivery_and_cost.md)** — bottom-up cost model at 2026 PH rates, on-prem vs cloud, 24-month roadmap. Lands at PHP 421 M against the PHP 500 M ABC.
+- **Costing the delivery?** Read **[Paper F](F_delivery_and_cost.md)** — bottom-up cost model at 2026 PH rates. Two deployment options priced side-by-side: on-prem at **PHP 421 M** or cloud at **PHP 359 M**. Both inside the PHP 500 M ABC.
 - **Have 90 seconds, not 90 minutes?** Read **[Paper G](G_executive_one_pager.md)** — the whole argument on a single page.
 - **Worried about the cutover?** Read **[Paper H](H_data_migration.md)** — how to move 1 M+ records without repeating Novopay.
 - **DPO / NPC-facing?** Read **[Paper I](I_privacy_impact_assessment.md)** — draft PIA under RA 10173 with lawful-basis matrix, data flows, and breach protocol.

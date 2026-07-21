@@ -226,6 +226,7 @@ Consolidated from the design in [Paper C §7](C_architecture_and_data_model.md),
 - **Authorisation** — RBAC × ABAC, row-level security per organisational scope, per-request policy check.
 - **Audit** — every mutation captured to hash-chained ledger (D §5) with a per-year Merkle-root anchor.
 - **Segmentation** — application, database, and admin planes on separate VLANs; production isolated from non-prod.
+- **Deployment residency** — [Paper F](F_delivery_and_cost.md) prices **two deployment options** (on-premises in DepEd facilities, or public cloud on GovCloud PH / AWS Manila). **Both satisfy RA 10173 residency** when configured per §I.5. Option B (cloud) requires explicit region pinning to a PH-based region and an annual review of the provider's SOC 2 / ISO 27001 attestation. Option A (on-prem) satisfies residency by construction — data never leaves DepEd-owned premises.
 - **Backup & recovery** — 3-2-1 rule, tested restore quarterly, RTO 4 h / RPO 15 min.
 - **Endpoint hardening** — CIS benchmarks on all servers, EDR on admin workstations.
 - **Vulnerability management** — SCA and SAST in CI, DAST pre-release, third-party pen-test twice per year.

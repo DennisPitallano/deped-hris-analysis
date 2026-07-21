@@ -12,29 +12,32 @@ hide:
 
 ## The bid, in one paragraph
 
-DepEd's Human Resources Information System (project **`2026C-ICTS2-002-B5-CB-034`**) is a **1 M+ employee, 11-module** system to be delivered in **365 days** at an ABC of **PHP 500 M**. This analysis models a delivery at **PHP 421 M** using a **69-FTE peak team at 2026 PH-market rates**, an **on-premises primary + GovCloud PH DR** infrastructure, and eight **value-added components** offered at no incremental cost. The result fits inside the ABC with **15.7 % headroom** and is anchored to comparable government HRIS deployments in six countries.
+DepEd's Human Resources Information System (project **`2026C-ICTS2-002-B5-CB-034`**) is a **1 M+ employee, 11-module** system to be delivered in **365 days** at an ABC of **PHP 500 M**. This analysis models delivery under **two deployment options** — on-premises at DepEd Central Office (**PHP 421 M**, 15.7 % headroom) or public cloud on GovCloud PH / AWS Manila (**PHP 359 M**, 28.2 % headroom). Both use the same **69-FTE peak team at 2026 PH-market rates** and both ship the same eight **value-added components** at no incremental cost. The choice between them is a decision framework at inception (M1), not a bid-time commitment.
 
 <div class="grid cards" markdown>
 
 - __The numbers__
 
-    - **ABC** — PHP 500 M · **Model** — PHP 421 M · **Headroom** — 15.7 %
+    - **ABC** — PHP 500 M
+    - **Option A · On-prem** — PHP 421 M · Headroom 15.7 %
+    - **Option B · Cloud** — PHP 359 M · Headroom 28.2 %
     - **1 M+ employees** across CO / RO / SDO / District / Schools
     - **365 days** to final acceptance · **8 milestones** · **99 % uptime**
     - **P1** 1 h resp / 24 h res · **P2** 2 h / 48 h · **P3** 4 h / 5 d · **P4** 1 d / next release
     - **11 modules**, of which 3 are detailed in the TOR
     - **28 recruitment reports**, 9 regulator integrations
     - **69 FTE peak** (M3–M6), 17.5 FTE warranty year
-    - **PHP 101 M CAPEX** on-prem + **PHP 32.5 M OPEX** over 24 mo
 
 - __The approach__
 
     - **Modular monolith** in PostgreSQL 16, extracted to services only where load demands (Payroll first)
-    - **On-premises primary** at DepEd Central Office · **DR at GovCloud PH**
+    - **Two deployment options, both PBD-compliant:**
+        - **Option A** — on-prem at DepEd Central Office + colo DR (PHP 101 M CAPEX)
+        - **Option B** — GovCloud PH or AWS Manila (PHP 3.96 M / mo OPEX)
     - **Keycloak** for OAuth2/OIDC/MFA · **BPMN engine** for workflow · **OpenSearch** for retrieval and audit
     - **Offline-first PWA** with CRDT sync for low-connectivity schools
     - **In-house team** (SCC 7 forbids subcontracting), Filipino market rates, senior-heavy
-    - **On-prem wins TCO after month 30**; cloud priced for comparison
+    - **Cloud wins TCO in years 1–2**; **on-prem wins TCO from year 3+** — decision framework in F.6.4
 
 - __The differentiators (D §1–§8)__
 
