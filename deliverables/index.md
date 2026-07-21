@@ -165,20 +165,72 @@ PostgreSQL data model.
 
     [Read the delivery model :octicons-arrow-right-24:](F_delivery_and_cost.md){ .md-button .md-button--primary }
 
+- :material-file-star-outline: __G · Executive One-Pager__ <span class="badge-new">New</span>
+
+    ---
+
+    The whole argument in a **single page** — ABC math, 24-month
+    Gantt, eight differentiators, top three risks. For evaluator
+    committee chairs and senior officials who need the pitch in
+    90 seconds, not 90 minutes.
+
+    <span class="tag-row">
+      <span class="tag">Single page</span>
+      <span class="tag">Exec briefing</span>
+    </span>
+
+    [Read the one-pager :octicons-arrow-right-24:](G_executive_one_pager.md){ .md-button .md-button--primary }
+
+- :material-database-arrow-right-outline: __H · Data Migration Plan__ <span class="badge-new">New</span>
+
+    ---
+
+    Legacy PIS + PSIPOP + CSC-BEA + 850 K paper 201 files → new
+    HRIS. Sources, target model, quality profile, wave plan
+    (pilot → regional), reconciliation gates, cutover freeze
+    windows, and a rollback path. The workstream that Novopay,
+    Queensland Health, and NHS NPfIT all got wrong.
+
+    <span class="tag-row">
+      <span class="tag">1 M+ records</span>
+      <span class="tag">Wave rollout</span>
+      <span class="tag">Reconciliation</span>
+    </span>
+
+    [Read the migration plan :octicons-arrow-right-24:](H_data_migration.md){ .md-button .md-button--primary }
+
+- :material-shield-lock-outline: __I · Privacy Impact Assessment__ <span class="badge-new">New</span>
+
+    ---
+
+    Draft PIA in line with **RA 10173** and **NPC Circular 16-01**.
+    Data inventory across 15 categories, lawful-basis matrix per
+    §12 and §13, data-flow diagram, 15-risk matrix, TOM controls
+    (§20), breach-response protocol, retention schedule, and DPO
+    sign-off sequence. NPC-fileable after DPO edits.
+
+    <span class="tag-row">
+      <span class="tag">RA 10173</span>
+      <span class="tag">NPC-ready</span>
+      <span class="tag">DPO checklist</span>
+    </span>
+
+    [Read the PIA :octicons-arrow-right-24:](I_privacy_impact_assessment.md){ .md-button .md-button--primary }
+
 </div>
 
 ## Which paper is for you? { .section-heading }
 
 <div class="compare-table" markdown>
 
-|                   | **A · Brief**              | **B · Response**              | **C · Architecture**        | **D · Value-Add**            | **E · Benchmarks**            | **F · Delivery & Cost**        |
-| :---------------- | :------------------------- | :---------------------------- | :-------------------------- | :--------------------------- | :---------------------------- | :----------------------------- |
-| **You are…**      | Reading the RFP            | Preparing a bid               | Building the system         | Looking for the edge         | Wanting international proof   | Costing the delivery            |
-| **Best for**      | Orientation, scope, SLAs   | Compliance, evidence, pricing | Design, data model, C4      | Winning the bid              | Citing precedent to evaluators| Sizing the team, infra, budget  |
-| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   | Eight-component pitch        | Country tables + lessons      | Bottom-up cost model            |
-| **Diagrams**      | —                          | Risk map                      | 8 Mermaid (C4/ER/state)     | Milestone Gantt              | —                             | 24-month Gantt + staffing curve |
-| **Length**        | ~22 KB · 20 min read       | ~56 KB · 45 min read          | ~74 KB · 60 min read        | ~14 KB · 15 min read         | ~18 KB · 20 min read           | ~26 KB · 25 min read            |
-| **Key sections**  | Milestones, P1–P4, reports | Milestone entry/exit, risks   | Container, deployment, ERDs | AI, offline, audit, escrow   | Novopay, Chile solver, OPM    | 2026 PH rates, on-prem vs cloud |
+|                   | **A · Brief**              | **B · Response**              | **C · Architecture**        | **D · Value-Add**            | **E · Benchmarks**            | **F · Delivery & Cost**        | **G · Exec**              | **H · Migration**             | **I · Privacy PIA**            |
+| :---------------- | :------------------------- | :---------------------------- | :-------------------------- | :--------------------------- | :---------------------------- | :----------------------------- | :------------------------ | :---------------------------- | :----------------------------- |
+| **You are…**      | Reading the RFP            | Preparing a bid               | Building the system         | Looking for the edge         | Wanting international proof   | Costing the delivery            | An evaluator / exec       | Planning cutover              | The DPO / NPC reviewer          |
+| **Best for**      | Orientation, scope, SLAs   | Compliance, evidence, pricing | Design, data model, C4      | Winning the bid              | Citing precedent to evaluators| Sizing the team, infra, budget  | 90-second pitch           | Sources, waves, reconciliation | RA 10173 · NPC filing           |
+| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   | Eight-component pitch        | Country tables + lessons      | Bottom-up cost model            | Single-page brief         | Wave plan + rollback           | PIA sections + risk matrix      |
+| **Diagrams**      | —                          | Risk map                      | 8 Mermaid (C4/ER/state)     | Milestone Gantt              | —                             | 24-month Gantt + staffing curve | Compact Gantt             | Pipeline flowchart             | Data-flow + breach sequence     |
+| **Length**        | ~22 KB · 20 min read       | ~56 KB · 45 min read          | ~74 KB · 60 min read        | ~14 KB · 15 min read         | ~18 KB · 20 min read           | ~26 KB · 25 min read            | ~4 KB · 3 min read        | ~18 KB · 20 min read           | ~28 KB · 30 min read            |
+| **Key sections**  | Milestones, P1–P4, reports | Milestone entry/exit, risks   | Container, deployment, ERDs | AI, offline, audit, escrow   | Novopay, Chile solver, OPM    | 2026 PH rates, on-prem vs cloud | ABC math, top-3 risks     | Waves, reconciliation, sunset  | Lawful bases, TOMs, breach       |
 
 </div>
 
@@ -234,6 +286,9 @@ PostgreSQL data model.
 - **Looking to win the bid?** Read **[Paper D](D_value_added.md)** — the eight value-added components that beat competitors at no extra cost.
 - **Need international precedent?** Study **[Paper E](E_international_benchmarks.md)** — comparable systems worldwide and the three disasters worth citing as ones you avoid.
 - **Costing the delivery?** Read **[Paper F](F_delivery_and_cost.md)** — bottom-up cost model at 2026 PH rates, on-prem vs cloud, 24-month roadmap. Lands at PHP 421 M against the PHP 500 M ABC.
+- **Have 90 seconds, not 90 minutes?** Read **[Paper G](G_executive_one_pager.md)** — the whole argument on a single page.
+- **Worried about the cutover?** Read **[Paper H](H_data_migration.md)** — how to move 1 M+ records without repeating Novopay.
+- **DPO / NPC-facing?** Read **[Paper I](I_privacy_impact_assessment.md)** — draft PIA under RA 10173 with lawful-basis matrix, data flows, and breach protocol.
 - **Looking at a different DepEd bid?** A **[sibling analysis of the DepEd DTI REI](https://dennispitallano.github.io/deped-dti-analysis/)** (`2026C-ICTS2-003-B5-CB-044`, ABC PHP 105 M, Managed Services for Adopt-a-School + School Management System) is live on its own site.
 - **Prefer offline reading?** All papers are available as [PDFs](downloads.md) with rendered diagrams.
 - **Presenting to stakeholders?** A 20-slide [executive deck](slides/) walks through all five papers with the C4 diagrams and milestone Gantt embedded.

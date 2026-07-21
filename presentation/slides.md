@@ -1004,6 +1004,74 @@ Full sensitivity analysis + comparables (Novopay, HRMIS, SIASN):
 </div>
 
 ---
+
+# Also in the analysis · G · H · I
+
+<div class="grid grid-cols-3 gap-4 pt-2 text-sm">
+
+<div class="also-card">
+
+### G · Executive One-Pager
+
+The whole argument on **one page** — ABC math, 24-month Gantt, 8 differentiators, top-3 risks.
+
+For evaluator committee chairs and senior officials who need it in 90 seconds.
+
+<div class="pt-2 text-xs opacity-70">
+<b>~ 4 KB · 3 min read</b><br/>
+Print-friendly · exec briefing
+</div>
+
+</div>
+
+<div class="also-card">
+
+### H · Data Migration Plan
+
+Legacy PIS + PSIPOP + CSC-BEA + 850 K paper 201 files → new HRIS.
+
+Wave rollout (pilot → regional), reconciliation gates, freeze windows, per-wave rollback + nuclear-option post-cutover revert.
+
+The workstream **Novopay, Queensland Health, and NHS NPfIT all got wrong**.
+
+<div class="pt-2 text-xs opacity-70">
+<b>~ 18 KB · 20 min read</b><br/>
+1 M+ records · 5 waves · 7 reconciliation reports
+</div>
+
+</div>
+
+<div class="also-card">
+
+### I · Privacy Impact Assessment
+
+Draft PIA per **RA 10173** and **NPC Circular 16-01**.
+
+15 data categories · lawful-basis matrix (§12, §13) · data-flow diagram · 15-risk matrix · technical + organisational measures · breach protocol · retention.
+
+**NPC-fileable** after DPO edits.
+
+<div class="pt-2 text-xs opacity-70">
+<b>~ 28 KB · 30 min read</b><br/>
+RA 10173 · NPC Circulars · DPO sign-off
+</div>
+
+</div>
+
+</div>
+
+<div class="pt-6 text-xs opacity-70 text-center">
+All three are on the same site: <b>dennispitallano.github.io/deped-hris-analysis</b>
+</div>
+
+<style>
+.also-card {
+  @apply p-4 rounded-lg border border-gray-200 dark:border-gray-700;
+  background: rgba(2,132,199,0.05);
+}
+</style>
+
+---
 layout: section
 routeAlias: summary
 ---
