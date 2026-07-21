@@ -120,15 +120,16 @@ plugins:
 
 nav:
   - Home: index.md
-  - "A · Brief": A_technical_specifications_brief.md
-  - "B · Response": B_tor_response_outline.md
-  - "C · Architecture": C_architecture_and_data_model.md
-  - "D · Value-Add": D_value_added.md
-  - "E · Benchmarks": E_international_benchmarks.md
-  - "F · Delivery & Cost": F_delivery_and_cost.md
-  - "G · Exec One-Pager": G_executive_one_pager.md
-  - "H · Data Migration": H_data_migration.md
-  - "I · Privacy (PIA)": I_privacy_impact_assessment.md
+  - Papers:
+    - "A · Technical Brief": A_technical_specifications_brief.md
+    - "B · Bid Response": B_tor_response_outline.md
+    - "C · Architecture": C_architecture_and_data_model.md
+    - "D · Value-Adds": D_value_added.md
+    - "E · Benchmarks": E_international_benchmarks.md
+    - "F · Delivery & Cost": F_delivery_and_cost.md
+    - "G · Executive One-Pager": G_executive_one_pager.md
+    - "H · Data Migration": H_data_migration.md
+    - "I · Privacy (PIA)": I_privacy_impact_assessment.md
   - Downloads: downloads.md
   - Slides ↗: https://dennispitallano.github.io/deped-hris-analysis/slides/
 
