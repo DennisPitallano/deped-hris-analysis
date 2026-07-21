@@ -180,6 +180,7 @@ PostgreSQL data model.
     </span>
 
     [Read the one-pager :octicons-arrow-right-24:](G_executive_one_pager.md){ .md-button .md-button--primary }
+    [PDF](pdf/G_executive_one_pager.pdf){ .md-button }
 
 - :material-database-arrow-right-outline: __H · Data Migration Plan__ <span class="badge-new">New</span>
 
@@ -198,6 +199,7 @@ PostgreSQL data model.
     </span>
 
     [Read the migration plan :octicons-arrow-right-24:](H_data_migration.md){ .md-button .md-button--primary }
+    [PDF](pdf/H_data_migration.pdf){ .md-button }
 
 - :material-shield-lock-outline: __I · Privacy Impact Assessment__ <span class="badge-new">New</span>
 
@@ -216,6 +218,79 @@ PostgreSQL data model.
     </span>
 
     [Read the PIA :octicons-arrow-right-24:](I_privacy_impact_assessment.md){ .md-button .md-button--primary }
+    [PDF](pdf/I_privacy_impact_assessment.pdf){ .md-button }
+
+- :material-alert-outline: __J · Risk Register__ <span class="badge-new">New</span>
+
+    ---
+
+    Standalone bid-grade register with **18 tracked risks**, each
+    scored likelihood × impact, mapped to a named owner, a
+    monitorable trigger, a specific control, and a residual
+    score after mitigation. Includes heat map, contingency
+    draw-down policy, and review cadence.
+
+    <span class="tag-row">
+      <span class="tag">18 risks</span>
+      <span class="tag">Heat map</span>
+      <span class="tag">Residual scoring</span>
+    </span>
+
+    [Read the register :octicons-arrow-right-24:](J_risk_register.md){ .md-button .md-button--primary }
+    [PDF](pdf/J_risk_register.pdf){ .md-button }
+
+- :material-connection: __K · Integration Specifications__ <span class="badge-new">New</span>
+
+    ---
+
+    Contract, auth, rate limits, retry policy, and runbook per
+    regulator across the nine required integrations —
+    **GSIS, Pag-IBIG, PhilHealth, SSS, BIR, CSC, DBM, DICT,
+    PhilSys**. Common sequence diagram, mocking strategy, and
+    observability metrics. The document engineers open on day
+    one of M2.
+
+    <span class="tag-row">
+      <span class="tag">9 regulators</span>
+      <span class="tag">OpenAPI</span>
+      <span class="tag">Runbooks</span>
+    </span>
+
+    [Read the integration specs :octicons-arrow-right-24:](K_integration_specifications.md){ .md-button .md-button--primary }
+    [PDF](pdf/K_integration_specifications.pdf){ .md-button }
+
+</div>
+
+## PBD coverage matrix { .section-heading }
+
+Which paper answers which PBD section — a quick confidence check that nothing was skipped.
+
+<div class="compare-table" markdown>
+
+| PBD section | Topic | Answered in |
+|---|---|---|
+| §I–II · Bid Data | Eligibility, instructions | Bidder-specific in [B](B_tor_response_outline.md); not analysed here |
+| §III–IV · Eligibility & submission | Documentary requirements | Bidder-specific in [B](B_tor_response_outline.md) |
+| §V · SCC | Special conditions (subcontracting, LDs, warranty) | [A §A.1](A_technical_specifications_brief.md#a1-project-fundamentals), [F §F.1](F_delivery_and_cost.md#f1-guiding-assumptions) |
+| §VI · Schedule | Milestones, payment weights | [A §A.4](A_technical_specifications_brief.md), [F §F.11](F_delivery_and_cost.md#f11-roadmap--month-by-month-with-staffing-curve) |
+| §VII.1 · Project overview | Scope, entities, duration | [A §A.1–§A.2](A_technical_specifications_brief.md) |
+| §VII.2 · Deliverables | Modules 1–11, reports, turnover | [A §A.4](A_technical_specifications_brief.md), [B §5–§9](B_tor_response_outline.md) |
+| §VII.3 · General specs | Integration, workflow, controls, forms | [A §A.3](A_technical_specifications_brief.md#a3-general-cross-cutting-specifications), [C](C_architecture_and_data_model.md), [K](K_integration_specifications.md) |
+| §VII.4 · Functional specs | Applicant, RSP, ESS, Leave, Payroll, Performance, L&D, R&R, Wellness, Succession | [A §A.4](A_technical_specifications_brief.md), [C §Components](C_architecture_and_data_model.md), [B §5–§9](B_tor_response_outline.md) |
+| §VII.5 · Architecture | Platform, security, non-functional | [C](C_architecture_and_data_model.md), [F §F.5](F_delivery_and_cost.md#f5-infrastructure--on-premises-primary), [I](I_privacy_impact_assessment.md) |
+| §VII.6 · SLA | P1–P4, uptime, response time | [A §A.3](A_technical_specifications_brief.md#a3-general-cross-cutting-specifications), [F §F.11.2](F_delivery_and_cost.md#f112-warranty-year--service-levels) |
+| §VII.7 · Security & privacy | DPA, ISO, MFA, RBAC, breach | [C §Security](C_architecture_and_data_model.md), [I](I_privacy_impact_assessment.md) |
+| §VII.8 · Integration | 9 regulators + Landbank | [C](C_architecture_and_data_model.md), [K](K_integration_specifications.md) |
+| §VII.9 · Reporting | 28 recruitment reports + others | [A §A.4](A_technical_specifications_brief.md), [B §10](B_tor_response_outline.md), [C §Report views](C_architecture_and_data_model.md) |
+| §VII.10 · Training | Materials, batches, coverage | [F §F.8](F_delivery_and_cost.md#f8-training-change-management-documentation) |
+| §VII.11 · Turnover | Source code, escrow, documentation | [B §11–§12](B_tor_response_outline.md), [D §7](D_value_added.md), [F §F.11.1](F_delivery_and_cost.md#f111-milestone-entry--exit-gates-money-flow-view) |
+| §VII.12 · Warranty | Post-acceptance service | [F §F.11.2](F_delivery_and_cost.md#f112-warranty-year--service-levels), [J §J.3](J_risk_register.md) |
+| §VII.13 · Risk | Risk management approach | [B §15](B_tor_response_outline.md), [J](J_risk_register.md) |
+| §VII.14 · Value-added components | Discretionary offer | [D](D_value_added.md), [B §16.5](B_tor_response_outline.md) |
+| Legacy migration (implicit) | PIS → HRIS | [H](H_data_migration.md) |
+| Executive brief (implicit) | 1-page summary | [G](G_executive_one_pager.md) |
+| International precedent (implicit) | Reference systems | [E](E_international_benchmarks.md) |
+| Cost model (implicit) | Realism against ABC | [F](F_delivery_and_cost.md) |
 
 </div>
 
@@ -223,14 +298,20 @@ PostgreSQL data model.
 
 <div class="compare-table" markdown>
 
-|                   | **A · Brief**              | **B · Response**              | **C · Architecture**        | **D · Value-Add**            | **E · Benchmarks**            | **F · Delivery & Cost**        | **G · Exec**              | **H · Migration**             | **I · Privacy PIA**            |
-| :---------------- | :------------------------- | :---------------------------- | :-------------------------- | :--------------------------- | :---------------------------- | :----------------------------- | :------------------------ | :---------------------------- | :----------------------------- |
-| **You are…**      | Reading the RFP            | Preparing a bid               | Building the system         | Looking for the edge         | Wanting international proof   | Costing the delivery            | An evaluator / exec       | Planning cutover              | The DPO / NPC reviewer          |
-| **Best for**      | Orientation, scope, SLAs   | Compliance, evidence, pricing | Design, data model, C4      | Winning the bid              | Citing precedent to evaluators| Sizing the team, infra, budget  | 90-second pitch           | Sources, waves, reconciliation | RA 10173 · NPC filing           |
-| **Format**        | Structured analysis        | Section VII compliance matrix | Diagrams + PostgreSQL DDL   | Eight-component pitch        | Country tables + lessons      | Bottom-up cost model            | Single-page brief         | Wave plan + rollback           | PIA sections + risk matrix      |
-| **Diagrams**      | —                          | Risk map                      | 8 Mermaid (C4/ER/state)     | Milestone Gantt              | —                             | 24-month Gantt + staffing curve | Compact Gantt             | Pipeline flowchart             | Data-flow + breach sequence     |
-| **Length**        | ~22 KB · 20 min read       | ~56 KB · 45 min read          | ~74 KB · 60 min read        | ~14 KB · 15 min read         | ~18 KB · 20 min read           | ~26 KB · 25 min read            | ~4 KB · 3 min read        | ~18 KB · 20 min read           | ~28 KB · 30 min read            |
-| **Key sections**  | Milestones, P1–P4, reports | Milestone entry/exit, risks   | Container, deployment, ERDs | AI, offline, audit, escrow   | Novopay, Chile solver, OPM    | 2026 PH rates, on-prem vs cloud | ABC math, top-3 risks     | Waves, reconciliation, sunset  | Lawful bases, TOMs, breach       |
+| Paper | You are… | Best for | Format | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| **[A · Brief](A_technical_specifications_brief.md)** | Reading the RFP | Orientation, scope, SLAs | Structured analysis | ~22 KB · 20 min |
+| **[B · Response](B_tor_response_outline.md)** | Preparing a bid | Compliance, evidence, pricing | Section VII compliance matrix | ~56 KB · 45 min |
+| **[C · Architecture](C_architecture_and_data_model.md)** | Building the system | Design, data model, C4 | 8 Mermaid diagrams + PostgreSQL DDL | ~74 KB · 60 min |
+| **[D · Value-Add](D_value_added.md)** | Looking for the edge | Winning the bid | Eight-component pitch + Gantt | ~14 KB · 15 min |
+| **[E · Benchmarks](E_international_benchmarks.md)** | Wanting international proof | Citing precedent to evaluators | Country tables + lessons | ~18 KB · 20 min |
+| **[F · Delivery & Cost](F_delivery_and_cost.md)** | Costing the delivery | Sizing team, infra, budget | Bottom-up cost model + 24-mo Gantt | ~26 KB · 25 min |
+| **[G · Exec](G_executive_one_pager.md)** | An evaluator / exec | 90-second pitch | Single-page brief | ~4 KB · 3 min |
+| **[H · Migration](H_data_migration.md)** | Planning cutover | Sources, waves, reconciliation | Wave plan + rollback + pipeline diagram | ~18 KB · 20 min |
+| **[I · Privacy (PIA)](I_privacy_impact_assessment.md)** | The DPO / NPC reviewer | RA 10173 · NPC filing | PIA sections + risk + breach sequence | ~28 KB · 30 min |
+| **[J · Risk Register](J_risk_register.md)** | The steering committee | Owners, triggers, residual scores | 18-risk register + heat map | ~14 KB · 15 min |
+| **[K · Integrations](K_integration_specifications.md)** | The engineering team | Contracts + runbooks per regulator | Per-regulator specs + sequence diagram | ~18 KB · 20 min |
+| **[Glossary](glossary.md)** | Lost in acronyms | Reference | Alphabetical acronym list | ~10 KB · scan |
 
 </div>
 
@@ -289,6 +370,9 @@ PostgreSQL data model.
 - **Have 90 seconds, not 90 minutes?** Read **[Paper G](G_executive_one_pager.md)** — the whole argument on a single page.
 - **Worried about the cutover?** Read **[Paper H](H_data_migration.md)** — how to move 1 M+ records without repeating Novopay.
 - **DPO / NPC-facing?** Read **[Paper I](I_privacy_impact_assessment.md)** — draft PIA under RA 10173 with lawful-basis matrix, data flows, and breach protocol.
+- **On the steering committee?** Read **[Paper J](J_risk_register.md)** — 18 tracked risks with owners, triggers, and residual scores.
+- **On the integration team?** Read **[Paper K](K_integration_specifications.md)** — contracts, auth, rate limits, and runbooks for the 9 regulator integrations.
+- **Lost in acronyms?** Open the **[Glossary](glossary.md)** — every acronym across the papers, expanded and cross-referenced.
 - **Looking at a different DepEd bid?** A **[sibling analysis of the DepEd DTI REI](https://dennispitallano.github.io/deped-dti-analysis/)** (`2026C-ICTS2-003-B5-CB-044`, ABC PHP 105 M, Managed Services for Adopt-a-School + School Management System) is live on its own site.
 - **Prefer offline reading?** All papers are available as [PDFs](downloads.md) with rendered diagrams.
 - **Presenting to stakeholders?** A 20-slide [executive deck](slides/) walks through all five papers with the C4 diagrams and milestone Gantt embedded.

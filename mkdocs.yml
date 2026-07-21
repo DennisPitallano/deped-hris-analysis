@@ -130,6 +130,10 @@ nav:
     - "G · Executive One-Pager": G_executive_one_pager.md
     - "H · Data Migration": H_data_migration.md
     - "I · Privacy (PIA)": I_privacy_impact_assessment.md
+    - "J · Risk Register": J_risk_register.md
+    - "K · Integration Specs": K_integration_specifications.md
+  - Reference:
+    - "Glossary": glossary.md
   - Downloads: downloads.md
   - Slides ↗: https://dennispitallano.github.io/deped-hris-analysis/slides/
 

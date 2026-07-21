@@ -4,7 +4,7 @@ title: Downloads
 
 # Downloads
 
-All three papers are available as high-quality PDFs — A4, page numbered, with fully rendered Mermaid diagrams.
+All eleven papers are available as high-quality PDFs — A4, page numbered, with fully rendered Mermaid diagrams.
 
 <div class="grid cards downloads-grid" markdown>
 
@@ -32,7 +32,7 @@ All three papers are available as high-quality PDFs — A4, page numbered, with 
     milestone entry/exit criteria, and a twelve-item risk register.
 
     <span class="tag-row">
-      <span class="tag">868 KB</span>
+      <span class="tag">872 KB</span>
       <span class="tag">A4</span>
       <span class="tag">Placeholders</span>
     </span>
@@ -56,18 +56,19 @@ All three papers are available as high-quality PDFs — A4, page numbered, with 
     [Download PDF](pdf/C_architecture_and_data_model.pdf){ .md-button .md-button--primary }
     [Read online](C_architecture_and_data_model.md){ .md-button }
 
-- :material-file-pdf-box: __D · Value-Added Components__ <span class="badge-new">New</span>
+- :material-file-pdf-box: __D · Value-Added Components__
 
     ---
 
-    Seven strategic differentiators offered at no incremental cost —
-    AI copilot, offline-first PWA, payroll anomaly detector, hash-chained
-    audit ledger, transparency portal, and 10-year escrow.
+    Eight strategic differentiators offered at no incremental cost —
+    bilingual UI + SMS/USSD, offline PWA, HR Copilot, payroll anomaly
+    detector, hash-chain audit ledger, transparency portal, escrow, and
+    Chile-pattern teacher placement optimiser.
 
     <span class="tag-row">
-      <span class="tag">Bid edge</span>
-      <span class="tag">159 KB</span>
-      <span class="tag">A4 · Mermaid Gantt</span>
+      <span class="tag">178 KB</span>
+      <span class="tag">A4</span>
+      <span class="tag">Mermaid Gantt</span>
     </span>
 
     [Download PDF](pdf/D_value_added.pdf){ .md-button .md-button--primary }
@@ -82,13 +83,114 @@ All three papers are available as high-quality PDFs — A4, page numbered, with 
     three disasters worth explicitly avoiding.
 
     <span class="tag-row">
-      <span class="tag">13 systems</span>
+      <span class="tag">217 KB</span>
       <span class="tag">A4</span>
-      <span class="tag">Cross-refs to A/B/C/D</span>
+      <span class="tag">13 systems</span>
     </span>
 
     [Download PDF](pdf/E_international_benchmarks.pdf){ .md-button .md-button--primary }
     [Read online](E_international_benchmarks.md){ .md-button }
+
+- :material-file-pdf-box: __F · Delivery Plan, Infrastructure & Cost__
+
+    ---
+
+    Bottom-up cost model at 2026 PH-market rates. 69-FTE peak team,
+    on-prem vs cloud TCO, 24-month roadmap with staffing curve.
+    Lands at **PHP 421 M** vs the PHP 500 M ABC.
+
+    <span class="tag-row">
+      <span class="tag">499 KB</span>
+      <span class="tag">A4</span>
+      <span class="tag">Sensitivity + comparables</span>
+    </span>
+
+    [Download PDF](pdf/F_delivery_and_cost.pdf){ .md-button .md-button--primary }
+    [Read online](F_delivery_and_cost.md){ .md-button }
+
+- :material-file-pdf-box: __G · Executive One-Pager__
+
+    ---
+
+    A single-page brief for evaluator committee chairs and senior officials
+    — ABC math, 24-month Gantt, eight differentiators, top three risks.
+
+    <span class="tag-row">
+      <span class="tag">127 KB</span>
+      <span class="tag">A4</span>
+      <span class="tag">Print-friendly</span>
+    </span>
+
+    [Download PDF](pdf/G_executive_one_pager.pdf){ .md-button .md-button--primary }
+    [Read online](G_executive_one_pager.md){ .md-button }
+
+- :material-file-pdf-box: __H · Data Migration Plan__
+
+    ---
+
+    Sources, quality profile, wave-based rollout, reconciliation reports,
+    per-wave rollback, and post-cutover revert. Legacy PIS + PSIPOP +
+    CSC-BEA + 850 K paper 201 files → new HRIS.
+
+    <span class="tag-row">
+      <span class="tag">222 KB</span>
+      <span class="tag">A4</span>
+      <span class="tag">Pipeline diagram</span>
+    </span>
+
+    [Download PDF](pdf/H_data_migration.pdf){ .md-button .md-button--primary }
+    [Read online](H_data_migration.md){ .md-button }
+
+- :material-file-pdf-box: __I · Privacy Impact Assessment__
+
+    ---
+
+    Draft PIA under RA 10173 / NPC Circular 16-01 — data inventory,
+    lawful-basis matrix, data-flow diagram, 15-risk matrix, TOM controls,
+    breach protocol, retention schedule.
+
+    <span class="tag-row">
+      <span class="tag">323 KB</span>
+      <span class="tag">A4</span>
+      <span class="tag">NPC-fileable</span>
+    </span>
+
+    [Download PDF](pdf/I_privacy_impact_assessment.pdf){ .md-button .md-button--primary }
+    [Read online](I_privacy_impact_assessment.md){ .md-button }
+
+- :material-file-pdf-box: __J · Risk Register__
+
+    ---
+
+    Standalone bid-grade register — 18 tracked risks, scored likelihood
+    × impact, per-risk owner, monitorable trigger, mapped control,
+    residual score, contingency draw-down policy.
+
+    <span class="tag-row">
+      <span class="tag">A4</span>
+      <span class="tag">Heat map</span>
+      <span class="tag">18 risks</span>
+    </span>
+
+    [Download PDF](pdf/J_risk_register.pdf){ .md-button .md-button--primary }
+    [Read online](J_risk_register.md){ .md-button }
+
+- :material-file-pdf-box: __K · Integration Specifications__
+
+    ---
+
+    Per-regulator contract, auth, rate limits, retry policy, and runbook
+    across nine integrations — GSIS, Pag-IBIG, PhilHealth, SSS, BIR,
+    CSC, DBM, DICT, PhilSys.
+
+    <span class="tag-row">
+      <span class="tag">A4</span>
+      <span class="tag">9 regulators</span>
+      <span class="tag">Runbooks</span>
+    </span>
+
+    [Download PDF](pdf/K_integration_specifications.pdf){ .md-button .md-button--primary }
+    [Read online](K_integration_specifications.md){ .md-button }
 
 </div>
 
@@ -106,6 +208,14 @@ node .\tools\md-to-pdf\md2pdf.mjs `
   .\deliverables\A_technical_specifications_brief.md `
   .\deliverables\B_tor_response_outline.md `
   .\deliverables\C_architecture_and_data_model.md `
+  .\deliverables\D_value_added.md `
+  .\deliverables\E_international_benchmarks.md `
+  .\deliverables\F_delivery_and_cost.md `
+  .\deliverables\G_executive_one_pager.md `
+  .\deliverables\H_data_migration.md `
+  .\deliverables\I_privacy_impact_assessment.md `
+  .\deliverables\J_risk_register.md `
+  .\deliverables\K_integration_specifications.md `
   --out-dir .\deliverables\pdf
 ```
 
